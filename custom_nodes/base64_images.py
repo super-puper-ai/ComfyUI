@@ -59,7 +59,7 @@ class SendBase64Images:
 
     def request(self, images, callBackApi):
         print("====================")
-        x=requests.post("http://" + callBackApi, json=images)
+        x=requests.post(callBackApi, json=images)
         return ()
 
 
