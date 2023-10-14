@@ -5,7 +5,7 @@ from io import BytesIO
 import requests
 import urllib.parse
 
-class ImageToBase64:
+class ImageToBuffer:
 
     @classmethod
     def INPUT_TYPES(s):
@@ -16,14 +16,14 @@ class ImageToBase64:
                 }
 
     RETURN_TYPES = ("CONDITIONING",)
-    FUNCTION = "image_to_base64"
+    FUNCTION = "image_to_buffer"
 
     OUTPUT_NODE = True
 
     CATEGORY = "image"
 
-    def image_to_base64(self, images):
-        print("======image_to_base64=======")
+    def image_to_buffer(self, images):
+        print("======image_to_buffer=======")
         results = list()
         count=0
         for image in images:
@@ -35,7 +35,7 @@ class ImageToBase64:
             results.append(buffer)
         return (results,)
 
-class SendBase64Images:
+class SendBufferedImages:
     def __init__(self):
         pass
 
@@ -50,20 +50,16 @@ class SendBase64Images:
                 }
     
     RETURN_TYPES = ()
-    FUNCTION = "request"
+    FUNCTION = "send"
     OUTPUT_NODE = True
     CATEGORY = "image"
 
-    def request(self, images, callBackApi, prompt_id):
+    def send(self, images, callBackApi, prompt_id):
         cbHost = urllib.parse.unquote(callBackApi)
-        print("==================== callback: " + cbHost + " ====================")
         payload = {
             "promptId": prompt_id,
         }
         files = []
-
-        # files = list()
-
         for i, image in enumerate(images):
             image.seek(0)
             files.append((str(i), ('my.png', image, 'image/png')))
@@ -75,12 +71,12 @@ class SendBase64Images:
 # A dictionary that contains all nodes you want to export with their names
 # NOTE: names should be globally unique
 NODE_CLASS_MAPPINGS = {
-    "ImageToBase64": ImageToBase64,
-    "SendBase64Images": SendBase64Images
+    "ImageToBuffer": ImageToBuffer,
+    "SendBufferedImages": SendBufferedImages
 }
 
 # A dictionary that contains the friendly/humanly readable titles for the nodes
 NODE_DISPLAY_NAME_MAPPINGS = {
-    "ImageToBase64": "Image To Base64",
-    "SendBase64Images": "Send Base64 Images"
+    "ImageToBuffer": "Image to buffer",
+    "SendBufferedImages": "Send buffered images"
 }
