@@ -3,13 +3,16 @@ from PIL import Image
 import numpy as np
 from io import BytesIO
 import requests
+import urllib.parse
 
 class ImageToBase64:
 
     @classmethod
     def INPUT_TYPES(s):
-        return {"required": 
-                    {"images": ("IMAGE", ),},
+        return {
+                    "required": {
+                        "images": ("IMAGE", ),
+                    },
                 }
 
     RETURN_TYPES = ("CONDITIONING",)
@@ -28,15 +31,8 @@ class ImageToBase64:
             i = 255. * image.cpu().numpy()
             img = Image.fromarray(np.clip(i, 0, 255).astype(np.uint8))
             buffer = BytesIO()
-            img.save(buffer, format="PNG")                  #Enregistre l'image dans le buffer
-            myimage = buffer.getvalue()  
-            encoded_string = "data:image/jpeg;base64," + base64.b64encode(myimage).decode('ascii')
-            
-            results.append({
-                "index": count,
-                "base64": encoded_string
-            })
-            count=count+1
+            img.save(buffer, format="PNG")
+            results.append(buffer)
         return (results,)
 
 class SendBase64Images:
@@ -50,6 +46,7 @@ class SendBase64Images:
                         "images": ("CONDITIONING", ),
                         "callBackApi": ("STRING", {"multiline": False})
                     },
+                "hidden": {"prompt_id": "PROMPT_ID"},
                 }
     
     RETURN_TYPES = ()
@@ -57,9 +54,21 @@ class SendBase64Images:
     OUTPUT_NODE = True
     CATEGORY = "image"
 
-    def request(self, images, callBackApi):
-        print("====================")
-        x=requests.post(callBackApi, json=images)
+    def request(self, images, callBackApi, prompt_id):
+        cbHost = urllib.parse.unquote(callBackApi)
+        print("==================== callback: " + cbHost + " ====================")
+        payload = {
+            "promptId": prompt_id,
+        }
+        files = []
+
+        # files = list()
+
+        for i, image in enumerate(images):
+            image.seek(0)
+            files.append((str(i), ('my.png', image, 'image/png')))
+
+        x=requests.post(cbHost, data=payload, files=files, verify=False)
         return ()
 
 
