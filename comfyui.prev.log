@@ -1,0 +1,51 @@
+** ComfyUI start up time: 2023-10-20 12:41:13.077338
+
+Prestartup times for custom nodes:
+   0.0 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager
+
+Using directml with device: 
+Total VRAM 1024 MB, total RAM 32699 MB
+Set vram state to: NORMAL_VRAM
+Device: privateuseone
+VAE dtype: torch.float32
+Using sub quadratic optimization for cross attention, if you have memory or speed issues try using: --use-split-cross-attention
+## ComfyUI-Manager: installing dependencies
+ Collecting GitPython (from -r D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager\requirements.txt (line 1))
+   Obtaining dependency information for GitPython from https://files.pythonhosted.org/packages/8d/c4/82b858fb6483dfb5e338123c154d19c043305b01726a67d89532b8f8f01b/GitPython-3.1.40-py3-none-any.whl.metadata
+   Downloading GitPython-3.1.40-py3-none-any.whl.metadata (12 kB)
+ Collecting gitdb<5,>=4.0.1 (from GitPython->-r D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager\requirements.txt (line 1))
+   Obtaining dependency information for gitdb<5,>=4.0.1 from https://files.pythonhosted.org/packages/fd/5b/8f0c4a5bb9fd491c277c21eff7ccae71b47d43c4446c9d0c6cff2fe8c2c4/gitdb-4.0.11-py3-none-any.whl.metadata
+   Downloading gitdb-4.0.11-py3-none-any.whl.metadata (1.2 kB)
+ Collecting smmap<6,>=3.0.1 (from gitdb<5,>=4.0.1->GitPython->-r D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager\requirements.txt (line 1))
+   Obtaining dependency information for smmap<6,>=3.0.1 from https://files.pythonhosted.org/packages/a7/a5/10f97f73544edcdef54409f1d839f6049a0d79df68adbc1ceb24d1aaca42/smmap-5.0.1-py3-none-any.whl.metadata
+   Downloading smmap-5.0.1-py3-none-any.whl.metadata (4.3 kB)
+ Downloading GitPython-3.1.40-py3-none-any.whl (190 kB)
+    ---------------------------------------- 190.6/190.6 kB 1.7 MB/s eta 0:00:00
+ Downloading gitdb-4.0.11-py3-none-any.whl (62 kB)
+    ---------------------------------------- 62.7/62.7 kB 3.5 MB/s eta 0:00:00
+ Downloading smmap-5.0.1-py3-none-any.whl (24 kB)
+[!] DEPRECATION: torchsde 0.2.5 has a non-standard dependency specifier numpy>=1.19.*; python_version >= "3.7". pip 23.3 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of torchsde or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063
+ Installing collected packages: smmap, gitdb, GitPython
+ Successfully installed GitPython-3.1.40 gitdb-4.0.11 smmap-5.0.1
+## ComfyUI-Manager: installing dependencies done.
+### Loading: ComfyUI-Manager (V0.36)
+### ComfyUI Revision: 1382 [c49c857b] | Released on '2023-10-14'
+
+Import times for custom nodes:
+   0.0 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\base64_images.py
+   7.7 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager
+
+Starting server
+
+To see the GUI go to: http://0.0.0.0:8188
+FETCH DATA from: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager\extension-node-map.json
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+Install custom node 'AnimateDiff Evolved'
+install: ['https://github.com/Kosinkadink/ComfyUI-AnimateDiff-Evolved']
+Download: git clone 'https://github.com/Kosinkadink/ComfyUI-AnimateDiff-Evolved'
+Installation was successful.
+After restarting ComfyUI, please refresh the browser.
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+FETCH DATA from: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager\extension-node-map.json
+
+Stopped server

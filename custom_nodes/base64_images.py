@@ -5,15 +5,16 @@ from io import BytesIO
 import requests
 import urllib.parse
 
+
 class ImageToBuffer:
 
     @classmethod
     def INPUT_TYPES(s):
         return {
-                    "required": {
-                        "images": ("IMAGE", ),
-                    },
-                }
+            "required": {
+                "images": ("IMAGE", ),
+            },
+        }
 
     RETURN_TYPES = ("CONDITIONING",)
     FUNCTION = "image_to_buffer"
@@ -25,7 +26,7 @@ class ImageToBuffer:
     def image_to_buffer(self, images):
         print("======image_to_buffer=======")
         results = list()
-        count=0
+        count = 0
         for image in images:
             print("images: " + str(count))
             i = 255. * image.cpu().numpy()
@@ -35,20 +36,21 @@ class ImageToBuffer:
             results.append(buffer)
         return (results,)
 
+
 class SendBufferedImages:
     def __init__(self):
         pass
 
     @classmethod
     def INPUT_TYPES(s):
-        return {"required": 
-                    {
-                        "images": ("CONDITIONING", ),
-                        "callBackApi": ("STRING", {"multiline": False})
-                    },
+        return {"required":
+                {
+                    "images": ("CONDITIONING", ),
+                    "callBackApi": ("STRING", {"multiline": False})
+                },
                 "hidden": {"prompt_id": "PROMPT_ID"},
                 }
-    
+
     RETURN_TYPES = ()
     FUNCTION = "send"
     OUTPUT_NODE = True
@@ -63,8 +65,11 @@ class SendBufferedImages:
         for i, image in enumerate(images):
             image.seek(0)
             files.append((str(i), ('my.png', image, 'image/png')))
-
-        x=requests.post(cbHost, data=payload, files=files, verify=False)
+        print(payload)
+        x = requests.post(cbHost, data=payload, files=files, verify=False)
+        print(x)
+        # x = requests.post('https://192.168.0.100:443/generation1saveresult', data=payload, files=files, verify=False)
+        print(x)
         return ()
 
 

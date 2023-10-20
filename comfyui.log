@@ -1,0 +1,41 @@
+** ComfyUI start up time: 2023-10-20 12:58:32.254137
+
+Prestartup times for custom nodes:
+   0.0 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager
+
+Using directml with device: 
+Total VRAM 1024 MB, total RAM 32699 MB
+Set vram state to: NORMAL_VRAM
+Device: privateuseone
+VAE dtype: torch.float32
+Using sub quadratic optimization for cross attention, if you have memory or speed issues try using: --use-split-cross-attention
+Using sub quadratic optimization for cross attention, if you have memory or speed issues try using: --use-split-cross-attention
+Traceback (most recent call last):
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\nodes.py", line 1698, in load_custom_node
+    module_spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\__init__.py", line 2, in <module>
+    from .animatediff.nodes import NODE_CLASS_MAPPINGS, NODE_DISPLAY_NAME_MAPPINGS
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\nodes.py", line 18, in <module>
+    from .motion_module import InjectorVersion, eject_params_from_model, get_injected_mm_params, inject_params_into_model, load_motion_lora, load_motion_module
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\motion_module.py", line 11, in <module>
+    from .motion_module_ad import AnimDiffMotionWrapper, has_mid_block
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\motion_module_ad.py", line 9, in <module>
+    from .motion_utils import GenericMotionWrapper, InjectorVersion, BlockType, CrossAttentionMM
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\motion_utils.py", line 5, in <module>
+    from comfy.ldm.modules.attention import attention_basic, attention_pytorch, attention_split, attention_sub_quad, attention_xformers, default
+ImportError: cannot import name 'attention_basic' from 'comfy.ldm.modules.attention' (D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\attention.py)
+
+Cannot import D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved module for custom nodes: cannot import name 'attention_basic' from 'comfy.ldm.modules.attention' (D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\attention.py)
+### Loading: ComfyUI-Manager (V0.36)
+### ComfyUI Revision: 1382 [c49c857b] | Released on '2023-10-14'
+
+Import times for custom nodes:
+   0.0 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\base64_images.py
+   0.0 seconds (IMPORT FAILED): D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved
+   0.5 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager
+
+Starting server
+
+To see the GUI go to: http://0.0.0.0:8188
