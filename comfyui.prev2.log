@@ -1,4 +1,4 @@
-** ComfyUI start up time: 2023-10-20 13:35:01.059064
+** ComfyUI start up time: 2023-10-20 13:32:45.061597
 
 #######################################################################
 [ComfyUI-Manager] Starting dependency installation/(de)activation for the extension
@@ -7,15 +7,22 @@
 ## ComfyUI-Manager: EXECUTE => ['C:\\Users\\majul\\miniconda3\\envs\\env_pytorch39\\python.exe', '-m', 'pip', 'install', 'opencv-python']
 
 ## Execute install/(de)activation script for 'D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\comfyui-animatediff'
- Requirement already satisfied: opencv-python in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (4.8.1.78)
+ Collecting opencv-python
+   Obtaining dependency information for opencv-python from https://files.pythonhosted.org/packages/38/d2/3e8c13ffc37ca5ebc6f382b242b44acb43eb489042e1728407ac3904e72f/opencv_python-4.8.1.78-cp37-abi3-win_amd64.whl.metadata
+   Downloading opencv_python-4.8.1.78-cp37-abi3-win_amd64.whl.metadata (20 kB)
  Requirement already satisfied: numpy>=1.17.0 in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from opencv-python) (1.25.2)
+ Downloading opencv_python-4.8.1.78-cp37-abi3-win_amd64.whl (38.1 MB)
+    ---------------------------------------- 38.1/38.1 MB 3.1 MB/s eta 0:00:00
 [!] DEPRECATION: torchsde 0.2.5 has a non-standard dependency specifier numpy>=1.19.*; python_version >= "3.7". pip 23.3 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of torchsde or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063
+ Installing collected packages: opencv-python
+ Successfully installed opencv-python-4.8.1.78
 
 ## ComfyUI-Manager: EXECUTE => ['C:\\Users\\majul\\miniconda3\\envs\\env_pytorch39\\python.exe', '-m', 'pip', 'install', 'flash_attn']
 
 ## Execute install/(de)activation script for '.'
  Collecting flash_attn
-   Using cached flash_attn-2.3.2.tar.gz (2.3 MB)
+   Downloading flash_attn-2.3.2.tar.gz (2.3 MB)
+      ---------------------------------------- 2.3/2.3 MB 2.8 MB/s eta 0:00:00
    Preparing metadata (setup.py): started
    Preparing metadata (setup.py): finished with status 'error'
 [!]   error: subprocess-exited-with-error
@@ -25,12 +32,12 @@
 [!]   
 [!]   [20 lines of output]
 [!]   fatal: not a git repository (or any of the parent directories): .git
-[!]   C:\Users\majul\AppData\Local\Temp\pip-install-fanhr5nj\flash-attn_5c0901036eee408c9eeb1f9f11f7cb33\setup.py:79: UserWarning: flash_attn was requested, but nvcc was not found.  Are you sure your environment has nvcc available?  If you're installing within a container from https://hub.docker.com/r/pytorch/pytorch, only images whose names contain 'devel' will provide nvcc.
+[!]   C:\Users\majul\AppData\Local\Temp\pip-install-vep28vle\flash-attn_f0582d7b54fd46709d4944eb5d921ac3\setup.py:79: UserWarning: flash_attn was requested, but nvcc was not found.  Are you sure your environment has nvcc available?  If you're installing within a container from https://hub.docker.com/r/pytorch/pytorch, only images whose names contain 'devel' will provide nvcc.
 [!]     warnings.warn(
 [!]   Traceback (most recent call last):
 [!]     File "<string>", line 2, in <module>
 [!]     File "<pip-setuptools-caller>", line 34, in <module>
-[!]     File "C:\Users\majul\AppData\Local\Temp\pip-install-fanhr5nj\flash-attn_5c0901036eee408c9eeb1f9f11f7cb33\setup.py", line 136, in <module>
+[!]     File "C:\Users\majul\AppData\Local\Temp\pip-install-vep28vle\flash-attn_f0582d7b54fd46709d4944eb5d921ac3\setup.py", line 136, in <module>
 [!]       CUDAExtension(
 [!]     File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\utils\cpp_extension.py", line 1048, in CUDAExtension
 [!]       library_dirs += library_paths(cuda=True)
@@ -62,7 +69,7 @@ install/(de)activation script failed: .
 
 
 Prestartup times for custom nodes:
-  14.9 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager
+  32.3 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager
 
 Using directml with device: 
 Total VRAM 1024 MB, total RAM 32699 MB
@@ -93,23 +100,38 @@ Using sub quadratic optimization for cross attention, if you have memory or spee
 
 Import times for custom nodes:
    0.0 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\base64_images.py
-   0.0 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved
    0.0 seconds (IMPORT FAILED): D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\comfyui-animatediff
+   0.1 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved
    0.5 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager
 
 Starting server
 
 To see the GUI go to: http://0.0.0.0:8188
+FETCH DATA from: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager\extension-node-map.json
+[AnimateDiffEvo] - [0;33mWARNING[0m - ffmpeg could not be found. Outputs that require it have been disabled
 FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
 FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
 FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
-Install custom node 'ComfyUI-VideoHelperSuite'
-install: ['https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite']
-Download: git clone 'https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite'
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+Uninstall custom node 'AnimateDiff'
+uninstall: ['https://github.com/ArtVentureX/comfyui-animatediff']
+Uninstallation was successful.
+After restarting ComfyUI, please refresh the browser.
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+Install custom node 'AnimateDiff'
+install: ['https://github.com/ArtVentureX/comfyui-animatediff']
+Download: git clone 'https://github.com/ArtVentureX/comfyui-animatediff'
 Install: pip packages
 Installation was successful.
 After restarting ComfyUI, please refresh the browser.
 FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
 
 Stopped server
 Exception ignored in: <module 'threading' from 'C:\\Users\\majul\\miniconda3\\envs\\env_pytorch39\\lib\\threading.py'>
