@@ -49,12 +49,17 @@ class ClipVisionModel():
             precision_scope = lambda a, b: contextlib.nullcontext(a)
 
         with precision_scope(comfy.model_management.get_autocast_device(self.load_device), torch.float32):
-            outputs = self.model(pixel_values=pixel_values)
+            outputs = self.model(pixel_values=pixel_values, output_hidden_states=True)
 
         for k in outputs:
             t = outputs[k]
             if t is not None:
-                outputs[k] = t.cpu()
+                if k == 'hidden_states':
+                    outputs["penultimate_hidden_states"] = t[-2].cpu()
+                    outputs["hidden_states"] = None
+                else:
+                    outputs[k] = t.cpu()
+
         return outputs
 
 def convert_to_transformers(sd, prefix):
@@ -87,8 +92,11 @@ def load_clipvision_from_sd(sd, prefix="", convert_keys=False):
         json_config = os.path.join(os.path.dirname(os.path.realpath(__file__)), "clip_vision_config_g.json")
     elif "vision_model.encoder.layers.30.layer_norm1.weight" in sd:
         json_config = os.path.join(os.path.dirname(os.path.realpath(__file__)), "clip_vision_config_h.json")
-    else:
+    elif "vision_model.encoder.layers.22.layer_norm1.weight" in sd:
         json_config = os.path.join(os.path.dirname(os.path.realpath(__file__)), "clip_vision_config_vitl.json")
+    else:
+        return None
+
     clip = ClipVisionModel(json_config)
     m, u = clip.load_sd(sd)
     if len(m) > 0:
