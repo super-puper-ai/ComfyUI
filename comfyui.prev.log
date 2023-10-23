@@ -1,119 +1,19 @@
-** ComfyUI start up time: 2023-10-20 13:35:01.059064
-
-#######################################################################
-[ComfyUI-Manager] Starting dependency installation/(de)activation for the extension
-
-
-## ComfyUI-Manager: EXECUTE => ['C:\\Users\\majul\\miniconda3\\envs\\env_pytorch39\\python.exe', '-m', 'pip', 'install', 'opencv-python']
-
-## Execute install/(de)activation script for 'D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\comfyui-animatediff'
- Requirement already satisfied: opencv-python in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (4.8.1.78)
- Requirement already satisfied: numpy>=1.17.0 in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from opencv-python) (1.25.2)
-[!] DEPRECATION: torchsde 0.2.5 has a non-standard dependency specifier numpy>=1.19.*; python_version >= "3.7". pip 23.3 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of torchsde or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063
-
-## ComfyUI-Manager: EXECUTE => ['C:\\Users\\majul\\miniconda3\\envs\\env_pytorch39\\python.exe', '-m', 'pip', 'install', 'flash_attn']
-
-## Execute install/(de)activation script for '.'
- Collecting flash_attn
-   Using cached flash_attn-2.3.2.tar.gz (2.3 MB)
-   Preparing metadata (setup.py): started
-   Preparing metadata (setup.py): finished with status 'error'
-[!]   error: subprocess-exited-with-error
-[!]   
-[!]   python setup.py egg_info did not run successfully.
-[!]   exit code: 1
-[!]   
-[!]   [20 lines of output]
-[!]   fatal: not a git repository (or any of the parent directories): .git
-[!]   C:\Users\majul\AppData\Local\Temp\pip-install-fanhr5nj\flash-attn_5c0901036eee408c9eeb1f9f11f7cb33\setup.py:79: UserWarning: flash_attn was requested, but nvcc was not found.  Are you sure your environment has nvcc available?  If you're installing within a container from https://hub.docker.com/r/pytorch/pytorch, only images whose names contain 'devel' will provide nvcc.
-[!]     warnings.warn(
-[!]   Traceback (most recent call last):
-[!]     File "<string>", line 2, in <module>
-[!]     File "<pip-setuptools-caller>", line 34, in <module>
-[!]     File "C:\Users\majul\AppData\Local\Temp\pip-install-fanhr5nj\flash-attn_5c0901036eee408c9eeb1f9f11f7cb33\setup.py", line 136, in <module>
-[!]       CUDAExtension(
-[!]     File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\utils\cpp_extension.py", line 1048, in CUDAExtension
-[!]       library_dirs += library_paths(cuda=True)
-[!]     File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\utils\cpp_extension.py", line 1186, in library_paths
-[!]       paths.append(_join_cuda_home(lib_dir))
-[!]     File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\utils\cpp_extension.py", line 2223, in _join_cuda_home
-[!]       raise EnvironmentError('CUDA_HOME environment variable is not set. '
-[!]   OSError: CUDA_HOME environment variable is not set. Please set it to your CUDA install root.
-[!]   
-[!]   
-[!]   torch.__version__  = 2.0.0+cpu
-[!]   
-[!]   
-[!]   [end of output]
-[!]   
-[!]   note: This error originates from a subprocess, and is likely not a problem with pip.
-[!] error: metadata-generation-failed
-[!] 
-[!] Encountered error while generating package metadata.
-[!] 
-[!] See above for output.
-[!] 
-[!] note: This is an issue with the package mentioned above, not pip.
-[!] hint: See above for details.
-install/(de)activation script failed: .
-
-[ComfyUI-Manager] Startup script completed.
-#######################################################################
-
+** ComfyUI start up time: 2023-10-23 13:19:31.471516
 
 Prestartup times for custom nodes:
-  14.9 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager
+   0.0 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager
 
-Using directml with device: 
-Total VRAM 1024 MB, total RAM 32699 MB
-Set vram state to: NORMAL_VRAM
-Device: privateuseone
-VAE dtype: torch.float32
-Using sub quadratic optimization for cross attention, if you have memory or speed issues try using: --use-split-cross-attention
 Traceback (most recent call last):
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\nodes.py", line 1735, in load_custom_node
-    module_spec.loader.exec_module(module)
-  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
-  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\comfyui-animatediff\__init__.py", line 2, in <module>
-    from .animatediff.nodes import NODE_CLASS_MAPPINGS, NODE_DISPLAY_NAME_MAPPINGS
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\comfyui-animatediff\animatediff\nodes.py", line 16, in <module>
-    from .sampler import AnimateDiffSampler, AnimateDiffSlidingWindowOptions
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\comfyui-animatediff\animatediff\sampler.py", line 14, in <module>
-    from .sliding_schedule import ContextSchedules
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\comfyui-animatediff\animatediff\sliding_schedule.py", line 147
-    match name:
-          ^
-SyntaxError: invalid syntax
-
-Cannot import D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\comfyui-animatediff module for custom nodes: invalid syntax (sliding_schedule.py, line 147)
-Using sub quadratic optimization for cross attention, if you have memory or speed issues try using: --use-split-cross-attention
-### Loading: ComfyUI-Manager (V0.36)
-### ComfyUI Revision: 1602 [585f993c] | Released on '2023-10-20'
-
-Import times for custom nodes:
-   0.0 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\base64_images.py
-   0.0 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved
-   0.0 seconds (IMPORT FAILED): D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\comfyui-animatediff
-   0.5 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager
-
-Starting server
-
-To see the GUI go to: http://0.0.0.0:8188
-FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
-FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
-FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
-Install custom node 'ComfyUI-VideoHelperSuite'
-install: ['https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite']
-Download: git clone 'https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite'
-Install: pip packages
-Installation was successful.
-After restarting ComfyUI, please refresh the browser.
-FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
-
-Stopped server
-Exception ignored in: <module 'threading' from 'C:\\Users\\majul\\miniconda3\\envs\\env_pytorch39\\lib\\threading.py'>
-Traceback (most recent call last):
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\threading.py", line 1477, in _shutdown
-    lock.acquire()
-KeyboardInterrupt: 
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\main.py", line 72, in <module>
+    import execution
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\execution.py", line 12, in <module>
+    import nodes
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\nodes.py", line 20, in <module>
+    import comfy.diffusers_load
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\diffusers_load.py", line 4, in <module>
+    import comfy.sd
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\sd.py", line 5, in <module>
+    from comfy import model_management
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\model_management.py", line 33, in <module>
+    import torch_directml
+ModuleNotFoundError: No module named 'torch_directml'

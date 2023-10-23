@@ -1,35 +1,7 @@
-** ComfyUI start up time: 2023-10-20 13:39:54.118205
-
-#######################################################################
-[ComfyUI-Manager] Starting dependency installation/(de)activation for the extension
-
-
-## ComfyUI-Manager: EXECUTE => ['C:\\Users\\majul\\miniconda3\\envs\\env_pytorch39\\python.exe', '-m', 'pip', 'install', 'opencv-python']
-
-## Execute install/(de)activation script for 'D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-VideoHelperSuite'
- Requirement already satisfied: opencv-python in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (4.8.1.78)
- Requirement already satisfied: numpy>=1.17.0 in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from opencv-python) (1.25.2)
-[!] DEPRECATION: torchsde 0.2.5 has a non-standard dependency specifier numpy>=1.19.*; python_version >= "3.7". pip 23.3 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of torchsde or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063
-
-## ComfyUI-Manager: EXECUTE => ['C:\\Users\\majul\\miniconda3\\envs\\env_pytorch39\\python.exe', '-m', 'pip', 'install', 'imageio-ffmpeg']
-
-## Execute install/(de)activation script for 'D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-VideoHelperSuite'
- Collecting imageio-ffmpeg
-   Obtaining dependency information for imageio-ffmpeg from https://files.pythonhosted.org/packages/c6/01/716106099e48c4f419876d5814679a94dd7d6f441217c97c1b608123c6bb/imageio_ffmpeg-0.4.9-py3-none-win_amd64.whl.metadata
-   Downloading imageio_ffmpeg-0.4.9-py3-none-win_amd64.whl.metadata (1.7 kB)
- Requirement already satisfied: setuptools in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from imageio-ffmpeg) (68.0.0)
- Downloading imageio_ffmpeg-0.4.9-py3-none-win_amd64.whl (22.6 MB)
-    ---------------------------------------- 22.6/22.6 MB 3.2 MB/s eta 0:00:00
-[!] DEPRECATION: torchsde 0.2.5 has a non-standard dependency specifier numpy>=1.19.*; python_version >= "3.7". pip 23.3 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of torchsde or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063
- Installing collected packages: imageio-ffmpeg
- Successfully installed imageio-ffmpeg-0.4.9
-
-[ComfyUI-Manager] Startup script completed.
-#######################################################################
-
+** ComfyUI start up time: 2023-10-23 13:20:54.112861
 
 Prestartup times for custom nodes:
-  17.4 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager
+   0.0 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager
 
 Using directml with device: 
 Total VRAM 1024 MB, total RAM 32699 MB
@@ -56,15 +28,15 @@ SyntaxError: invalid syntax
 Cannot import D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\comfyui-animatediff module for custom nodes: invalid syntax (sliding_schedule.py, line 147)
 Using sub quadratic optimization for cross attention, if you have memory or speed issues try using: --use-split-cross-attention
 ### Loading: ComfyUI-Manager (V0.36)
-### ComfyUI Revision: 1602 [585f993c] | Released on '2023-10-20'
+### ComfyUI Revision: 1603 [48f30aa5] | Released on '2023-10-20'
 [VideoHelperSuite] - [0;32mINFO[0m - ffmpeg could not be found. Using ffmpeg from imageio-ffmpeg.
 
 Import times for custom nodes:
    0.0 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\base64_images.py
-   0.0 seconds (IMPORT FAILED): D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\comfyui-animatediff
-   0.0 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved
+   0.1 seconds (IMPORT FAILED): D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\comfyui-animatediff
+   0.1 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved
    0.5 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager
-   1.0 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-VideoHelperSuite
+   0.9 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-VideoHelperSuite
 
 Starting server
 
@@ -72,363 +44,268 @@ To see the GUI go to: http://0.0.0.0:8188
 FETCH DATA from: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager\extension-node-map.json
 [AnimateDiffEvo] - [0;33mWARNING[0m - ffmpeg could not be found. Outputs that require it have been disabled
 got prompt
-ERROR:root:Failed to validate prompt for output 21:
-ERROR:root:* VAEDecode 8:
-ERROR:root:  - Required input is missing: samples
-ERROR:root:  - Required input is missing: vae
-ERROR:root:Output will be ignored
-invalid prompt: {'type': 'prompt_outputs_failed_validation', 'message': 'Prompt outputs failed validation', 'details': '', 'extra_info': {}}
-got prompt
+C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\_utils.py:776: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
+  return self.fget.__get__(instance, owner)()
 model_type V_PREDICTION
 adm 0
 Using split attention in VAE
 Working with z of shape (1, 4, 32, 32) = 4096 dimensions.
 Using split attention in VAE
-missing {'cond_stage_model.text_projection', 'cond_stage_model.logit_scale'}
+missing {'cond_stage_model.logit_scale', 'cond_stage_model.text_projection'}
 left over keys: dict_keys(['cond_stage_model.model.logit_scale', 'cond_stage_model.model.text_projection'])
-[AnimateDiffEvo] - [0;32mINFO[0m - Loading motion module mm-Stabilized_high.pth
 Requested to load SD2ClipModel
 Loading 1 new model
-warning, embedding:easynegative, does not exist, ignoring
-warning, embedding:badhandv4, does not exist, ignoring
-[AnimateDiffEvo] - [0;32mINFO[0m - Regular AnimateDiff activated - latents passed in (1) less or equal to context_length 16.
-[AnimateDiffEvo] - [0;32mINFO[0m - Injecting motion module mm-Stabilized_high.pth version v1.
 Requested to load BaseModel
 Loading 1 new model
 D:\Documents\projects\super-puper-ai\ComfyUI\comfy\k_diffusion\external.py:63: UserWarning: The operator 'aten::linspace.out' is not currently supported on the DML backend and will fall back to run on the CPU. This may have performance implications. (Triggered internally at D:\a\_work\1\s\pytorch-directml-plugin\torch_directml\csrc\dml\dml_cpu_fallback.cpp:17.)
   t = torch.linspace(t_max, 0, n, device=self.sigmas.device)
-100%|██████████████████████████████████████████████████████████████████████████████████| 20/20 [00:07<00:00,  2.98it/s]100%|██████████████████████████████████████████████████████████████████████████████████| 20/20 [00:07<00:00,  2.52it/s]
-[AnimateDiffEvo] - [0;32mINFO[0m - Ejecting motion module mm-Stabilized_high.pth version v1.
-[AnimateDiffEvo] - [0;32mINFO[0m - Cleaning motion module from unet.
-[AnimateDiffEvo] - [0;32mINFO[0m - Removing motion module mm-Stabilized_high.pth from cache
-D:\Documents\projects\super-puper-ai\ComfyUI\comfy\model_base.py:48: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
-  self.register_buffer('betas', torch.tensor(betas, dtype=torch.float32))
-D:\Documents\projects\super-puper-ai\ComfyUI\comfy\model_base.py:49: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
-  self.register_buffer('alphas_cumprod', torch.tensor(alphas_cumprod, dtype=torch.float32))
-Prompt executed in 67.69 seconds
-got prompt
-ERROR:root:Failed to validate prompt for output 21:
-ERROR:root:* VAEDecode 8:
-ERROR:root:  - Required input is missing: vae
-ERROR:root:Output will be ignored
-invalid prompt: {'type': 'prompt_outputs_failed_validation', 'message': 'Prompt outputs failed validation', 'details': '', 'extra_info': {}}
-got prompt
-model_type V_PREDICTION
-adm 0
-Using split attention in VAE
-Working with z of shape (1, 4, 32, 32) = 4096 dimensions.
-Using split attention in VAE
-missing {'cond_stage_model.text_projection', 'cond_stage_model.logit_scale'}
-left over keys: dict_keys(['cond_stage_model.model.logit_scale', 'cond_stage_model.model.text_projection'])
-[AnimateDiffEvo] - [0;32mINFO[0m - Loading motion module mm-Stabilized_high.pth
-Requested to load SD2ClipModel
-Loading 1 new model
-[AnimateDiffEvo] - [0;32mINFO[0m - Regular AnimateDiff activated - latents passed in (16) less or equal to context_length None.
-[AnimateDiffEvo] - [0;32mINFO[0m - Injecting motion module mm-Stabilized_high.pth version v1.
-Requested to load BaseModel
-Loading 1 new model
-
-[AnimateDiffEvo] - [0;32mINFO[0m - Ejecting motion module mm-Stabilized_high.pth version v1.
-[AnimateDiffEvo] - [0;32mINFO[0m - Cleaning motion module from unet.
-[AnimateDiffEvo] - [0;32mINFO[0m - Removing motion module mm-Stabilized_high.pth from cache
-ERROR:root:!!! Exception during processing !!!
-ERROR:root:Traceback (most recent call last):
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\execution.py", line 155, in recursive_execute
-    output_data, output_ui = get_output_data(obj, input_data_all)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\execution.py", line 85, in get_output_data
-    return_values = map_node_over_list(obj, input_data_all, obj.FUNCTION, allow_interrupt=True)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\execution.py", line 78, in map_node_over_list
-    results.append(getattr(obj, func)(**slice_dict(input_data_all, i)))
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\nodes.py", line 1237, in sample
-    return common_ksampler(model, seed, steps, cfg, sampler_name, scheduler, positive, negative, latent_image, denoise=denoise)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\nodes.py", line 1207, in common_ksampler
-    samples = comfy.sample.sample(model, noise, steps, cfg, sampler_name, scheduler, positive, negative, latent_image,
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\sampling.py", line 163, in animatediff_sample
-    return wrap_function_to_inject_xformers_bug_info(orig_comfy_sample)(model, *args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\model_utils.py", line 185, in wrapped_function
-    return function_to_wrap(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\sample.py", line 97, in sample
-    samples = sampler.sample(noise, positive_copy, negative_copy, cfg=cfg, latent_image=latent_image, start_step=start_step, last_step=last_step, force_full_denoise=force_full_denoise, denoise_mask=noise_mask, sigmas=sigmas, callback=callback, disable_pbar=disable_pbar, seed=seed)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 781, in sample
-    return sample(self.model, noise, positive, negative, cfg, self.device, sampler(), sigmas, self.model_options, latent_image=latent_image, denoise_mask=denoise_mask, callback=callback, disable_pbar=disable_pbar, seed=seed)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 686, in sample
-    samples = sampler.sample(model_wrap, sigmas, extra_args, callback, noise, latent_image, denoise_mask, disable_pbar)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 638, in sample
-    samples = getattr(k_diffusion_sampling, "sample_{}".format(sampler_name))(model_k, noise, sigmas, extra_args=extra_args, callback=k_callback, disable=disable_pbar, **extra_options)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\utils\_contextlib.py", line 115, in decorate_context
-    return func(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\k_diffusion\sampling.py", line 137, in sample_euler
-    denoised = model(x, sigma_hat * s_in, **extra_args)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 326, in forward
-    out = self.inner_model(x, sigma, cond=cond, uncond=uncond, cond_scale=cond_scale, model_options=model_options, seed=seed)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\k_diffusion\external.py", line 184, in forward
-    return self.get_v(input * c_in, self.sigma_to_t(sigma), **kwargs) * c_out + input * c_skip
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 305, in get_v
-    return self.inner_model.apply_model(x, t, cond, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 314, in apply_model
-    out = sampling_function(self.inner_model.apply_model, x, timestep, uncond, cond, cond_scale, model_options=model_options, seed=seed)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\sampling.py", line 537, in sliding_sampling_function
-    cond, uncond = calc_cond_uncond_batch(model_function, cond, uncond, x, timestep, max_total_area, cond_concat, model_options)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\sampling.py", line 433, in calc_cond_uncond_batch
-    output = model_function(input_x, timestep_, **c).chunk(batch_chunks)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\model_base.py", line 64, in apply_model
-    return self.diffusion_model(xc, t, context=context, y=c_adm, control=control, transformer_options=transformer_options).float()
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\diffusionmodules\openaimodel.py", line 625, in forward
-    h = forward_timestep_embed(module, h, emb, context, transformer_options)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\sampling.py", line 75, in forward_timestep_embed
-    x = layer(x, context, transformer_options)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\attention.py", line 534, in forward
-    x = block(x, context=context[i], transformer_options=transformer_options)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\attention.py", line 364, in forward
-    return checkpoint(self._forward, (x, context, transformer_options), self.parameters(), self.checkpoint)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\diffusionmodules\util.py", line 123, in checkpoint
-    return func(*inputs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\attention.py", line 429, in _forward
-    n = self.attn1(n, context=context_attn1, value=value_attn1)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\attention.py", line 340, in forward
-    out = optimized_attention(q, k, v, self.heads)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\attention.py", line 172, in attention_sub_quad
-    hidden_states = efficient_dot_product_attention(
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\sub_quadratic_attention.py", line 243, in efficient_dot_product_attention
-    res = torch.cat([
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\sub_quadratic_attention.py", line 244, in <listcomp>
-    compute_query_chunk_attn(
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\sub_quadratic_attention.py", line 115, in _query_chunk_attention
-    chunks: List[AttnChunk] = [
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\sub_quadratic_attention.py", line 116, in <listcomp>
-    chunk_scanner(chunk) for chunk in torch.arange(0, k_tokens, kv_chunk_size)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\sub_quadratic_attention.py", line 113, in chunk_scanner
-    return summarize_chunk(query, key_chunk, value_chunk)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\sub_quadratic_attention.py", line 77, in _summarize_chunk
-    attn_weights = torch.baddbmm(
-RuntimeError: Could not allocate tensor with 1006632960 bytes. There is not enough GPU video memory available!
-
-Prompt executed in 17.99 seconds
-got prompt
-[AnimateDiffEvo] - [0;32mINFO[0m - Loading motion module mm-Stabilized_high.pth
-[AnimateDiffEvo] - [0;32mINFO[0m - Regular AnimateDiff activated - latents passed in (16) less or equal to context_length None.
-[AnimateDiffEvo] - [0;32mINFO[0m - Injecting motion module mm-Stabilized_high.pth version v1.
-Requested to load BaseModel
-Loading 1 new model
-
-[AnimateDiffEvo] - [0;32mINFO[0m - Ejecting motion module mm-Stabilized_high.pth version v1.
-[AnimateDiffEvo] - [0;32mINFO[0m - Cleaning motion module from unet.
-[AnimateDiffEvo] - [0;32mINFO[0m - Removing motion module mm-Stabilized_high.pth from cache
-ERROR:root:!!! Exception during processing !!!
-ERROR:root:Traceback (most recent call last):
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\execution.py", line 155, in recursive_execute
-    output_data, output_ui = get_output_data(obj, input_data_all)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\execution.py", line 85, in get_output_data
-    return_values = map_node_over_list(obj, input_data_all, obj.FUNCTION, allow_interrupt=True)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\execution.py", line 78, in map_node_over_list
-    results.append(getattr(obj, func)(**slice_dict(input_data_all, i)))
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\nodes.py", line 1237, in sample
-    return common_ksampler(model, seed, steps, cfg, sampler_name, scheduler, positive, negative, latent_image, denoise=denoise)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\nodes.py", line 1207, in common_ksampler
-    samples = comfy.sample.sample(model, noise, steps, cfg, sampler_name, scheduler, positive, negative, latent_image,
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\sampling.py", line 163, in animatediff_sample
-    return wrap_function_to_inject_xformers_bug_info(orig_comfy_sample)(model, *args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\model_utils.py", line 185, in wrapped_function
-    return function_to_wrap(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\sample.py", line 97, in sample
-    samples = sampler.sample(noise, positive_copy, negative_copy, cfg=cfg, latent_image=latent_image, start_step=start_step, last_step=last_step, force_full_denoise=force_full_denoise, denoise_mask=noise_mask, sigmas=sigmas, callback=callback, disable_pbar=disable_pbar, seed=seed)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 781, in sample
-    return sample(self.model, noise, positive, negative, cfg, self.device, sampler(), sigmas, self.model_options, latent_image=latent_image, denoise_mask=denoise_mask, callback=callback, disable_pbar=disable_pbar, seed=seed)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 686, in sample
-    samples = sampler.sample(model_wrap, sigmas, extra_args, callback, noise, latent_image, denoise_mask, disable_pbar)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 638, in sample
-    samples = getattr(k_diffusion_sampling, "sample_{}".format(sampler_name))(model_k, noise, sigmas, extra_args=extra_args, callback=k_callback, disable=disable_pbar, **extra_options)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\utils\_contextlib.py", line 115, in decorate_context
-    return func(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\k_diffusion\sampling.py", line 137, in sample_euler
-    denoised = model(x, sigma_hat * s_in, **extra_args)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 326, in forward
-    out = self.inner_model(x, sigma, cond=cond, uncond=uncond, cond_scale=cond_scale, model_options=model_options, seed=seed)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\k_diffusion\external.py", line 184, in forward
-    return self.get_v(input * c_in, self.sigma_to_t(sigma), **kwargs) * c_out + input * c_skip
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 305, in get_v
-    return self.inner_model.apply_model(x, t, cond, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 314, in apply_model
-    out = sampling_function(self.inner_model.apply_model, x, timestep, uncond, cond, cond_scale, model_options=model_options, seed=seed)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\sampling.py", line 537, in sliding_sampling_function
-    cond, uncond = calc_cond_uncond_batch(model_function, cond, uncond, x, timestep, max_total_area, cond_concat, model_options)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\sampling.py", line 433, in calc_cond_uncond_batch
-    output = model_function(input_x, timestep_, **c).chunk(batch_chunks)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\model_base.py", line 64, in apply_model
-    return self.diffusion_model(xc, t, context=context, y=c_adm, control=control, transformer_options=transformer_options).float()
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\diffusionmodules\openaimodel.py", line 625, in forward
-    h = forward_timestep_embed(module, h, emb, context, transformer_options)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\sampling.py", line 75, in forward_timestep_embed
-    x = layer(x, context, transformer_options)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\attention.py", line 534, in forward
-    x = block(x, context=context[i], transformer_options=transformer_options)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\attention.py", line 364, in forward
-    return checkpoint(self._forward, (x, context, transformer_options), self.parameters(), self.checkpoint)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\diffusionmodules\util.py", line 123, in checkpoint
-    return func(*inputs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\attention.py", line 429, in _forward
-    n = self.attn1(n, context=context_attn1, value=value_attn1)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\attention.py", line 340, in forward
-    out = optimized_attention(q, k, v, self.heads)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\attention.py", line 172, in attention_sub_quad
-    hidden_states = efficient_dot_product_attention(
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\sub_quadratic_attention.py", line 243, in efficient_dot_product_attention
-    res = torch.cat([
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\sub_quadratic_attention.py", line 244, in <listcomp>
-    compute_query_chunk_attn(
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\sub_quadratic_attention.py", line 159, in _get_attention_scores_no_kv_chunking
-    attn_probs = attn_scores.softmax(dim=-1)
-RuntimeError: Could not allocate tensor with 701890560 bytes. There is not enough GPU video memory available!
-
-Prompt executed in 25.13 seconds
-got prompt
-[AnimateDiffEvo] - [0;32mINFO[0m - Loading motion module mm-Stabilized_high.pth
-[AnimateDiffEvo] - [0;32mINFO[0m - Regular AnimateDiff activated - latents passed in (16) less or equal to context_length None.
-[AnimateDiffEvo] - [0;32mINFO[0m - Injecting motion module mm-Stabilized_high.pth version v1.
-Requested to load BaseModel
-Loading 1 new model
-
-[AnimateDiffEvo] - [0;32mINFO[0m - Ejecting motion module mm-Stabilized_high.pth version v1.
-[AnimateDiffEvo] - [0;32mINFO[0m - Cleaning motion module from unet.
-[AnimateDiffEvo] - [0;32mINFO[0m - Removing motion module mm-Stabilized_high.pth from cache
-ERROR:root:!!! Exception during processing !!!
-ERROR:root:Traceback (most recent call last):
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\execution.py", line 155, in recursive_execute
-    output_data, output_ui = get_output_data(obj, input_data_all)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\execution.py", line 85, in get_output_data
-    return_values = map_node_over_list(obj, input_data_all, obj.FUNCTION, allow_interrupt=True)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\execution.py", line 78, in map_node_over_list
-    results.append(getattr(obj, func)(**slice_dict(input_data_all, i)))
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\nodes.py", line 1237, in sample
-    return common_ksampler(model, seed, steps, cfg, sampler_name, scheduler, positive, negative, latent_image, denoise=denoise)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\nodes.py", line 1207, in common_ksampler
-    samples = comfy.sample.sample(model, noise, steps, cfg, sampler_name, scheduler, positive, negative, latent_image,
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\sampling.py", line 163, in animatediff_sample
-    return wrap_function_to_inject_xformers_bug_info(orig_comfy_sample)(model, *args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\model_utils.py", line 185, in wrapped_function
-    return function_to_wrap(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\sample.py", line 97, in sample
-    samples = sampler.sample(noise, positive_copy, negative_copy, cfg=cfg, latent_image=latent_image, start_step=start_step, last_step=last_step, force_full_denoise=force_full_denoise, denoise_mask=noise_mask, sigmas=sigmas, callback=callback, disable_pbar=disable_pbar, seed=seed)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 781, in sample
-    return sample(self.model, noise, positive, negative, cfg, self.device, sampler(), sigmas, self.model_options, latent_image=latent_image, denoise_mask=denoise_mask, callback=callback, disable_pbar=disable_pbar, seed=seed)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 686, in sample
-    samples = sampler.sample(model_wrap, sigmas, extra_args, callback, noise, latent_image, denoise_mask, disable_pbar)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 638, in sample
-    samples = getattr(k_diffusion_sampling, "sample_{}".format(sampler_name))(model_k, noise, sigmas, extra_args=extra_args, callback=k_callback, disable=disable_pbar, **extra_options)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\utils\_contextlib.py", line 115, in decorate_context
-    return func(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\k_diffusion\sampling.py", line 137, in sample_euler
-    denoised = model(x, sigma_hat * s_in, **extra_args)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 326, in forward
-    out = self.inner_model(x, sigma, cond=cond, uncond=uncond, cond_scale=cond_scale, model_options=model_options, seed=seed)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\k_diffusion\external.py", line 184, in forward
-    return self.get_v(input * c_in, self.sigma_to_t(sigma), **kwargs) * c_out + input * c_skip
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 305, in get_v
-    return self.inner_model.apply_model(x, t, cond, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 314, in apply_model
-    out = sampling_function(self.inner_model.apply_model, x, timestep, uncond, cond, cond_scale, model_options=model_options, seed=seed)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\sampling.py", line 537, in sliding_sampling_function
-    cond, uncond = calc_cond_uncond_batch(model_function, cond, uncond, x, timestep, max_total_area, cond_concat, model_options)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\sampling.py", line 433, in calc_cond_uncond_batch
-    output = model_function(input_x, timestep_, **c).chunk(batch_chunks)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\model_base.py", line 64, in apply_model
-    return self.diffusion_model(xc, t, context=context, y=c_adm, control=control, transformer_options=transformer_options).float()
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\diffusionmodules\openaimodel.py", line 657, in forward
-    h = forward_timestep_embed(module, h, emb, context, transformer_options, output_shape)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\sampling.py", line 73, in forward_timestep_embed
-    x = layer(x, context)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\motion_module_ad.py", line 136, in forward
-    return self.temporal_transformer(input_tensor, encoder_hidden_states, attention_mask)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\motion_module_ad.py", line 208, in forward
-    hidden_states = block(
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\motion_module_ad.py", line 287, in forward
-    norm_hidden_states = norm(hidden_states)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\normalization.py", line 190, in forward
-    return F.layer_norm(
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\functional.py", line 2515, in layer_norm
-    return torch.layer_norm(input, normalized_shape, weight, bias, eps, torch.backends.cudnn.enabled)
-RuntimeError: Could not allocate tensor with 20213760 bytes. There is not enough GPU video memory available!
-
-Prompt executed in 33.74 seconds
-got prompt
-[AnimateDiffEvo] - [0;32mINFO[0m - Loading motion module mm-Stabilized_high.pth
-[AnimateDiffEvo] - [0;32mINFO[0m - Regular AnimateDiff activated - latents passed in (16) less or equal to context_length None.
-[AnimateDiffEvo] - [0;32mINFO[0m - Injecting motion module mm-Stabilized_high.pth version v1.
-Requested to load BaseModel
-Loading 1 new model
-100%|██████████████████████████████████████████████████████████████████████████████████| 20/20 [00:34<00:00,  1.70s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 20/20 [00:34<00:00,  1.73s/it]
-[AnimateDiffEvo] - [0;32mINFO[0m - Ejecting motion module mm-Stabilized_high.pth version v1.
-[AnimateDiffEvo] - [0;32mINFO[0m - Cleaning motion module from unet.
-[AnimateDiffEvo] - [0;32mINFO[0m - Removing motion module mm-Stabilized_high.pth from cache
-Prompt executed in 55.95 seconds
-got prompt
-[AnimateDiffEvo] - [0;32mINFO[0m - Loading motion module mm-Stabilized_high.pth
-[AnimateDiffEvo] - [0;32mINFO[0m - Regular AnimateDiff activated - latents passed in (16) less or equal to context_length None.
-[AnimateDiffEvo] - [0;32mINFO[0m - Injecting motion module mm-Stabilized_high.pth version v1.
-Requested to load BaseModel
-Loading 1 new model
-100%|██████████████████████████████████████████████████████████████████████████████████| 20/20 [00:29<00:00,  1.40s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 20/20 [00:29<00:00,  1.49s/it]
-[AnimateDiffEvo] - [0;32mINFO[0m - Ejecting motion module mm-Stabilized_high.pth version v1.
-[AnimateDiffEvo] - [0;32mINFO[0m - Cleaning motion module from unet.
-[AnimateDiffEvo] - [0;32mINFO[0m - Removing motion module mm-Stabilized_high.pth from cache
-Prompt executed in 61.56 seconds
-FETCH DATA from: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager\extension-node-map.json
-[AnimateDiffEvo] - [0;33mWARNING[0m - ffmpeg could not be found. Outputs that require it have been disabled
-got prompt
+100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:49<00:00,  1.70s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:49<00:00,  1.98s/it]
 Global Step: 560001
 Using split attention in VAE
 Working with z of shape (1, 4, 32, 32) = 4096 dimensions.
 Using split attention in VAE
 Leftover VAE keys ['model_ema.decay', 'model_ema.num_updates']
-Prompt executed in 5.87 seconds
+ERROR:root:!!! Exception during processing !!!
+ERROR:root:Traceback (most recent call last):
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\execution.py", line 155, in recursive_execute
+    output_data, output_ui = get_output_data(obj, input_data_all)
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\execution.py", line 85, in get_output_data
+    return_values = map_node_over_list(obj, input_data_all, obj.FUNCTION, allow_interrupt=True)
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\execution.py", line 78, in map_node_over_list
+    results.append(getattr(obj, func)(**slice_dict(input_data_all, i)))
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy_extras\nodes_upscale_model.py", line 52, in upscale
+    s = comfy.utils.tiled_scale(in_img, lambda a: upscale_model(a), tile_x=tile, tile_y=tile, overlap=overlap, upscale_amount=upscale_model.scale, pbar=pbar)
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\utils\_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\utils.py", line 400, in tiled_scale
+    ps = function(s_in).cpu()
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy_extras\nodes_upscale_model.py", line 52, in <lambda>
+    s = comfy.utils.tiled_scale(in_img, lambda a: upscale_model(a), tile_x=tile, tile_y=tile, overlap=overlap, upscale_amount=upscale_model.scale, pbar=pbar)
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy_extras\chainner_models\architecture\RRDB.py", line 296, in forward
+    return self.model(x)
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\container.py", line 217, in forward
+    input = module(input)
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\conv.py", line 463, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\conv.py", line 459, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+RuntimeError: Could not allocate tensor with 754974720 bytes. There is not enough GPU video memory available!
+
+Prompt executed in 100.70 seconds
 got prompt
-[AnimateDiffEvo] - [0;32mINFO[0m - Loading motion module mm-Stabilized_high.pth
-[AnimateDiffEvo] - [0;32mINFO[0m - Regular AnimateDiff activated - latents passed in (16) less or equal to context_length None.
-[AnimateDiffEvo] - [0;32mINFO[0m - Injecting motion module mm-Stabilized_high.pth version v1.
+100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:15<00:00,  1.65it/s]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:15<00:00,  1.57it/s]
+======image_to_buffer=======
+images: 0
+{'promptId': '2f329fc7-9059-4057-b15c-56bf82659252'}
+ERROR:root:!!! Exception during processing !!!
+ERROR:root:Traceback (most recent call last):
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\execution.py", line 155, in recursive_execute
+    output_data, output_ui = get_output_data(obj, input_data_all)
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\execution.py", line 85, in get_output_data
+    return_values = map_node_over_list(obj, input_data_all, obj.FUNCTION, allow_interrupt=True)
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\execution.py", line 78, in map_node_over_list
+    results.append(getattr(obj, func)(**slice_dict(input_data_all, i)))
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\base64_images.py", line 69, in send
+    x = requests.post(cbHost, data=payload, files=files, verify=False)
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\requests\sessions.py", line 575, in request
+    prep = self.prepare_request(req)
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\requests\sessions.py", line 486, in prepare_request
+    p.prepare(
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\requests\models.py", line 368, in prepare
+    self.prepare_url(url, params)
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\requests\models.py", line 439, in prepare_url
+    raise MissingSchema(
+requests.exceptions.MissingSchema: Invalid URL '': No scheme supplied. Perhaps you meant https://?
+
+Prompt executed in 17.10 seconds
+got prompt
+Prompt executed in 0.05 seconds
+got prompt
+Prompt executed in 0.00 seconds
+FETCH DATA from: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager\extension-node-map.json
+[AnimateDiffEvo] - [0;33mWARNING[0m - ffmpeg could not be found. Outputs that require it have been disabled
+got prompt
+Prompt executed in 0.00 seconds
+got prompt
+Prompt executed in 0.00 seconds
+got prompt
+100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:15<00:00,  1.57it/s]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:15<00:00,  1.60it/s]
+Prompt executed in 17.34 seconds
+got prompt
+Prompt executed in 0.03 seconds
+got prompt
+Prompt executed in 0.15 seconds
+got prompt
+Prompt executed in 0.28 seconds
+got prompt
+Prompt executed in 0.00 seconds
+got prompt
+Prompt executed in 0.00 seconds
+got prompt
+100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:20<00:00,  1.16it/s]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:20<00:00,  1.22it/s]
+Prompt executed in 21.91 seconds
+got prompt
+100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:21<00:00,  1.16it/s]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:21<00:00,  1.18it/s]
+Prompt executed in 22.70 seconds
+got prompt
+ERROR:root:Failed to validate prompt for output 22:
+ERROR:root:* ImageUpscaleWithModel 14:
+ERROR:root:  - Required input is missing: image
+ERROR:root:Output will be ignored
+100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [01:37<00:00,  3.81s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [01:37<00:00,  3.89s/it]
+Prompt executed in 102.92 seconds
+got prompt
+ERROR:root:Failed to validate prompt for output 22:
+ERROR:root:* ImageUpscaleWithModel 14:
+ERROR:root:  - Required input is missing: image
+ERROR:root:Output will be ignored
+Requested to load BaseModel
+Loading 1 new model
+100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:51<00:00,  1.82s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:51<00:00,  2.07s/it]
+Prompt executed in 55.48 seconds
+got prompt
+ERROR:root:Failed to validate prompt for output 22:
+ERROR:root:* ImageUpscaleWithModel 14:
+ERROR:root:  - Required input is missing: image
+ERROR:root:Output will be ignored
+100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:45<00:00,  1.72s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:45<00:00,  1.82s/it]
+Prompt executed in 47.08 seconds
+got prompt
+ERROR:root:Failed to validate prompt for output 22:
+ERROR:root:* ImageUpscaleWithModel 14:
+ERROR:root:  - Required input is missing: image
+ERROR:root:Output will be ignored
+Prompt executed in 0.00 seconds
+got prompt
+ERROR:root:Failed to validate prompt for output 22:
+ERROR:root:* ImageUpscaleWithModel 14:
+ERROR:root:  - Required input is missing: image
+ERROR:root:Output will be ignored
+100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:43<00:00,  1.78s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:43<00:00,  1.73s/it]
+Prompt executed in 45.20 seconds
+got prompt
+ERROR:root:Failed to validate prompt for output 22:
+ERROR:root:* ImageUpscaleWithModel 14:
+ERROR:root:  - Required input is missing: image
+ERROR:root:Output will be ignored
+100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:45<00:00,  1.90s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:45<00:00,  1.83s/it]
+Prompt executed in 47.07 seconds
+got prompt
+ERROR:root:Failed to validate prompt for output 22:
+ERROR:root:* ImageUpscaleWithModel 14:
+ERROR:root:  - Required input is missing: image
+ERROR:root:Output will be ignored
+D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py:360: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
+  sigs.append(model.t_to_sigma(torch.tensor(ts)))
+100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:42<00:00,  1.64s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:42<00:00,  1.71s/it]
+Prompt executed in 44.16 seconds
+got prompt
+ERROR:root:Failed to validate prompt for output 22:
+ERROR:root:* ImageUpscaleWithModel 14:
+ERROR:root:  - Required input is missing: image
+ERROR:root:Output will be ignored
+100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:42<00:00,  1.68s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:42<00:00,  1.70s/it]
+Prompt executed in 43.79 seconds
+got prompt
+ERROR:root:Failed to validate prompt for output 22:
+ERROR:root:* ImageUpscaleWithModel 14:
+ERROR:root:  - Required input is missing: image
+ERROR:root:Output will be ignored
+100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:44<00:00,  1.75s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:44<00:00,  1.77s/it]
+Prompt executed in 45.50 seconds
+got prompt
+ERROR:root:Failed to validate prompt for output 22:
+ERROR:root:* ImageUpscaleWithModel 14:
+ERROR:root:  - Required input is missing: image
+ERROR:root:Output will be ignored
+100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:44<00:00,  1.76s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:44<00:00,  1.79s/it]
+Prompt executed in 46.14 seconds
+got prompt
+ERROR:root:Failed to validate prompt for output 22:
+ERROR:root:* ImageUpscaleWithModel 14:
+ERROR:root:  - Required input is missing: image
+ERROR:root:Output will be ignored
+100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:47<00:00,  2.06s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:47<00:00,  1.89s/it]
+Prompt executed in 50.19 seconds
+got prompt
+ERROR:root:Failed to validate prompt for output 22:
+ERROR:root:* ImageUpscaleWithModel 14:
+ERROR:root:  - Required input is missing: image
+ERROR:root:Output will be ignored
+100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [02:05<00:00,  4.82s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [02:05<00:00,  5.03s/it]
+Prompt executed in 131.08 seconds
+got prompt
+ERROR:root:Failed to validate prompt for output 22:
+ERROR:root:* ImageUpscaleWithModel 14:
+ERROR:root:  - Required input is missing: image
+ERROR:root:Output will be ignored
+Requested to load BaseModel
+Loading 1 new model
+100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [02:10<00:00,  5.03s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [02:10<00:00,  5.23s/it]
+Prompt executed in 139.50 seconds
+got prompt
+ERROR:root:Failed to validate prompt for output 22:
+ERROR:root:* ImageUpscaleWithModel 14:
+ERROR:root:  - Required input is missing: image
+ERROR:root:Output will be ignored
+Requested to load BaseModel
+Loading 1 new model
+100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [02:40<00:00,  5.77s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [02:40<00:00,  6.41s/it]
+Prompt executed in 169.55 seconds
+got prompt
+ERROR:root:Failed to validate prompt for output 22:
+ERROR:root:* ImageUpscaleWithModel 14:
+ERROR:root:  - Required input is missing: image
+ERROR:root:Output will be ignored
+Requested to load BaseModel
+Loading 1 new model
+100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [02:25<00:00,  6.04s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [02:25<00:00,  5.84s/it]
+Prompt executed in 153.59 seconds
+got prompt
+ERROR:root:Failed to validate prompt for output 22:
+ERROR:root:* ImageUpscaleWithModel 14:
+ERROR:root:  - Required input is missing: image
+ERROR:root:Output will be ignored
+Requested to load BaseModel
+Loading 1 new model
+100%|██████████████████████████████████████████████████████████████████████████████████| 10/10 [00:59<00:00,  5.79s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 10/10 [00:59<00:00,  5.98s/it]
+Prompt executed in 67.52 seconds
+got prompt
+ERROR:root:Failed to validate prompt for output 22:
+ERROR:root:* ImageUpscaleWithModel 14:
+ERROR:root:  - Required input is missing: image
+ERROR:root:Output will be ignored
+Requested to load BaseModel
+Loading 1 new model
+100%|██████████████████████████████████████████████████████████████████████████████████| 30/30 [02:48<00:00,  5.57s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 30/30 [02:48<00:00,  5.60s/it]
+Prompt executed in 176.36 seconds
+got prompt
+ERROR:root:Failed to validate prompt for output 22:
+ERROR:root:* ImageUpscaleWithModel 14:
+ERROR:root:  - Required input is missing: image
+ERROR:root:Output will be ignored
+Requested to load BaseModel
+Loading 1 new model
+100%|██████████████████████████████████████████████████████████████████████████████████| 30/30 [02:33<00:00,  4.90s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 30/30 [02:33<00:00,  5.12s/it]
+Prompt executed in 160.39 seconds
+got prompt
+ERROR:root:Failed to validate prompt for output 22:
+ERROR:root:* ImageUpscaleWithModel 14:
+ERROR:root:  - Required input is missing: image
+ERROR:root:Output will be ignored
 Requested to load BaseModel
 Loading 1 new model
 
-[AnimateDiffEvo] - [0;32mINFO[0m - Ejecting motion module mm-Stabilized_high.pth version v1.
-[AnimateDiffEvo] - [0;32mINFO[0m - Cleaning motion module from unet.
-[AnimateDiffEvo] - [0;32mINFO[0m - Removing motion module mm-Stabilized_high.pth from cache
 ERROR:root:!!! Exception during processing !!!
 ERROR:root:Traceback (most recent call last):
   File "D:\Documents\projects\super-puper-ai\ComfyUI\execution.py", line 155, in recursive_execute
@@ -441,10 +318,8 @@ ERROR:root:Traceback (most recent call last):
     return common_ksampler(model, seed, steps, cfg, sampler_name, scheduler, positive, negative, latent_image, denoise=denoise)
   File "D:\Documents\projects\super-puper-ai\ComfyUI\nodes.py", line 1207, in common_ksampler
     samples = comfy.sample.sample(model, noise, steps, cfg, sampler_name, scheduler, positive, negative, latent_image,
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\sampling.py", line 163, in animatediff_sample
-    return wrap_function_to_inject_xformers_bug_info(orig_comfy_sample)(model, *args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\model_utils.py", line 185, in wrapped_function
-    return function_to_wrap(*args, **kwargs)
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\sampling.py", line 109, in animatediff_sample
+    return orig_comfy_sample(model, *args, **kwargs)
   File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\sample.py", line 97, in sample
     samples = sampler.sample(noise, positive_copy, negative_copy, cfg=cfg, latent_image=latent_image, start_step=start_step, last_step=last_step, force_full_denoise=force_full_denoise, denoise_mask=noise_mask, sigmas=sigmas, callback=callback, disable_pbar=disable_pbar, seed=seed)
   File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 781, in sample
@@ -455,8 +330,8 @@ ERROR:root:Traceback (most recent call last):
     samples = getattr(k_diffusion_sampling, "sample_{}".format(sampler_name))(model_k, noise, sigmas, extra_args=extra_args, callback=k_callback, disable=disable_pbar, **extra_options)
   File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\utils\_contextlib.py", line 115, in decorate_context
     return func(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\k_diffusion\sampling.py", line 137, in sample_euler
-    denoised = model(x, sigma_hat * s_in, **extra_args)
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\k_diffusion\sampling.py", line 154, in sample_euler_ancestral
+    denoised = model(x, sigmas[i] * s_in, **extra_args)
   File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
     return forward_call(*args, **kwargs)
   File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 326, in forward
@@ -469,9 +344,9 @@ ERROR:root:Traceback (most recent call last):
     return self.inner_model.apply_model(x, t, cond, **kwargs)
   File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 314, in apply_model
     out = sampling_function(self.inner_model.apply_model, x, timestep, uncond, cond, cond_scale, model_options=model_options, seed=seed)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\sampling.py", line 537, in sliding_sampling_function
-    cond, uncond = calc_cond_uncond_batch(model_function, cond, uncond, x, timestep, max_total_area, cond_concat, model_options)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\sampling.py", line 433, in calc_cond_uncond_batch
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 292, in sampling_function
+    cond, uncond = calc_cond_uncond_batch(model_function, cond, uncond, x, timestep, max_total_area, model_options)
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 268, in calc_cond_uncond_batch
     output = model_function(input_x, timestep_, **c).chunk(batch_chunks)
   File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\model_base.py", line 64, in apply_model
     return self.diffusion_model(xc, t, context=context, y=c_adm, control=control, transformer_options=transformer_options).float()
@@ -479,152 +354,35 @@ ERROR:root:Traceback (most recent call last):
     return forward_call(*args, **kwargs)
   File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\diffusionmodules\openaimodel.py", line 625, in forward
     h = forward_timestep_embed(module, h, emb, context, transformer_options)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\sampling.py", line 75, in forward_timestep_embed
-    x = layer(x, context, transformer_options)
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\diffusionmodules\openaimodel.py", line 54, in forward_timestep_embed
+    x = layer(x, emb)
   File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
     return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\attention.py", line 534, in forward
-    x = block(x, context=context[i], transformer_options=transformer_options)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\attention.py", line 364, in forward
-    return checkpoint(self._forward, (x, context, transformer_options), self.parameters(), self.checkpoint)
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\diffusionmodules\openaimodel.py", line 219, in forward
+    return checkpoint(
   File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\diffusionmodules\util.py", line 123, in checkpoint
     return func(*inputs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\attention.py", line 429, in _forward
-    n = self.attn1(n, context=context_attn1, value=value_attn1)
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\diffusionmodules\openaimodel.py", line 232, in _forward
+    h = self.in_layers(x)
   File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
     return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\attention.py", line 340, in forward
-    out = optimized_attention(q, k, v, self.heads)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\attention.py", line 172, in attention_sub_quad
-    hidden_states = efficient_dot_product_attention(
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\sub_quadratic_attention.py", line 243, in efficient_dot_product_attention
-    res = torch.cat([
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\sub_quadratic_attention.py", line 244, in <listcomp>
-    compute_query_chunk_attn(
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\sub_quadratic_attention.py", line 159, in _get_attention_scores_no_kv_chunking
-    attn_probs = attn_scores.softmax(dim=-1)
-RuntimeError: Could not allocate tensor with 738918400 bytes. There is not enough GPU video memory available!
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\container.py", line 217, in forward
+    input = module(input)
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\normalization.py", line 273, in forward
+    return F.group_norm(
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\functional.py", line 2530, in group_norm
+    return torch.group_norm(input, num_groups, weight, bias, eps, torch.backends.cudnn.enabled)
+RuntimeError: Could not allocate tensor with 2649600 bytes. There is not enough GPU video memory available!
 
-Prompt executed in 27.66 seconds
+Prompt executed in 30.25 seconds
 got prompt
-[AnimateDiffEvo] - [0;32mINFO[0m - Loading motion module mm-Stabilized_high.pth
-[AnimateDiffEvo] - [0;32mINFO[0m - Regular AnimateDiff activated - latents passed in (16) less or equal to context_length None.
-[AnimateDiffEvo] - [0;32mINFO[0m - Injecting motion module mm-Stabilized_high.pth version v1.
-Requested to load BaseModel
-Loading 1 new model
-FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
-100%|██████████████████████████████████████████████████████████████████████████████████| 20/20 [01:25<00:00,  5.44s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 20/20 [01:25<00:00,  4.26s/it]
-[AnimateDiffEvo] - [0;32mINFO[0m - Ejecting motion module mm-Stabilized_high.pth version v1.
-[AnimateDiffEvo] - [0;32mINFO[0m - Cleaning motion module from unet.
-[AnimateDiffEvo] - [0;32mINFO[0m - Removing motion module mm-Stabilized_high.pth from cache
-Prompt executed in 108.83 seconds
-FETCH DATA from: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager\extension-node-map.json
-[AnimateDiffEvo] - [0;33mWARNING[0m - ffmpeg could not be found. Outputs that require it have been disabled
-got prompt
-[AnimateDiffEvo] - [0;32mINFO[0m - Loading motion module mm_sd_v15.ckpt
-[AnimateDiffEvo] - [0;32mINFO[0m - Regular AnimateDiff activated - latents passed in (16) less or equal to context_length None.
-[AnimateDiffEvo] - [0;32mINFO[0m - Injecting motion module mm_sd_v15.ckpt version v1.
-Requested to load BaseModel
-Loading 1 new model
-100%|██████████████████████████████████████████████████████████████████████████████████| 20/20 [01:35<00:00,  3.70s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 20/20 [01:35<00:00,  4.77s/it]
-[AnimateDiffEvo] - [0;32mINFO[0m - Ejecting motion module mm_sd_v15.ckpt version v1.
-[AnimateDiffEvo] - [0;32mINFO[0m - Cleaning motion module from unet.
-[AnimateDiffEvo] - [0;32mINFO[0m - Removing motion module mm_sd_v15.ckpt from cache
-Prompt executed in 122.27 seconds
-FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
-got prompt
-[AnimateDiffEvo] - [0;32mINFO[0m - Loading motion module mm_sd_v15.ckpt
-[AnimateDiffEvo] - [0;32mINFO[0m - Regular AnimateDiff activated - latents passed in (16) less or equal to context_length None.
-[AnimateDiffEvo] - [0;32mINFO[0m - Injecting motion module mm_sd_v15.ckpt version v1.
-Requested to load BaseModel
-Loading 1 new model
-got prompt
+ERROR:root:Failed to validate prompt for output 22:
+ERROR:root:* ImageUpscaleWithModel 14:
+ERROR:root:  - Required input is missing: image
+ERROR:root:Output will be ignored
 
-[AnimateDiffEvo] - [0;32mINFO[0m - Ejecting motion module mm_sd_v15.ckpt version v1.
-[AnimateDiffEvo] - [0;32mINFO[0m - Cleaning motion module from unet.
-[AnimateDiffEvo] - [0;32mINFO[0m - Removing motion module mm_sd_v15.ckpt from cache
-Prompt executed in 54.92 seconds
-got prompt
-[AnimateDiffEvo] - [0;32mINFO[0m - Loading motion module mm_sd_v15.ckpt
-[AnimateDiffEvo] - [0;32mINFO[0m - Regular AnimateDiff activated - latents passed in (16) less or equal to context_length 16.
-[AnimateDiffEvo] - [0;32mINFO[0m - Injecting motion module mm_sd_v15.ckpt version v1.
-Requested to load BaseModel
-Loading 1 new model
-FETCH DATA from: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager\extension-node-map.json
-[AnimateDiffEvo] - [0;33mWARNING[0m - ffmpeg could not be found. Outputs that require it have been disabled
-FETCH DATA from: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager\extension-node-map.json
-[AnimateDiffEvo] - [0;33mWARNING[0m - ffmpeg could not be found. Outputs that require it have been disabled
-100%|██████████████████████████████████████████████████████████████████████████████████| 20/20 [01:30<00:00,  4.27s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 20/20 [01:30<00:00,  4.55s/it]
-[AnimateDiffEvo] - [0;32mINFO[0m - Ejecting motion module mm_sd_v15.ckpt version v1.
-[AnimateDiffEvo] - [0;32mINFO[0m - Cleaning motion module from unet.
-[AnimateDiffEvo] - [0;32mINFO[0m - Removing motion module mm_sd_v15.ckpt from cache
-Prompt executed in 147.36 seconds
-got prompt
-model_type V_PREDICTION
-adm 0
-Using split attention in VAE
-Working with z of shape (1, 4, 32, 32) = 4096 dimensions.
-Using split attention in VAE
-missing {'cond_stage_model.text_projection', 'cond_stage_model.logit_scale'}
-left over keys: dict_keys(['cond_stage_model.model.logit_scale', 'cond_stage_model.model.text_projection'])
-Requested to load SD2ClipModel
-Loading 1 new model
-Requested to load BaseModel
-Loading 1 new model
-FETCH DATA from: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager\extension-node-map.json
-[AnimateDiffEvo] - [0;33mWARNING[0m - ffmpeg could not be found. Outputs that require it have been disabled
-100%|██████████████████████████████████████████████████████████████████████████████████| 20/20 [01:16<00:00,  3.98s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 20/20 [01:16<00:00,  3.85s/it]
-Global Step: 560001
-Using split attention in VAE
-Working with z of shape (1, 4, 32, 32) = 4096 dimensions.
-Using split attention in VAE
-Leftover VAE keys ['model_ema.decay', 'model_ema.num_updates']
-Prompt executed in 127.39 seconds
-got prompt
-ERROR:root:Failed to validate prompt for output 35:
-ERROR:root:* ADE_AnimateDiffLoaderWithContext 27:
-ERROR:root:  - Value not in list: model_name: 'mm_sd_v14.ckpt' not in ['mm-Stabilized_high.pth', 'mm_sd_v15.ckpt']
-ERROR:root:* VAELoader 2:
-ERROR:root:  - Value not in list: vae_name: 'vae-ft-mse-840000-ema-pruned.safetensors' not in ['vae-ft-ema-560000-ema-pruned.ckpt']
-ERROR:root:Output will be ignored
-invalid prompt: {'type': 'prompt_outputs_failed_validation', 'message': 'Prompt outputs failed validation', 'details': '', 'extra_info': {}}
-FETCH DATA from: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager\extension-node-map.json
-[AnimateDiffEvo] - [0;33mWARNING[0m - ffmpeg could not be found. Outputs that require it have been disabled
-got prompt
-ERROR:root:Failed to validate prompt for output 35:
-ERROR:root:* ADE_AnimateDiffLoaderWithContext 27:
-ERROR:root:  - Value not in list: model_name: 'mm_sd_v14.ckpt' not in ['mm-Stabilized_high.pth', 'mm_sd_v15.ckpt']
-ERROR:root:* VAELoader 2:
-ERROR:root:  - Value not in list: vae_name: 'vae-ft-mse-840000-ema-pruned.safetensors' not in ['vae-ft-ema-560000-ema-pruned.ckpt', 'vae-ft-ema-840000-ema-pruned.pt']
-ERROR:root:Output will be ignored
-invalid prompt: {'type': 'prompt_outputs_failed_validation', 'message': 'Prompt outputs failed validation', 'details': '', 'extra_info': {}}
-got prompt
-ERROR:root:Failed to validate prompt for output 35:
-ERROR:root:* ADE_AnimateDiffLoaderWithContext 27:
-ERROR:root:  - Value not in list: model_name: 'mm_sd_v14.ckpt' not in ['mm-Stabilized_high.pth', 'mm_sd_v15.ckpt']
-ERROR:root:Output will be ignored
-invalid prompt: {'type': 'prompt_outputs_failed_validation', 'message': 'Prompt outputs failed validation', 'details': '', 'extra_info': {}}
-got prompt
-model_type EPS
-adm 0
-Using split attention in VAE
-Working with z of shape (1, 4, 32, 32) = 4096 dimensions.
-Using split attention in VAE
-missing {'cond_stage_model.text_projection', 'cond_stage_model.logit_scale'}
-left over keys: dict_keys(['cond_stage_model.transformer.text_model.embeddings.position_ids'])
-[AnimateDiffEvo] - [0;32mINFO[0m - Loading motion module mm_sd_v15.ckpt
-Requested to load SD1ClipModel
-Loading 1 new model
-[AnimateDiffEvo] - [0;32mINFO[0m - Regular AnimateDiff activated - latents passed in (16) less or equal to context_length None.
-[AnimateDiffEvo] - [0;32mINFO[0m - Injecting motion module mm_sd_v15.ckpt version v1.
-Requested to load BaseModel
-Loading 1 new model
-
-[AnimateDiffEvo] - [0;32mINFO[0m - Ejecting motion module mm_sd_v15.ckpt version v1.
-[AnimateDiffEvo] - [0;32mINFO[0m - Cleaning motion module from unet.
-[AnimateDiffEvo] - [0;32mINFO[0m - Removing motion module mm_sd_v15.ckpt from cache
 ERROR:root:!!! Exception during processing !!!
 ERROR:root:Traceback (most recent call last):
   File "D:\Documents\projects\super-puper-ai\ComfyUI\execution.py", line 155, in recursive_execute
@@ -637,10 +395,8 @@ ERROR:root:Traceback (most recent call last):
     return common_ksampler(model, seed, steps, cfg, sampler_name, scheduler, positive, negative, latent_image, denoise=denoise)
   File "D:\Documents\projects\super-puper-ai\ComfyUI\nodes.py", line 1207, in common_ksampler
     samples = comfy.sample.sample(model, noise, steps, cfg, sampler_name, scheduler, positive, negative, latent_image,
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\sampling.py", line 163, in animatediff_sample
-    return wrap_function_to_inject_xformers_bug_info(orig_comfy_sample)(model, *args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\model_utils.py", line 185, in wrapped_function
-    return function_to_wrap(*args, **kwargs)
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\sampling.py", line 109, in animatediff_sample
+    return orig_comfy_sample(model, *args, **kwargs)
   File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\sample.py", line 97, in sample
     samples = sampler.sample(noise, positive_copy, negative_copy, cfg=cfg, latent_image=latent_image, start_step=start_step, last_step=last_step, force_full_denoise=force_full_denoise, denoise_mask=noise_mask, sigmas=sigmas, callback=callback, disable_pbar=disable_pbar, seed=seed)
   File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 781, in sample
@@ -651,23 +407,23 @@ ERROR:root:Traceback (most recent call last):
     samples = getattr(k_diffusion_sampling, "sample_{}".format(sampler_name))(model_k, noise, sigmas, extra_args=extra_args, callback=k_callback, disable=disable_pbar, **extra_options)
   File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\utils\_contextlib.py", line 115, in decorate_context
     return func(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\k_diffusion\sampling.py", line 137, in sample_euler
-    denoised = model(x, sigma_hat * s_in, **extra_args)
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\k_diffusion\sampling.py", line 154, in sample_euler_ancestral
+    denoised = model(x, sigmas[i] * s_in, **extra_args)
   File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
     return forward_call(*args, **kwargs)
   File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 326, in forward
     out = self.inner_model(x, sigma, cond=cond, uncond=uncond, cond_scale=cond_scale, model_options=model_options, seed=seed)
   File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
     return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\k_diffusion\external.py", line 129, in forward
-    eps = self.get_eps(input * c_in, self.sigma_to_t(sigma), **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\k_diffusion\external.py", line 155, in get_eps
-    return self.inner_model.apply_model(*args, **kwargs)
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\k_diffusion\external.py", line 184, in forward
+    return self.get_v(input * c_in, self.sigma_to_t(sigma), **kwargs) * c_out + input * c_skip
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 305, in get_v
+    return self.inner_model.apply_model(x, t, cond, **kwargs)
   File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 314, in apply_model
     out = sampling_function(self.inner_model.apply_model, x, timestep, uncond, cond, cond_scale, model_options=model_options, seed=seed)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\sampling.py", line 537, in sliding_sampling_function
-    cond, uncond = calc_cond_uncond_batch(model_function, cond, uncond, x, timestep, max_total_area, cond_concat, model_options)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\sampling.py", line 433, in calc_cond_uncond_batch
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 292, in sampling_function
+    cond, uncond = calc_cond_uncond_batch(model_function, cond, uncond, x, timestep, max_total_area, model_options)
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 268, in calc_cond_uncond_batch
     output = model_function(input_x, timestep_, **c).chunk(batch_chunks)
   File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\model_base.py", line 64, in apply_model
     return self.diffusion_model(xc, t, context=context, y=c_adm, control=control, transformer_options=transformer_options).float()
@@ -675,7 +431,7 @@ ERROR:root:Traceback (most recent call last):
     return forward_call(*args, **kwargs)
   File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\diffusionmodules\openaimodel.py", line 625, in forward
     h = forward_timestep_embed(module, h, emb, context, transformer_options)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\sampling.py", line 75, in forward_timestep_embed
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\diffusionmodules\openaimodel.py", line 56, in forward_timestep_embed
     x = layer(x, context, transformer_options)
   File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
     return forward_call(*args, **kwargs)
@@ -687,55 +443,150 @@ ERROR:root:Traceback (most recent call last):
     return checkpoint(self._forward, (x, context, transformer_options), self.parameters(), self.checkpoint)
   File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\diffusionmodules\util.py", line 123, in checkpoint
     return func(*inputs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\attention.py", line 429, in _forward
-    n = self.attn1(n, context=context_attn1, value=value_attn1)
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\attention.py", line 474, in _forward
+    x = self.ff(self.norm3(x)) + x
   File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
     return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\attention.py", line 340, in forward
-    out = optimized_attention(q, k, v, self.heads)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\attention.py", line 172, in attention_sub_quad
-    hidden_states = efficient_dot_product_attention(
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\sub_quadratic_attention.py", line 243, in efficient_dot_product_attention
-    res = torch.cat([
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\sub_quadratic_attention.py", line 244, in <listcomp>
-    compute_query_chunk_attn(
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\sub_quadratic_attention.py", line 115, in _query_chunk_attention
-    chunks: List[AttnChunk] = [
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\sub_quadratic_attention.py", line 116, in <listcomp>
-    chunk_scanner(chunk) for chunk in torch.arange(0, k_tokens, kv_chunk_size)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\sub_quadratic_attention.py", line 113, in chunk_scanner
-    return summarize_chunk(query, key_chunk, value_chunk)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\sub_quadratic_attention.py", line 77, in _summarize_chunk
-    attn_weights = torch.baddbmm(
-RuntimeError: Could not allocate tensor with 1073741824 bytes. There is not enough GPU video memory available!
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\attention.py", line 82, in forward
+    return self.net(x)
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\container.py", line 217, in forward
+    input = module(input)
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\attention.py", line 62, in forward
+    return x * F.gelu(gate)
+RuntimeError: Could not allocate tensor with 10598400 bytes. There is not enough GPU video memory available!
 
-Prompt executed in 83.97 seconds
+Prompt executed in 14.80 seconds
 got prompt
-[AnimateDiffEvo] - [0;32mINFO[0m - Loading motion module mm_sd_v15.ckpt
-[AnimateDiffEvo] - [0;32mINFO[0m - Regular AnimateDiff activated - latents passed in (16) less or equal to context_length None.
-[AnimateDiffEvo] - [0;32mINFO[0m - Injecting motion module mm_sd_v15.ckpt version v1.
-Requested to load BaseModel
-Loading 1 new model
-100%|██████████████████████████████████████████████████████████████████████████████████| 20/20 [01:43<00:00,  5.51s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 20/20 [01:43<00:00,  5.18s/it]
-[AnimateDiffEvo] - [0;32mINFO[0m - Ejecting motion module mm_sd_v15.ckpt version v1.
-[AnimateDiffEvo] - [0;32mINFO[0m - Cleaning motion module from unet.
-[AnimateDiffEvo] - [0;32mINFO[0m - Removing motion module mm_sd_v15.ckpt from cache
-Global Step: 840001
-Using split attention in VAE
-Working with z of shape (1, 4, 32, 32) = 4096 dimensions.
-Using split attention in VAE
-Leftover VAE keys ['model_ema.decay', 'model_ema.num_updates']
-Prompt executed in 126.34 seconds
+ERROR:root:Failed to validate prompt for output 22:
+ERROR:root:* ImageUpscaleWithModel 14:
+ERROR:root:  - Required input is missing: image
+ERROR:root:Output will be ignored
+
+ERROR:root:!!! Exception during processing !!!
+ERROR:root:Traceback (most recent call last):
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\execution.py", line 155, in recursive_execute
+    output_data, output_ui = get_output_data(obj, input_data_all)
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\execution.py", line 85, in get_output_data
+    return_values = map_node_over_list(obj, input_data_all, obj.FUNCTION, allow_interrupt=True)
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\execution.py", line 78, in map_node_over_list
+    results.append(getattr(obj, func)(**slice_dict(input_data_all, i)))
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\nodes.py", line 1237, in sample
+    return common_ksampler(model, seed, steps, cfg, sampler_name, scheduler, positive, negative, latent_image, denoise=denoise)
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\nodes.py", line 1207, in common_ksampler
+    samples = comfy.sample.sample(model, noise, steps, cfg, sampler_name, scheduler, positive, negative, latent_image,
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\sampling.py", line 109, in animatediff_sample
+    return orig_comfy_sample(model, *args, **kwargs)
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\sample.py", line 97, in sample
+    samples = sampler.sample(noise, positive_copy, negative_copy, cfg=cfg, latent_image=latent_image, start_step=start_step, last_step=last_step, force_full_denoise=force_full_denoise, denoise_mask=noise_mask, sigmas=sigmas, callback=callback, disable_pbar=disable_pbar, seed=seed)
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 781, in sample
+    return sample(self.model, noise, positive, negative, cfg, self.device, sampler(), sigmas, self.model_options, latent_image=latent_image, denoise_mask=denoise_mask, callback=callback, disable_pbar=disable_pbar, seed=seed)
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 686, in sample
+    samples = sampler.sample(model_wrap, sigmas, extra_args, callback, noise, latent_image, denoise_mask, disable_pbar)
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 638, in sample
+    samples = getattr(k_diffusion_sampling, "sample_{}".format(sampler_name))(model_k, noise, sigmas, extra_args=extra_args, callback=k_callback, disable=disable_pbar, **extra_options)
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\utils\_contextlib.py", line 115, in decorate_context
+    return func(*args, **kwargs)
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\k_diffusion\sampling.py", line 154, in sample_euler_ancestral
+    denoised = model(x, sigmas[i] * s_in, **extra_args)
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 326, in forward
+    out = self.inner_model(x, sigma, cond=cond, uncond=uncond, cond_scale=cond_scale, model_options=model_options, seed=seed)
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\k_diffusion\external.py", line 184, in forward
+    return self.get_v(input * c_in, self.sigma_to_t(sigma), **kwargs) * c_out + input * c_skip
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 305, in get_v
+    return self.inner_model.apply_model(x, t, cond, **kwargs)
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 314, in apply_model
+    out = sampling_function(self.inner_model.apply_model, x, timestep, uncond, cond, cond_scale, model_options=model_options, seed=seed)
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 292, in sampling_function
+    cond, uncond = calc_cond_uncond_batch(model_function, cond, uncond, x, timestep, max_total_area, model_options)
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 268, in calc_cond_uncond_batch
+    output = model_function(input_x, timestep_, **c).chunk(batch_chunks)
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\model_base.py", line 64, in apply_model
+    return self.diffusion_model(xc, t, context=context, y=c_adm, control=control, transformer_options=transformer_options).float()
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\diffusionmodules\openaimodel.py", line 625, in forward
+    h = forward_timestep_embed(module, h, emb, context, transformer_options)
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\diffusionmodules\openaimodel.py", line 54, in forward_timestep_embed
+    x = layer(x, emb)
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\diffusionmodules\openaimodel.py", line 219, in forward
+    return checkpoint(
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\diffusionmodules\util.py", line 123, in checkpoint
+    return func(*inputs)
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\diffusionmodules\openaimodel.py", line 232, in _forward
+    h = self.in_layers(x)
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\container.py", line 217, in forward
+    input = module(input)
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\activation.py", line 396, in forward
+    return F.silu(input, inplace=self.inplace)
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\functional.py", line 2059, in silu
+    return torch._C._nn.silu(input)
+RuntimeError: Could not allocate tensor with 2649600 bytes. There is not enough GPU video memory available!
+
+Prompt executed in 24.47 seconds
 got prompt
-Prompt executed in 3.30 seconds
+100%|██████████████████████████████████████████████████████████████████████████████████| 30/30 [00:11<00:00,  2.80it/s]100%|██████████████████████████████████████████████████████████████████████████████████| 30/30 [00:11<00:00,  2.72it/s]
+======image_to_buffer=======
+images: 0
+{'promptId': 'd3179f6c-3b72-4ab5-997b-f4865db8671f'}
+ERROR:root:!!! Exception during processing !!!
+ERROR:root:Traceback (most recent call last):
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\execution.py", line 155, in recursive_execute
+    output_data, output_ui = get_output_data(obj, input_data_all)
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\execution.py", line 85, in get_output_data
+    return_values = map_node_over_list(obj, input_data_all, obj.FUNCTION, allow_interrupt=True)
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\execution.py", line 78, in map_node_over_list
+    results.append(getattr(obj, func)(**slice_dict(input_data_all, i)))
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\base64_images.py", line 69, in send
+    x = requests.post(cbHost, data=payload, files=files, verify=False)
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\requests\api.py", line 115, in post
+    return request("post", url, data=data, json=json, **kwargs)
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\requests\api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\requests\sessions.py", line 697, in send
+    adapter = self.get_adapter(url=request.url)
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\requests\sessions.py", line 794, in get_adapter
+    raise InvalidSchema(f"No connection adapters were found for {url!r}")
+requests.exceptions.InvalidSchema: No connection adapters were found for 'TODO: BACKEND API'
+
+Prompt executed in 14.13 seconds
 got prompt
-[AnimateDiffEvo] - [0;32mINFO[0m - Loading motion module mm_sd_v15.ckpt
-[AnimateDiffEvo] - [0;32mINFO[0m - Regular AnimateDiff activated - latents passed in (16) less or equal to context_length None.
-[AnimateDiffEvo] - [0;32mINFO[0m - Injecting motion module mm_sd_v15.ckpt version v1.
-Requested to load BaseModel
-Loading 1 new model
-100%|██████████████████████████████████████████████████████████████████████████████████| 20/20 [01:24<00:00,  3.95s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 20/20 [01:24<00:00,  4.23s/it]
-[AnimateDiffEvo] - [0;32mINFO[0m - Ejecting motion module mm_sd_v15.ckpt version v1.
-[AnimateDiffEvo] - [0;32mINFO[0m - Cleaning motion module from unet.
-[AnimateDiffEvo] - [0;32mINFO[0m - Removing motion module mm_sd_v15.ckpt from cache
-Prompt executed in 102.26 seconds
+ERROR:root:Failed to validate prompt for output 24:
+ERROR:root:* (prompt):
+ERROR:root:  - Required input is missing: images
+ERROR:root:* ImageToBuffer 24:
+ERROR:root:  - Required input is missing: images
+ERROR:root:Output will be ignored
+ERROR:root:Failed to validate prompt for output 25:
+ERROR:root:Output will be ignored
+100%|████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.81it/s]100%|████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.81it/s]
+Prompt executed in 0.71 seconds
+got prompt
+
+Prompt executed in 17.74 seconds
+got prompt
+ERROR:root:Failed to validate prompt for output 24:
+ERROR:root:* (prompt):
+ERROR:root:  - Required input is missing: images
+ERROR:root:* ImageToBuffer 24:
+ERROR:root:  - Required input is missing: images
+ERROR:root:Output will be ignored
+ERROR:root:Failed to validate prompt for output 25:
+ERROR:root:Output will be ignored
+100%|██████████████████████████████████████████████████████████████████████████████████| 30/30 [02:26<00:00,  4.57s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 30/30 [02:26<00:00,  4.87s/it]
+Prompt executed in 153.47 seconds
