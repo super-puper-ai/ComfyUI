@@ -1,5 +1,35 @@
-** ComfyUI start up time: 2023-10-24 16:23:02.144904
+** ComfyUI start up time: 2023-10-24 17:53:06.914810
 
 Prestartup times for custom nodes:
    0.0 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager
 
+Using directml with device: 
+Total VRAM 1024 MB, total RAM 32699 MB
+Set vram state to: NORMAL_VRAM
+Device: privateuseone
+VAE dtype: torch.float32
+Using sub quadratic optimization for cross attention, if you have memory or speed issues try using: --use-split-cross-attention
+========= custom_node_path D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes =========
+========= possible_module base64_images.py =========
+========= possible_module ComfyUI-Manager =========
+### Loading: ComfyUI-Manager (V0.36)
+
+
+## [WARN] ComfyUI-Manager: Your ComfyUI version (1) is too old. Please update to the latest version. ##
+
+
+### ComfyUI Revision: 1 [9d5a2a3b] | Released on '2023-10-24'
+========= possible_module ComfyUI-VideoHelperSuite =========
+[VideoHelperSuite] - [0;32mINFO[0m - ffmpeg could not be found. Using ffmpeg from imageio-ffmpeg.
+========= possible_module example_node.py.example =========
+
+Import times for custom nodes:
+   0.0 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\base64_images.py
+   0.2 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-VideoHelperSuite
+   0.3 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager
+
+Starting server
+
+To see the GUI go to: http://0.0.0.0:8189
+
+Stopped server

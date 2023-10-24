@@ -1,4 +1,4 @@
-** ComfyUI start up time: 2023-10-24 16:20:42.534857
+** ComfyUI start up time: 2023-10-24 17:17:08.113423
 
 Prestartup times for custom nodes:
    0.0 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager
@@ -9,6 +9,9 @@ Set vram state to: NORMAL_VRAM
 Device: privateuseone
 VAE dtype: torch.float32
 Using sub quadratic optimization for cross attention, if you have memory or speed issues try using: --use-split-cross-attention
+========= custom_node_path D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes =========
+========= possible_module base64_images.py =========
+========= possible_module comfyui-animatediff =========
 Traceback (most recent call last):
   File "D:\Documents\projects\super-puper-ai\ComfyUI\nodes.py", line 1735, in load_custom_node
     module_spec.loader.exec_module(module)
@@ -26,45 +29,1502 @@ Traceback (most recent call last):
 SyntaxError: invalid syntax
 
 Cannot import D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\comfyui-animatediff module for custom nodes: invalid syntax (sliding_schedule.py, line 147)
+========= possible_module ComfyUI-AnimateDiff-Evolved =========
 Using sub quadratic optimization for cross attention, if you have memory or speed issues try using: --use-split-cross-attention
+========= possible_module ComfyUI-Manager =========
 ### Loading: ComfyUI-Manager (V0.36)
-### ComfyUI Revision: 1604 [200ac913] | Released on '2023-10-23'
+
+
+## [WARN] ComfyUI-Manager: Your ComfyUI version (1) is too old. Please update to the latest version. ##
+
+
+### ComfyUI Revision: 1 [9d5a2a3b] | Released on '2023-10-24'
+========= possible_module ComfyUI-VideoHelperSuite =========
 [VideoHelperSuite] - [0;32mINFO[0m - ffmpeg could not be found. Using ffmpeg from imageio-ffmpeg.
+========= possible_module example_node.py.example =========
 
 Import times for custom nodes:
    0.0 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\base64_images.py
-   0.0 seconds (IMPORT FAILED): D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\comfyui-animatediff
    0.0 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved
-   0.5 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager
-   0.9 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-VideoHelperSuite
+   0.1 seconds (IMPORT FAILED): D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\comfyui-animatediff
+   0.2 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-VideoHelperSuite
+   0.2 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager
 
-Traceback (most recent call last):
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\runpy.py", line 197, in _run_module_as_main
-    return _run_code(code, main_globals, None,
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\runpy.py", line 87, in _run_code
-    exec(code, run_globals)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\debugpy\__main__.py", line 39, in <module>
-    cli.main()
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\debugpy\server\cli.py", line 430, in main
-    run()
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\debugpy\server\cli.py", line 284, in run_file
-    runpy.run_path(target, run_name="__main__")
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\debugpy\_vendored\pydevd\_pydevd_bundle\pydevd_runpy.py", line 321, in run_path
-    return _run_module_code(code, init_globals, run_name,
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\debugpy\_vendored\pydevd\_pydevd_bundle\pydevd_runpy.py", line 135, in _run_module_code
-    _run_code(code, mod_globals, init_globals,
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\debugpy\_vendored\pydevd\_pydevd_bundle\pydevd_runpy.py", line 124, in _run_code
-    exec(code, run_globals)
-  File "main.py", line 201, in <module>
-    loop.run_until_complete(run(server, address=args.listen, port=args.port, verbose=not args.dont_print_server, call_on_start=call_on_start))
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\asyncio\base_events.py", line 647, in run_until_complete
-    return future.result()
-  File "main.py", line 105, in run
-    await asyncio.gather(server.start(address, port, verbose, call_on_start), server.publish_loop())
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\server.py", line 613, in start
-    await site.start()
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\aiohttp\web_runner.py", line 121, in start
-    self._server = await loop.create_server(
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\asyncio\base_events.py", line 1506, in create_server
-    raise OSError(err.errno, 'error while attempting '
-OSError: [Errno 10048] error while attempting to bind on address ('127.0.0.1', 8188): обычно разрешается только одно использование адреса сокета (протокол/сетевой адрес/порт)
+Starting server
+
+To see the GUI go to: http://0.0.0.0:8189
+FETCH DATA from: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager\extension-node-map.json
+[AnimateDiffEvo] - [0;33mWARNING[0m - ffmpeg could not be found. Outputs that require it have been disabled
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/alter-list.json
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+Install custom node 'Vid2vid'
+install: ['https://github.com/sylym/comfy_vid2vid']
+Download: git clone 'https://github.com/sylym/comfy_vid2vid'
+Install: pip packages
+
+## ComfyUI-Manager: EXECUTE => ['C:\\Users\\majul\\miniconda3\\envs\\env_pytorch39\\python.exe', '-m', 'pip', 'install', 'diffusers[torch]==0.11.1']
+ Collecting diffusers[torch]==0.11.1
+   Downloading diffusers-0.11.1-py3-none-any.whl (524 kB)
+      -------------------------------------- 524.9/524.9 kB 1.8 MB/s eta 0:00:00
+ Collecting importlib-metadata (from diffusers[torch]==0.11.1)
+   Obtaining dependency information for importlib-metadata from https://files.pythonhosted.org/packages/cc/37/db7ba97e676af155f5fcb1a35466f446eadc9104e25b83366e8088c9c926/importlib_metadata-6.8.0-py3-none-any.whl.metadata
+   Downloading importlib_metadata-6.8.0-py3-none-any.whl.metadata (5.1 kB)
+ Requirement already satisfied: filelock in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from diffusers[torch]==0.11.1) (3.12.3)
+ Requirement already satisfied: huggingface-hub>=0.10.0 in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from diffusers[torch]==0.11.1) (0.16.4)
+ Requirement already satisfied: numpy in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from diffusers[torch]==0.11.1) (1.25.2)
+ Requirement already satisfied: regex!=2019.12.17 in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from diffusers[torch]==0.11.1) (2023.8.8)
+ Requirement already satisfied: requests in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from diffusers[torch]==0.11.1) (2.31.0)
+ Requirement already satisfied: Pillow in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from diffusers[torch]==0.11.1) (10.0.0)
+ Requirement already satisfied: torch>=1.4 in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from diffusers[torch]==0.11.1) (2.0.0)
+ Requirement already satisfied: accelerate>=0.11.0 in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from diffusers[torch]==0.11.1) (0.22.0)
+ Requirement already satisfied: packaging>=20.0 in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from accelerate>=0.11.0->diffusers[torch]==0.11.1) (23.1)
+ Requirement already satisfied: psutil in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from accelerate>=0.11.0->diffusers[torch]==0.11.1) (5.9.5)
+ Requirement already satisfied: pyyaml in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from accelerate>=0.11.0->diffusers[torch]==0.11.1) (6.0.1)
+ Requirement already satisfied: fsspec in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from huggingface-hub>=0.10.0->diffusers[torch]==0.11.1) (2023.6.0)
+ Requirement already satisfied: tqdm>=4.42.1 in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from huggingface-hub>=0.10.0->diffusers[torch]==0.11.1) (4.66.1)
+ Requirement already satisfied: typing-extensions>=3.7.4.3 in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from huggingface-hub>=0.10.0->diffusers[torch]==0.11.1) (4.7.1)
+ Requirement already satisfied: sympy in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from torch>=1.4->diffusers[torch]==0.11.1) (1.12)
+ Requirement already satisfied: networkx in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from torch>=1.4->diffusers[torch]==0.11.1) (3.1)
+ Requirement already satisfied: jinja2 in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from torch>=1.4->diffusers[torch]==0.11.1) (3.1.2)
+ Collecting zipp>=0.5 (from importlib-metadata->diffusers[torch]==0.11.1)
+   Obtaining dependency information for zipp>=0.5 from https://files.pythonhosted.org/packages/d9/66/48866fc6b158c81cc2bfecc04c480f105c6040e8b077bc54c634b4a67926/zipp-3.17.0-py3-none-any.whl.metadata
+   Downloading zipp-3.17.0-py3-none-any.whl.metadata (3.7 kB)
+ Requirement already satisfied: charset-normalizer<4,>=2 in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from requests->diffusers[torch]==0.11.1) (3.2.0)
+ Requirement already satisfied: idna<4,>=2.5 in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from requests->diffusers[torch]==0.11.1) (3.4)
+ Requirement already satisfied: urllib3<3,>=1.21.1 in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from requests->diffusers[torch]==0.11.1) (2.0.4)
+ Requirement already satisfied: certifi>=2017.4.17 in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from requests->diffusers[torch]==0.11.1) (2023.7.22)
+ Requirement already satisfied: colorama in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from tqdm>=4.42.1->huggingface-hub>=0.10.0->diffusers[torch]==0.11.1) (0.4.6)
+ Requirement already satisfied: MarkupSafe>=2.0 in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from jinja2->torch>=1.4->diffusers[torch]==0.11.1) (2.1.3)
+ Requirement already satisfied: mpmath>=0.19 in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from sympy->torch>=1.4->diffusers[torch]==0.11.1) (1.3.0)
+ Using cached importlib_metadata-6.8.0-py3-none-any.whl (22 kB)
+ Downloading zipp-3.17.0-py3-none-any.whl (7.4 kB)
+[!] DEPRECATION: torchsde 0.2.5 has a non-standard dependency specifier numpy>=1.19.*; python_version >= "3.7". pip 23.3 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of torchsde or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063
+ Installing collected packages: zipp, importlib-metadata, diffusers
+ Successfully installed diffusers-0.11.1 importlib-metadata-6.8.0 zipp-3.17.0
+
+
+###################################################################
+[WARN] ComfyUI-Manager: Your ComfyUI version (1) is too old. Please update to the latest version.
+[WARN] The extension installation feature may not work properly in the current installed ComfyUI version on Windows environment.
+###################################################################
+
+
+
+## ComfyUI-Manager: EXECUTE => ['C:\\Users\\majul\\miniconda3\\envs\\env_pytorch39\\python.exe', '-m', 'pip', 'install', 'omegaconf']
+ Collecting omegaconf
+   Using cached omegaconf-2.3.0-py3-none-any.whl (79 kB)
+ Collecting antlr4-python3-runtime==4.9.* (from omegaconf)
+   Using cached antlr4-python3-runtime-4.9.3.tar.gz (117 kB)
+   Preparing metadata (setup.py): started
+   Preparing metadata (setup.py): finished with status 'done'
+ Requirement already satisfied: PyYAML>=5.1.0 in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from omegaconf) (6.0.1)
+ Building wheels for collected packages: antlr4-python3-runtime
+   Building wheel for antlr4-python3-runtime (setup.py): started
+   Building wheel for antlr4-python3-runtime (setup.py): finished with status 'done'
+   Created wheel for antlr4-python3-runtime: filename=antlr4_python3_runtime-4.9.3-py3-none-any.whl size=144578 sha256=9974560c565c9071c64aa631eb36397bd5ad308f46fe8c26f167742a4bccc4c0
+   Stored in directory: c:\users\majul\appdata\local\pip\cache\wheels\23\cf\80\f3efa822e6ab23277902ee9165fe772eeb1dfb8014f359020a
+ Successfully built antlr4-python3-runtime
+[!] DEPRECATION: torchsde 0.2.5 has a non-standard dependency specifier numpy>=1.19.*; python_version >= "3.7". pip 23.3 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of torchsde or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063
+ Installing collected packages: antlr4-python3-runtime, omegaconf
+ Successfully installed antlr4-python3-runtime-4.9.3 omegaconf-2.3.0
+
+
+###################################################################
+[WARN] ComfyUI-Manager: Your ComfyUI version (1) is too old. Please update to the latest version.
+[WARN] The extension installation feature may not work properly in the current installed ComfyUI version on Windows environment.
+###################################################################
+
+
+Installation was successful.
+After restarting ComfyUI, please refresh the browser.
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+FETCH DATA from: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager\custom-node-list.json
+Install custom node 'ComfyUI Inspire Pack'
+install: ['https://github.com/ltdrdata/ComfyUI-Inspire-Pack']
+Download: git clone 'https://github.com/ltdrdata/ComfyUI-Inspire-Pack'
+Install: pip packages
+
+## ComfyUI-Manager: EXECUTE => ['C:\\Users\\majul\\miniconda3\\envs\\env_pytorch39\\python.exe', '-m', 'pip', 'install', 'matplotlib']
+ Collecting matplotlib
+   Obtaining dependency information for matplotlib from https://files.pythonhosted.org/packages/01/50/0d8d8f044e2a0d8151e9ed59fe50924e9e697ba43a8b12d5ff9b45adb871/matplotlib-3.8.0-cp39-cp39-win_amd64.whl.metadata
+   Downloading matplotlib-3.8.0-cp39-cp39-win_amd64.whl.metadata (5.9 kB)
+ Collecting contourpy>=1.0.1 (from matplotlib)
+   Obtaining dependency information for contourpy>=1.0.1 from https://files.pythonhosted.org/packages/87/2b/9b49451f7412cc1a79198e94a771a4e52d65c479aae610b1161c0290ef2c/contourpy-1.1.1-cp39-cp39-win_amd64.whl.metadata
+   Downloading contourpy-1.1.1-cp39-cp39-win_amd64.whl.metadata (5.9 kB)
+ Collecting cycler>=0.10 (from matplotlib)
+   Obtaining dependency information for cycler>=0.10 from https://files.pythonhosted.org/packages/e7/05/c19819d5e3d95294a6f5947fb9b9629efb316b96de511b418c53d245aae6/cycler-0.12.1-py3-none-any.whl.metadata
+   Downloading cycler-0.12.1-py3-none-any.whl.metadata (3.8 kB)
+ Collecting fonttools>=4.22.0 (from matplotlib)
+   Obtaining dependency information for fonttools>=4.22.0 from https://files.pythonhosted.org/packages/39/85/43a6d535a7cb021a673f5451f49c8f034217d58a83ab813e374bfe564ccb/fonttools-4.43.1-cp39-cp39-win_amd64.whl.metadata
+   Downloading fonttools-4.43.1-cp39-cp39-win_amd64.whl.metadata (155 kB)
+      -------------------------------------- 155.5/155.5 kB 1.3 MB/s eta 0:00:00
+ Collecting kiwisolver>=1.0.1 (from matplotlib)
+   Obtaining dependency information for kiwisolver>=1.0.1 from https://files.pythonhosted.org/packages/ca/c1/1f986c8119c0c57c2bd71d1941da23332c38ee2c90117e46dff4358b70f7/kiwisolver-1.4.5-cp39-cp39-win_amd64.whl.metadata
+   Downloading kiwisolver-1.4.5-cp39-cp39-win_amd64.whl.metadata (6.5 kB)
+ Requirement already satisfied: numpy<2,>=1.21 in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from matplotlib) (1.25.2)
+ Requirement already satisfied: packaging>=20.0 in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from matplotlib) (23.1)
+ Requirement already satisfied: pillow>=6.2.0 in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from matplotlib) (10.0.0)
+ Collecting pyparsing>=2.3.1 (from matplotlib)
+   Obtaining dependency information for pyparsing>=2.3.1 from https://files.pythonhosted.org/packages/39/92/8486ede85fcc088f1b3dba4ce92dd29d126fd96b0008ea213167940a2475/pyparsing-3.1.1-py3-none-any.whl.metadata
+   Downloading pyparsing-3.1.1-py3-none-any.whl.metadata (5.1 kB)
+ Collecting python-dateutil>=2.7 (from matplotlib)
+   Using cached python_dateutil-2.8.2-py2.py3-none-any.whl (247 kB)
+ Collecting importlib-resources>=3.2.0 (from matplotlib)
+   Obtaining dependency information for importlib-resources>=3.2.0 from https://files.pythonhosted.org/packages/65/6e/09d8816b5cb7a4006ef8ad1717a2703ad9f331dae9717d9f22488a2d6469/importlib_resources-6.1.0-py3-none-any.whl.metadata
+   Downloading importlib_resources-6.1.0-py3-none-any.whl.metadata (4.1 kB)
+ Requirement already satisfied: zipp>=3.1.0 in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from importlib-resources>=3.2.0->matplotlib) (3.17.0)
+ Collecting six>=1.5 (from python-dateutil>=2.7->matplotlib)
+   Using cached six-1.16.0-py2.py3-none-any.whl (11 kB)
+ Downloading matplotlib-3.8.0-cp39-cp39-win_amd64.whl (7.6 MB)
+    ---------------------------------------- 7.6/7.6 MB 3.1 MB/s eta 0:00:00
+ Downloading contourpy-1.1.1-cp39-cp39-win_amd64.whl (435 kB)
+    ---------------------------------------- 436.0/436.0 kB 3.4 MB/s eta 0:00:00
+ Downloading cycler-0.12.1-py3-none-any.whl (8.3 kB)
+ Downloading fonttools-4.43.1-cp39-cp39-win_amd64.whl (2.1 MB)
+    ---------------------------------------- 2.1/2.1 MB 3.1 MB/s eta 0:00:00
+ Downloading importlib_resources-6.1.0-py3-none-any.whl (33 kB)
+ Downloading kiwisolver-1.4.5-cp39-cp39-win_amd64.whl (56 kB)
+    ---------------------------------------- 56.2/56.2 kB ? eta 0:00:00
+ Downloading pyparsing-3.1.1-py3-none-any.whl (103 kB)
+    ---------------------------------------- 103.1/103.1 kB 3.0 MB/s eta 0:00:00
+[!] DEPRECATION: torchsde 0.2.5 has a non-standard dependency specifier numpy>=1.19.*; python_version >= "3.7". pip 23.3 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of torchsde or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063
+ Installing collected packages: six, pyparsing, kiwisolver, importlib-resources, fonttools, cycler, contourpy, python-dateutil, matplotlib
+ Successfully installed contourpy-1.1.1 cycler-0.12.1 fonttools-4.43.1 importlib-resources-6.1.0 kiwisolver-1.4.5 matplotlib-3.8.0 pyparsing-3.1.1 python-dateutil-2.8.2 six-1.16.0
+
+
+###################################################################
+[WARN] ComfyUI-Manager: Your ComfyUI version (1) is too old. Please update to the latest version.
+[WARN] The extension installation feature may not work properly in the current installed ComfyUI version on Windows environment.
+###################################################################
+
+
+Installation was successful.
+After restarting ComfyUI, please refresh the browser.
+FETCH DATA from: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager\custom-node-list.json
+Uninstall custom node 'ComfyUI Inspire Pack'
+uninstall: ['https://github.com/ltdrdata/ComfyUI-Inspire-Pack']
+Uninstallation was successful.
+After restarting ComfyUI, please refresh the browser.
+FETCH DATA from: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager\custom-node-list.json
+Uninstall custom node 'Vid2vid'
+uninstall: ['https://github.com/sylym/comfy_vid2vid']
+Uninstallation was successful.
+After restarting ComfyUI, please refresh the browser.
+FETCH DATA from: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager\custom-node-list.json
+Install custom node 'ComfyUI Impact Pack'
+install: ['https://github.com/ltdrdata/ComfyUI-Impact-Pack']
+Download: git clone 'https://github.com/ltdrdata/ComfyUI-Impact-Pack'
+Install: pip packages
+
+## ComfyUI-Manager: EXECUTE => ['C:\\Users\\majul\\miniconda3\\envs\\env_pytorch39\\python.exe', '-m', 'pip', 'install', 'segment-anything']
+ Collecting segment-anything
+   Downloading segment_anything-1.0-py3-none-any.whl (36 kB)
+[!] DEPRECATION: torchsde 0.2.5 has a non-standard dependency specifier numpy>=1.19.*; python_version >= "3.7". pip 23.3 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of torchsde or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063
+ Installing collected packages: segment-anything
+ Successfully installed segment-anything-1.0
+
+
+###################################################################
+[WARN] ComfyUI-Manager: Your ComfyUI version (1) is too old. Please update to the latest version.
+[WARN] The extension installation feature may not work properly in the current installed ComfyUI version on Windows environment.
+###################################################################
+
+
+
+## ComfyUI-Manager: EXECUTE => ['C:\\Users\\majul\\miniconda3\\envs\\env_pytorch39\\python.exe', '-m', 'pip', 'install', 'scikit-image']
+ Collecting scikit-image
+   Obtaining dependency information for scikit-image from https://files.pythonhosted.org/packages/3d/97/a09a526eee08683922ca2e37c69742ffdcc879ee40bfe29d3e3d55e821c0/scikit_image-0.22.0-cp39-cp39-win_amd64.whl.metadata
+   Downloading scikit_image-0.22.0-cp39-cp39-win_amd64.whl.metadata (13 kB)
+ Requirement already satisfied: numpy>=1.22 in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from scikit-image) (1.25.2)
+ Requirement already satisfied: scipy>=1.8 in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from scikit-image) (1.11.2)
+ Requirement already satisfied: networkx>=2.8 in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from scikit-image) (3.1)
+ Requirement already satisfied: pillow>=9.0.1 in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from scikit-image) (10.0.0)
+ Collecting imageio>=2.27 (from scikit-image)
+   Obtaining dependency information for imageio>=2.27 from https://files.pythonhosted.org/packages/9b/82/473e452d3f21a9cd7e792a827f8df58bdff614fd2fff33d7bf6c4c128da7/imageio-2.31.6-py3-none-any.whl.metadata
+   Downloading imageio-2.31.6-py3-none-any.whl.metadata (4.6 kB)
+ Collecting tifffile>=2022.8.12 (from scikit-image)
+   Obtaining dependency information for tifffile>=2022.8.12 from https://files.pythonhosted.org/packages/f5/72/68ea763b5f3e3d9871492683059ed4724fd700dbe54aa03cdda7a9692129/tifffile-2023.9.26-py3-none-any.whl.metadata
+   Downloading tifffile-2023.9.26-py3-none-any.whl.metadata (30 kB)
+ Requirement already satisfied: packaging>=21 in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from scikit-image) (23.1)
+ Collecting lazy_loader>=0.3 (from scikit-image)
+   Obtaining dependency information for lazy_loader>=0.3 from https://files.pythonhosted.org/packages/a1/c3/65b3814e155836acacf720e5be3b5757130346670ac454fee29d3eda1381/lazy_loader-0.3-py3-none-any.whl.metadata
+   Downloading lazy_loader-0.3-py3-none-any.whl.metadata (4.3 kB)
+ Downloading scikit_image-0.22.0-cp39-cp39-win_amd64.whl (24.5 MB)
+    ---------------------------------------- 24.5/24.5 MB 3.0 MB/s eta 0:00:00
+ Downloading imageio-2.31.6-py3-none-any.whl (313 kB)
+    ---------------------------------------- 313.2/313.2 kB 3.3 MB/s eta 0:00:00
+ Using cached lazy_loader-0.3-py3-none-any.whl (9.1 kB)
+ Downloading tifffile-2023.9.26-py3-none-any.whl (222 kB)
+    ---------------------------------------- 222.9/222.9 kB 2.7 MB/s eta 0:00:00
+[!] DEPRECATION: torchsde 0.2.5 has a non-standard dependency specifier numpy>=1.19.*; python_version >= "3.7". pip 23.3 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of torchsde or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063
+ Installing collected packages: tifffile, lazy_loader, imageio, scikit-image
+ Successfully installed imageio-2.31.6 lazy_loader-0.3 scikit-image-0.22.0 tifffile-2023.9.26
+
+
+###################################################################
+[WARN] ComfyUI-Manager: Your ComfyUI version (1) is too old. Please update to the latest version.
+[WARN] The extension installation feature may not work properly in the current installed ComfyUI version on Windows environment.
+###################################################################
+
+
+
+## ComfyUI-Manager: EXECUTE => ['C:\\Users\\majul\\miniconda3\\envs\\env_pytorch39\\python.exe', '-m', 'pip', 'install', 'piexif']
+ Collecting piexif
+   Using cached piexif-1.1.3-py2.py3-none-any.whl (20 kB)
+[!] DEPRECATION: torchsde 0.2.5 has a non-standard dependency specifier numpy>=1.19.*; python_version >= "3.7". pip 23.3 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of torchsde or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063
+ Installing collected packages: piexif
+ Successfully installed piexif-1.1.3
+
+
+###################################################################
+[WARN] ComfyUI-Manager: Your ComfyUI version (1) is too old. Please update to the latest version.
+[WARN] The extension installation feature may not work properly in the current installed ComfyUI version on Windows environment.
+###################################################################
+
+
+Install: install script
+
+## ComfyUI-Manager: EXECUTE => ['C:\\Users\\majul\\miniconda3\\envs\\env_pytorch39\\python.exe', 'install.py']
+ ### ComfyUI-Impact-Pack: Check dependencies
+[!] 
+ ### ComfyUI-Impact-Pack: Check basic models
+ Downloading https://dl.fbaipublicfiles.com/segment_anything/sam_vit_b_01ec64.pth to D:\Documents\projects\super-puper-ai\ComfyUI\models\sams\sam_vit_b_01ec64.pth
+[!]   0%|          | 0/375042383 [00:00<?, ?it/s]
+[!]   0%|          | 393216/375042383 [00:00<01:36, 3892581.79it/s]
+[!]   0%|          | 786432/375042383 [00:00<01:42, 3661671.46it/s]
+[!]   0%|          | 1179648/375042383 [00:00<01:49, 3426997.37it/s]
+[!]   0%|          | 1572864/375042383 [00:00<01:44, 3561511.93it/s]
+[!]   1%|          | 1966080/375042383 [00:00<01:42, 3647491.36it/s]
+[!]   1%|          | 2359296/375042383 [00:00<01:41, 3674886.28it/s]
+[!]   1%|          | 2752512/375042383 [00:00<01:40, 3713452.71it/s]
+[!]   1%|          | 3145728/375042383 [00:00<01:39, 3754534.76it/s]
+[!]   1%|          | 3538944/375042383 [00:00<01:38, 3756698.83it/s]
+[!]   1%|1         | 3932160/375042383 [00:01<01:38, 3763042.81it/s]
+[!]   1%|1         | 4325376/375042383 [00:01<01:38, 3770418.25it/s]
+[!]   1%|1         | 4718592/375042383 [00:01<01:37, 3796924.58it/s]
+[!]   1%|1         | 5111808/375042383 [00:01<01:37, 3788736.81it/s]
+[!]   1%|1         | 5505024/375042383 [00:01<01:37, 3796713.89it/s]
+[!]   2%|1         | 5898240/375042383 [00:01<01:37, 3790964.44it/s]
+[!]   2%|1         | 6291456/375042383 [00:01<01:36, 3805141.91it/s]
+[!]   2%|1         | 6684672/375042383 [00:01<01:37, 3790578.91it/s]
+[!]   2%|1         | 7077888/375042383 [00:01<01:36, 3814662.15it/s]
+[!]   2%|1         | 7471104/375042383 [00:01<01:36, 3805965.13it/s]
+[!]   2%|2         | 7864320/375042383 [00:02<01:37, 3765646.31it/s]
+[!]   2%|2         | 8257536/375042383 [00:02<01:36, 3791863.20it/s]
+[!]   2%|2         | 8650752/375042383 [00:02<01:36, 3803371.19it/s]
+[!]   2%|2         | 9043968/375042383 [00:02<01:35, 3818772.75it/s]
+[!]   3%|2         | 9437184/375042383 [00:02<01:35, 3818425.63it/s]
+[!]   3%|2         | 9830400/375042383 [00:02<01:36, 3790196.76it/s]
+[!]   3%|2         | 10223616/375042383 [00:02<01:36, 3795329.29it/s]
+[!]   3%|2         | 10616832/375042383 [00:02<01:35, 3808307.17it/s]
+[!]   3%|2         | 11010048/375042383 [00:02<01:35, 3818239.63it/s]
+[!]   3%|3         | 11403264/375042383 [00:03<01:35, 3789872.76it/s]
+[!]   3%|3         | 11796480/375042383 [00:03<01:35, 3805942.14it/s]
+[!]   3%|3         | 12189696/375042383 [00:03<01:35, 3807829.98it/s]
+[!]   3%|3         | 12582912/375042383 [00:03<01:34, 3815566.33it/s]
+[!]   3%|3         | 12976128/375042383 [00:03<01:34, 3823150.18it/s]
+[!]   4%|3         | 13369344/375042383 [00:03<01:35, 3801836.68it/s]
+[!]   4%|3         | 13762560/375042383 [00:03<01:35, 3801424.14it/s]
+[!]   4%|3         | 14155776/375042383 [00:03<01:34, 3811817.43it/s]
+[!]   4%|3         | 14548992/375042383 [00:03<01:34, 3815640.91it/s]
+[!]   4%|3         | 14942208/375042383 [00:03<01:34, 3823165.32it/s]
+[!]   4%|4         | 15335424/375042383 [00:04<01:34, 3801408.24it/s]
+[!]   4%|4         | 15728640/375042383 [00:04<01:34, 3804101.71it/s]
+[!]   4%|4         | 16121856/375042383 [00:04<01:34, 3816741.14it/s]
+[!]   4%|4         | 16515072/375042383 [00:04<01:33, 3821466.42it/s]
+[!]   5%|4         | 16908288/375042383 [00:04<01:33, 3811606.81it/s]
+[!]   5%|4         | 17301504/375042383 [00:04<01:34, 3796710.56it/s]
+[!]   5%|4         | 17694720/375042383 [00:04<01:33, 3801695.83it/s]
+[!]   5%|4         | 18087936/375042383 [00:04<01:33, 3809295.94it/s]
+[!]   5%|4         | 18481152/375042383 [00:04<01:33, 3818110.01it/s]
+[!]   5%|5         | 18874368/375042383 [00:04<01:33, 3820179.79it/s]
+[!]   5%|5         | 19267584/375042383 [00:05<01:33, 3798097.43it/s]
+[!]   5%|5         | 19660800/375042383 [00:05<01:33, 3806660.83it/s]
+[!]   5%|5         | 20054016/375042383 [00:05<01:33, 3809837.84it/s]
+[!]   5%|5         | 20447232/375042383 [00:05<01:33, 3807017.57it/s]
+[!]   6%|5         | 20840448/375042383 [00:05<01:33, 3807565.24it/s]
+[!]   6%|5         | 21233664/375042383 [00:05<01:32, 3806638.27it/s]
+[!]   6%|5         | 21626880/375042383 [00:05<01:33, 3782961.09it/s]
+[!]   6%|5         | 22020096/375042383 [00:05<01:33, 3789126.50it/s]
+[!]   6%|5         | 22413312/375042383 [00:05<01:32, 3799271.57it/s]
+[!]   6%|6         | 22806528/375042383 [00:06<01:32, 3805132.99it/s]
+[!]   6%|6         | 23199744/375042383 [00:06<01:32, 3796915.85it/s]
+[!]   6%|6         | 23592960/375042383 [00:06<01:32, 3782566.43it/s]
+[!]   6%|6         | 23986176/375042383 [00:06<01:32, 3804010.48it/s]
+[!]   7%|6         | 24379392/375042383 [00:06<01:32, 3797058.95it/s]
+[!]   7%|6         | 24772608/375042383 [00:06<01:31, 3809776.01it/s]
+[!]   7%|6         | 25165824/375042383 [00:06<01:32, 3771980.86it/s]
+[!]   7%|6         | 25559040/375042383 [00:06<01:32, 3768525.73it/s]
+[!]   7%|6         | 25952256/375042383 [00:06<01:32, 3788500.71it/s]
+[!]   7%|7         | 26345472/375042383 [00:06<01:31, 3807262.96it/s]
+[!]   7%|7         | 26738688/375042383 [00:07<01:31, 3816348.91it/s]
+[!]   7%|7         | 27131904/375042383 [00:07<01:31, 3792864.03it/s]
+[!]   7%|7         | 27525120/375042383 [00:07<01:31, 3798066.27it/s]
+[!]   7%|7         | 27918336/375042383 [00:07<01:30, 3814996.92it/s]
+[!]   8%|7         | 28311552/375042383 [00:07<01:30, 3822603.74it/s]
+[!]   8%|7         | 28704768/375042383 [00:07<01:30, 3822817.24it/s]
+[!]   8%|7         | 29097984/375042383 [00:07<01:31, 3797866.54it/s]
+[!]   8%|7         | 29491200/375042383 [00:07<01:30, 3803730.45it/s]
+[!]   8%|7         | 29884416/375042383 [00:07<01:30, 3807816.97it/s]
+[!]   8%|8         | 30277632/375042383 [00:07<01:30, 3821867.53it/s]
+[!]   8%|8         | 30670848/375042383 [00:08<01:30, 3797375.57it/s]
+[!]   8%|8         | 31064064/375042383 [00:08<01:30, 3797742.05it/s]
+[!]   8%|8         | 31457280/375042383 [00:08<01:30, 3807581.45it/s]
+[!]   8%|8         | 31850496/375042383 [00:08<01:29, 3821709.41it/s]
+[!]   9%|8         | 32243712/375042383 [00:08<01:29, 3818821.85it/s]
+[!]   9%|8         | 32636928/375042383 [00:08<01:30, 3785241.01it/s]
+[!]   9%|8         | 33030144/375042383 [00:08<01:30, 3794903.61it/s]
+[!]   9%|8         | 33423360/375042383 [00:08<01:29, 3818509.49it/s]
+[!]   9%|9         | 33816576/375042383 [00:08<01:29, 3820486.27it/s]
+[!]   9%|9         | 34209792/375042383 [00:09<01:29, 3825205.95it/s]
+[!]   9%|9         | 34603008/375042383 [00:09<01:29, 3797716.01it/s]
+[!]   9%|9         | 34996224/375042383 [00:09<01:29, 3786906.11it/s]
+[!]   9%|9         | 35389440/375042383 [00:09<01:29, 3785118.64it/s]
+[!]  10%|9         | 35782656/375042383 [00:09<01:29, 3794783.46it/s]
+[!]  10%|9         | 36175872/375042383 [00:09<01:28, 3812704.26it/s]
+[!]  10%|9         | 36569088/375042383 [00:09<01:28, 3814404.09it/s]
+[!]  10%|9         | 36962304/375042383 [00:09<01:29, 3781678.71it/s]
+[!]  10%|9         | 37355520/375042383 [00:09<01:29, 3789978.18it/s]
+[!]  10%|#         | 37748736/375042383 [00:09<01:28, 3798114.62it/s]
+[!]  10%|#         | 38141952/375042383 [00:10<01:28, 3813398.30it/s]
+[!]  10%|#         | 38535168/375042383 [00:10<01:28, 3810424.36it/s]
+[!]  10%|#         | 38928384/375042383 [00:10<01:28, 3792592.33it/s]
+[!]  10%|#         | 39321600/375042383 [00:10<01:33, 3597557.94it/s]
+[!]  11%|#         | 39714816/375042383 [00:10<01:31, 3661359.66it/s]
+[!]  11%|#         | 40108032/375042383 [00:10<01:30, 3706784.35it/s]
+[!]  11%|#         | 40501248/375042383 [00:10<01:29, 3724128.36it/s]
+[!]  11%|#         | 40894464/375042383 [00:10<01:28, 3760778.21it/s]
+[!]  11%|#1        | 41287680/375042383 [00:10<01:28, 3779773.06it/s]
+[!]  11%|#1        | 41680896/375042383 [00:11<01:27, 3793314.90it/s]
+[!]  11%|#1        | 42074112/375042383 [00:11<01:28, 3774297.60it/s]
+[!]  11%|#1        | 42467328/375042383 [00:11<01:27, 3786665.26it/s]
+[!]  11%|#1        | 42860544/375042383 [00:11<01:27, 3794307.45it/s]
+[!]  12%|#1        | 43253760/375042383 [00:11<01:27, 3812854.41it/s]
+[!]  12%|#1        | 43646976/375042383 [00:11<01:27, 3801150.61it/s]
+[!]  12%|#1        | 44040192/375042383 [00:11<01:26, 3807464.51it/s]
+[!]  12%|#1        | 44433408/375042383 [00:11<01:27, 3777064.81it/s]
+[!]  12%|#1        | 44826624/375042383 [00:11<01:27, 3792506.23it/s]
+[!]  12%|#2        | 45219840/375042383 [00:11<01:27, 3788448.40it/s]
+[!]  12%|#2        | 45613056/375042383 [00:12<01:26, 3805510.32it/s]
+[!]  12%|#2        | 46006272/375042383 [00:12<01:26, 3792270.20it/s]
+[!]  12%|#2        | 46399488/375042383 [00:12<01:28, 3697972.20it/s]
+[!]  12%|#2        | 46792704/375042383 [00:12<01:27, 3739588.96it/s]
+[!]  13%|#2        | 47185920/375042383 [00:12<01:26, 3775163.22it/s]
+[!]  13%|#2        | 47579136/375042383 [00:12<01:26, 3791660.82it/s]
+[!]  13%|#2        | 47972352/375042383 [00:12<01:26, 3802361.35it/s]
+[!]  13%|#2        | 48365568/375042383 [00:12<01:26, 3789270.85it/s]
+[!]  13%|#3        | 48758784/375042383 [00:12<01:26, 3787043.37it/s]
+[!]  13%|#3        | 49152000/375042383 [00:12<01:25, 3807698.34it/s]
+[!]  13%|#3        | 49545216/375042383 [00:13<01:25, 3809200.22it/s]
+[!]  13%|#3        | 49938432/375042383 [00:13<01:25, 3818992.21it/s]
+[!]  13%|#3        | 50331648/375042383 [00:13<01:25, 3786069.86it/s]
+[!]  14%|#3        | 50724864/375042383 [00:13<01:25, 3788171.64it/s]
+[!]  14%|#3        | 51118080/375042383 [00:13<01:24, 3822536.95it/s]
+[!]  14%|#3        | 51511296/375042383 [00:13<01:24, 3821059.38it/s]
+[!]  14%|#3        | 51904512/375042383 [00:13<01:24, 3835253.34it/s]
+[!]  14%|#3        | 52297728/375042383 [00:13<01:25, 3795682.75it/s]
+[!]  14%|#4        | 52690944/375042383 [00:13<01:24, 3797018.19it/s]
+[!]  14%|#4        | 53084160/375042383 [00:14<01:24, 3817856.45it/s]
+[!]  14%|#4        | 53477376/375042383 [00:14<01:24, 3816355.86it/s]
+[!]  14%|#4        | 53870592/375042383 [00:14<01:24, 3820747.23it/s]
+[!]  14%|#4        | 54263808/375042383 [00:14<01:24, 3784193.11it/s]
+[!]  15%|#4        | 54657024/375042383 [00:14<01:24, 3803661.31it/s]
+[!]  15%|#4        | 55050240/375042383 [00:14<01:23, 3814264.82it/s]
+[!]  15%|#4        | 55443456/375042383 [00:14<01:23, 3813599.59it/s]
+[!]  15%|#4        | 55836672/375042383 [00:14<01:23, 3815995.25it/s]
+[!]  15%|#4        | 56229888/375042383 [00:14<01:24, 3784786.43it/s]
+[!]  15%|#5        | 56623104/375042383 [00:14<01:23, 3798645.15it/s]
+[!]  15%|#5        | 57016320/375042383 [00:15<01:23, 3802856.10it/s]
+[!]  15%|#5        | 57409536/375042383 [00:15<01:23, 3819758.08it/s]
+[!]  15%|#5        | 57802752/375042383 [00:15<01:23, 3790290.83it/s]
+[!]  16%|#5        | 58195968/375042383 [00:15<01:23, 3789296.82it/s]
+[!]  16%|#5        | 58589184/375042383 [00:15<01:23, 3798181.33it/s]
+[!]  16%|#5        | 58982400/375042383 [00:15<01:23, 3806287.58it/s]
+[!]  16%|#5        | 59375616/375042383 [00:15<01:22, 3805870.71it/s]
+[!]  16%|#5        | 59768832/375042383 [00:15<01:23, 3782966.60it/s]
+[!]  16%|#6        | 60162048/375042383 [00:15<01:23, 3787326.60it/s]
+[!]  16%|#6        | 60555264/375042383 [00:15<01:22, 3799852.80it/s]
+[!]  16%|#6        | 60948480/375042383 [00:16<01:22, 3813566.21it/s]
+[!]  16%|#6        | 61341696/375042383 [00:16<01:22, 3819367.92it/s]
+[!]  16%|#6        | 61734912/375042383 [00:16<01:22, 3778575.74it/s]
+[!]  17%|#6        | 62128128/375042383 [00:16<01:22, 3800803.29it/s]
+[!]  17%|#6        | 62521344/375042383 [00:16<01:21, 3815904.24it/s]
+[!]  17%|#6        | 62914560/375042383 [00:16<01:21, 3815686.57it/s]
+[!]  17%|#6        | 63307776/375042383 [00:16<01:21, 3820681.18it/s]
+[!]  17%|#6        | 63700992/375042383 [00:16<01:22, 3788855.18it/s]
+[!]  17%|#7        | 64094208/375042383 [00:16<01:21, 3803291.10it/s]
+[!]  17%|#7        | 64487424/375042383 [00:17<01:21, 3806894.42it/s]
+[!]  17%|#7        | 64880640/375042383 [00:17<01:21, 3821817.28it/s]
+[!]  17%|#7        | 65273856/375042383 [00:17<01:21, 3812916.58it/s]
+[!]  18%|#7        | 65667072/375042383 [00:17<01:21, 3796678.61it/s]
+[!]  18%|#7        | 66060288/375042383 [00:17<01:21, 3800448.72it/s]
+[!]  18%|#7        | 66453504/375042383 [00:17<01:21, 3805103.33it/s]
+[!]  18%|#7        | 66846720/375042383 [00:17<01:20, 3823186.51it/s]
+[!]  18%|#7        | 67239936/375042383 [00:17<01:20, 3812267.78it/s]
+[!]  18%|#8        | 67633152/375042383 [00:17<01:20, 3804306.27it/s]
+[!]  18%|#8        | 68026368/375042383 [00:17<01:20, 3808672.04it/s]
+[!]  18%|#8        | 68419584/375042383 [00:18<01:20, 3805991.83it/s]
+[!]  18%|#8        | 68812800/375042383 [00:18<01:20, 3789729.04it/s]
+[!]  18%|#8        | 69206016/375042383 [00:18<01:20, 3819553.10it/s]
+[!]  19%|#8        | 69599232/375042383 [00:18<01:20, 3807898.92it/s]
+[!]  19%|#8        | 69992448/375042383 [00:18<01:19, 3822050.19it/s]
+[!]  19%|#8        | 70385664/375042383 [00:18<01:19, 3808714.76it/s]
+[!]  19%|#8        | 70778880/375042383 [00:18<01:20, 3794093.88it/s]
+[!]  19%|#8        | 71172096/375042383 [00:18<01:20, 3795297.09it/s]
+[!]  19%|#9        | 71565312/375042383 [00:18<01:19, 3808009.28it/s]
+[!]  19%|#9        | 71958528/375042383 [00:18<01:19, 3817279.30it/s]
+[!]  19%|#9        | 72351744/375042383 [00:19<01:19, 3814141.29it/s]
+[!]  19%|#9        | 72744960/375042383 [00:19<01:19, 3785419.21it/s]
+[!]  20%|#9        | 73138176/375042383 [00:19<01:19, 3797459.05it/s]
+[!]  20%|#9        | 73531392/375042383 [00:19<01:19, 3797863.46it/s]
+[!]  20%|#9        | 73924608/375042383 [00:19<01:19, 3811336.16it/s]
+[!]  20%|#9        | 74317824/375042383 [00:19<01:18, 3808492.08it/s]
+[!]  20%|#9        | 74711040/375042383 [00:19<01:19, 3778603.51it/s]
+[!]  20%|##        | 75104256/375042383 [00:19<01:18, 3796701.86it/s]
+[!]  20%|##        | 75497472/375042383 [00:19<01:18, 3806991.83it/s]
+[!]  20%|##        | 75890688/375042383 [00:20<01:18, 3812995.27it/s]
+[!]  20%|##        | 76283904/375042383 [00:20<01:19, 3779279.80it/s]
+[!]  20%|##        | 76677120/375042383 [00:20<01:18, 3792935.72it/s]
+[!]  21%|##        | 77070336/375042383 [00:20<01:18, 3800069.86it/s]
+[!]  21%|##        | 77463552/375042383 [00:20<01:19, 3756416.18it/s]
+[!]  21%|##        | 77856768/375042383 [00:20<01:18, 3773219.42it/s]
+[!]  21%|##        | 78249984/375042383 [00:20<01:18, 3791550.63it/s]
+[!]  21%|##        | 78643200/375042383 [00:20<01:18, 3764788.41it/s]
+[!]  21%|##1       | 79036416/375042383 [00:20<01:18, 3789036.73it/s]
+[!]  21%|##1       | 79429632/375042383 [00:20<01:17, 3811924.23it/s]
+[!]  21%|##1       | 79822848/375042383 [00:21<01:17, 3801486.30it/s]
+[!]  21%|##1       | 80216064/375042383 [00:21<01:17, 3809967.03it/s]
+[!]  21%|##1       | 80609280/375042383 [00:21<01:17, 3793033.95it/s]
+[!]  22%|##1       | 81002496/375042383 [00:21<01:17, 3806999.34it/s]
+[!]  22%|##1       | 81395712/375042383 [00:21<01:16, 3815543.73it/s]
+[!]  22%|##1       | 81788928/375042383 [00:21<01:16, 3819505.90it/s]
+[!]  22%|##1       | 82182144/375042383 [00:21<01:16, 3804624.70it/s]
+[!]  22%|##2       | 82575360/375042383 [00:21<01:16, 3811811.06it/s]
+[!]  22%|##2       | 82968576/375042383 [00:21<01:17, 3791486.98it/s]
+[!]  22%|##2       | 83361792/375042383 [00:21<01:16, 3810126.05it/s]
+[!]  22%|##2       | 83755008/375042383 [00:22<01:16, 3817362.63it/s]
+[!]  22%|##2       | 84148224/375042383 [00:22<01:16, 3813106.92it/s]
+[!]  23%|##2       | 84541440/375042383 [00:22<01:16, 3808494.43it/s]
+[!]  23%|##2       | 84934656/375042383 [00:22<01:16, 3800571.33it/s]
+[!]  23%|##2       | 85327872/375042383 [00:22<01:16, 3805400.08it/s]
+[!]  23%|##2       | 85721088/375042383 [00:22<01:15, 3817560.51it/s]
+[!]  23%|##2       | 86114304/375042383 [00:22<01:15, 3815656.21it/s]
+[!]  23%|##3       | 86507520/375042383 [00:22<01:16, 3792764.44it/s]
+[!]  23%|##3       | 86900736/375042383 [00:22<01:15, 3807761.14it/s]
+[!]  23%|##3       | 87293952/375042383 [00:23<01:16, 3777759.72it/s]
+[!]  23%|##3       | 87687168/375042383 [00:23<01:15, 3784304.77it/s]
+[!]  23%|##3       | 88080384/375042383 [00:23<01:15, 3803779.75it/s]
+[!]  24%|##3       | 88473600/375042383 [00:23<01:15, 3807825.18it/s]
+[!]  24%|##3       | 88866816/375042383 [00:23<01:15, 3777468.99it/s]
+[!]  24%|##3       | 89260032/375042383 [00:23<01:15, 3770643.28it/s]
+[!]  24%|##3       | 89653248/375042383 [00:23<01:15, 3791650.52it/s]
+[!]  24%|##4       | 90046464/375042383 [00:23<01:15, 3795848.42it/s]
+[!]  24%|##4       | 90439680/375042383 [00:23<01:14, 3807073.85it/s]
+[!]  24%|##4       | 90832896/375042383 [00:23<01:15, 3768245.00it/s]
+[!]  24%|##4       | 91226112/375042383 [00:24<01:15, 3778782.20it/s]
+[!]  24%|##4       | 91619328/375042383 [00:24<01:14, 3792019.80it/s]
+[!]  25%|##4       | 92012544/375042383 [00:24<01:14, 3796356.52it/s]
+[!]  25%|##4       | 92405760/375042383 [00:24<01:14, 3794517.81it/s]
+[!]  25%|##4       | 92798976/375042383 [00:24<01:14, 3796750.03it/s]
+[!]  25%|##4       | 93192192/375042383 [00:24<01:14, 3771105.00it/s]
+[!]  25%|##4       | 93585408/375042383 [00:24<01:14, 3795396.30it/s]
+[!]  25%|##5       | 93978624/375042383 [00:24<01:13, 3809995.20it/s]
+[!]  25%|##5       | 94371840/375042383 [00:24<01:13, 3810082.71it/s]
+[!]  25%|##5       | 94765056/375042383 [00:24<01:14, 3773739.76it/s]
+[!]  25%|##5       | 95158272/375042383 [00:25<01:13, 3790438.63it/s]
+[!]  25%|##5       | 95551488/375042383 [00:25<01:13, 3816803.43it/s]
+[!]  26%|##5       | 95944704/375042383 [00:25<01:13, 3821770.48it/s]
+[!]  26%|##5       | 96337920/375042383 [00:25<01:13, 3814786.29it/s]
+[!]  26%|##5       | 96731136/375042383 [00:25<01:13, 3783188.30it/s]
+[!]  26%|##5       | 97124352/375042383 [00:25<01:13, 3800030.16it/s]
+[!]  26%|##6       | 97517568/375042383 [00:25<01:12, 3815056.87it/s]
+[!]  26%|##6       | 97910784/375042383 [00:25<01:12, 3802656.31it/s]
+[!]  26%|##6       | 98304000/375042383 [00:25<01:12, 3814877.85it/s]
+[!]  26%|##6       | 98697216/375042383 [00:26<01:12, 3790834.93it/s]
+[!]  26%|##6       | 99090432/375042383 [00:26<01:12, 3801085.98it/s]
+[!]  27%|##6       | 99483648/375042383 [00:26<01:12, 3815118.54it/s]
+[!]  27%|##6       | 99876864/375042383 [00:26<01:12, 3810186.75it/s]
+[!]  27%|##6       | 100270080/375042383 [00:26<01:12, 3805875.05it/s]
+[!]  27%|##6       | 100663296/375042383 [00:26<01:56, 2359477.36it/s]
+[!]  27%|##6       | 101056512/375042383 [00:26<01:42, 2664324.19it/s]
+[!]  27%|##7       | 101449728/375042383 [00:26<01:33, 2920368.55it/s]
+[!]  27%|##7       | 101842944/375042383 [00:27<01:26, 3141897.25it/s]
+[!]  27%|##7       | 102236160/375042383 [00:27<01:22, 3320524.96it/s]
+[!]  27%|##7       | 102629376/375042383 [00:27<01:19, 3429591.68it/s]
+[!]  27%|##7       | 103022592/375042383 [00:27<01:16, 3533609.19it/s]
+[!]  28%|##7       | 103415808/375042383 [00:27<01:15, 3591372.87it/s]
+[!]  28%|##7       | 103809024/375042383 [00:27<01:13, 3668740.53it/s]
+[!]  28%|##7       | 104202240/375042383 [00:27<01:13, 3706918.17it/s]
+[!]  28%|##7       | 104595456/375042383 [00:27<01:12, 3744799.28it/s]
+[!]  28%|##7       | 104988672/375042383 [00:27<01:11, 3781730.25it/s]
+[!]  28%|##8       | 105381888/375042383 [00:27<01:11, 3757150.24it/s]
+[!]  28%|##8       | 105775104/375042383 [00:28<01:11, 3780222.47it/s]
+[!]  28%|##8       | 106168320/375042383 [00:28<01:11, 3785750.16it/s]
+[!]  28%|##8       | 106561536/375042383 [00:28<01:10, 3806321.85it/s]
+[!]  29%|##8       | 106954752/375042383 [00:28<01:10, 3776754.94it/s]
+[!]  29%|##8       | 107347968/375042383 [00:28<01:10, 3799784.01it/s]
+[!]  29%|##8       | 107741184/375042383 [00:28<01:10, 3812864.42it/s]
+[!]  29%|##8       | 108134400/375042383 [00:28<01:10, 3811105.08it/s]
+[!]  29%|##8       | 108527616/375042383 [00:28<01:09, 3813032.26it/s]
+[!]  29%|##9       | 108920832/375042383 [00:28<01:10, 3780958.35it/s]
+[!]  29%|##9       | 109314048/375042383 [00:29<01:09, 3804345.59it/s]
+[!]  29%|##9       | 109707264/375042383 [00:29<01:09, 3802353.68it/s]
+[!]  29%|##9       | 110100480/375042383 [00:29<01:09, 3825753.02it/s]
+[!]  29%|##9       | 110493696/375042383 [00:29<01:09, 3827351.52it/s]
+[!]  30%|##9       | 110886912/375042383 [00:29<01:09, 3796307.66it/s]
+[!]  30%|##9       | 111280128/375042383 [00:29<01:09, 3810490.12it/s]
+[!]  30%|##9       | 111673344/375042383 [00:29<01:09, 3811816.21it/s]
+[!]  30%|##9       | 112066560/375042383 [00:29<01:08, 3821570.82it/s]
+[!]  30%|##9       | 112459776/375042383 [00:29<01:09, 3787629.54it/s]
+[!]  30%|###       | 112852992/375042383 [00:29<01:09, 3797771.90it/s]
+[!]  30%|###       | 113246208/375042383 [00:30<01:09, 3793689.81it/s]
+[!]  30%|###       | 113639424/375042383 [00:30<01:08, 3814981.38it/s]
+[!]  30%|###       | 114032640/375042383 [00:30<01:08, 3825838.26it/s]
+[!]  31%|###       | 114425856/375042383 [00:30<01:08, 3781627.26it/s]
+[!]  31%|###       | 114819072/375042383 [00:30<01:08, 3796049.95it/s]
+[!]  31%|###       | 115212288/375042383 [00:30<01:08, 3785647.29it/s]
+[!]  31%|###       | 115605504/375042383 [00:30<01:12, 3595211.11it/s]
+[!]  31%|###       | 115998720/375042383 [00:30<01:11, 3644806.38it/s]
+[!]  31%|###1      | 116391936/375042383 [00:30<01:09, 3705291.64it/s]
+[!]  31%|###1      | 116785152/375042383 [00:30<01:09, 3735218.03it/s]
+[!]  31%|###1      | 117178368/375042383 [00:31<01:08, 3765584.80it/s]
+[!]  31%|###1      | 117571584/375042383 [00:31<01:08, 3770914.40it/s]
+[!]  31%|###1      | 117964800/375042383 [00:31<01:08, 3755218.48it/s]
+[!]  32%|###1      | 118358016/375042383 [00:31<01:07, 3782753.59it/s]
+[!]  32%|###1      | 118751232/375042383 [00:31<01:07, 3799069.32it/s]
+[!]  32%|###1      | 119144448/375042383 [00:31<01:07, 3796645.25it/s]
+[!]  32%|###1      | 119537664/375042383 [00:31<01:07, 3805120.68it/s]
+[!]  32%|###1      | 119930880/375042383 [00:31<01:07, 3762499.43it/s]
+[!]  32%|###2      | 120324096/375042383 [00:31<01:07, 3789269.53it/s]
+[!]  32%|###2      | 120717312/375042383 [00:32<01:07, 3792044.78it/s]
+[!]  32%|###2      | 121110528/375042383 [00:32<01:06, 3811497.83it/s]
+[!]  32%|###2      | 121503744/375042383 [00:32<01:06, 3787704.52it/s]
+[!]  33%|###2      | 121896960/375042383 [00:32<01:06, 3800994.01it/s]
+[!]  33%|###2      | 122290176/375042383 [00:32<01:06, 3812577.26it/s]
+[!]  33%|###2      | 122683392/375042383 [00:32<01:06, 3812386.83it/s]
+[!]  33%|###2      | 123076608/375042383 [00:32<01:05, 3819762.87it/s]
+[!]  33%|###2      | 123469824/375042383 [00:32<01:06, 3780033.73it/s]
+[!]  33%|###3      | 123863040/375042383 [00:32<01:06, 3800519.06it/s]
+[!]  33%|###3      | 124256256/375042383 [00:32<01:05, 3806188.03it/s]
+[!]  33%|###3      | 124649472/375042383 [00:33<01:05, 3812214.02it/s]
+[!]  33%|###3      | 125042688/375042383 [00:33<01:05, 3816236.93it/s]
+[!]  33%|###3      | 125435904/375042383 [00:33<01:05, 3784898.13it/s]
+[!]  34%|###3      | 125829120/375042383 [00:33<01:05, 3813276.53it/s]
+[!]  34%|###3      | 126222336/375042383 [00:33<01:05, 3797101.51it/s]
+[!]  34%|###3      | 126615552/375042383 [00:33<01:04, 3824600.80it/s]
+[!]  34%|###3      | 127008768/375042383 [00:33<01:05, 3807481.50it/s]
+[!]  34%|###3      | 127401984/375042383 [00:33<01:05, 3788375.23it/s]
+[!]  34%|###4      | 127795200/375042383 [00:33<01:04, 3808585.33it/s]
+[!]  34%|###4      | 128188416/375042383 [00:33<01:04, 3817803.78it/s]
+[!]  34%|###4      | 128581632/375042383 [00:34<01:04, 3820135.07it/s]
+[!]  34%|###4      | 128974848/375042383 [00:34<01:05, 3784119.13it/s]
+[!]  34%|###4      | 129368064/375042383 [00:34<01:04, 3806492.79it/s]
+[!]  35%|###4      | 129761280/375042383 [00:34<01:04, 3808498.06it/s]
+[!]  35%|###4      | 130154496/375042383 [00:34<01:03, 3827225.39it/s]
+[!]  35%|###4      | 130547712/375042383 [00:34<01:03, 3824885.66it/s]
+[!]  35%|###4      | 130940928/375042383 [00:34<01:04, 3777515.16it/s]
+[!]  35%|###5      | 131334144/375042383 [00:34<01:04, 3800446.11it/s]
+[!]  35%|###5      | 131727360/375042383 [00:34<01:03, 3805586.15it/s]
+[!]  35%|###5      | 132120576/375042383 [00:35<01:03, 3820097.69it/s]
+[!]  35%|###5      | 132513792/375042383 [00:35<01:03, 3796904.81it/s]
+[!]  35%|###5      | 132907008/375042383 [00:35<01:03, 3793023.92it/s]
+[!]  36%|###5      | 133300224/375042383 [00:35<01:03, 3801038.29it/s]
+[!]  36%|###5      | 133693440/375042383 [00:35<01:03, 3810473.23it/s]
+[!]  36%|###5      | 134086656/375042383 [00:35<01:02, 3829389.49it/s]
+[!]  36%|###5      | 134479872/375042383 [00:35<01:03, 3796470.47it/s]
+[!]  36%|###5      | 134873088/375042383 [00:35<01:03, 3787750.30it/s]
+[!]  36%|###6      | 135266304/375042383 [00:35<01:03, 3805104.12it/s]
+[!]  36%|###6      | 135659520/375042383 [00:35<01:02, 3815214.12it/s]
+[!]  36%|###6      | 136052736/375042383 [00:36<01:02, 3818370.12it/s]
+[!]  36%|###6      | 136445952/375042383 [00:36<01:02, 3811877.47it/s]
+[!]  36%|###6      | 136839168/375042383 [00:36<01:03, 3773777.47it/s]
+[!]  37%|###6      | 137232384/375042383 [00:36<01:02, 3798151.31it/s]
+[!]  37%|###6      | 137625600/375042383 [00:36<01:02, 3798991.19it/s]
+[!]  37%|###6      | 138018816/375042383 [00:36<01:02, 3799350.88it/s]
+[!]  37%|###6      | 138412032/375042383 [00:36<01:02, 3815451.22it/s]
+[!]  37%|###7      | 138805248/375042383 [00:36<01:03, 3719323.60it/s]
+[!]  37%|###7      | 139198464/375042383 [00:36<01:02, 3759507.98it/s]
+[!]  37%|###7      | 139591680/375042383 [00:37<01:02, 3737764.40it/s]
+[!]  37%|###7      | 139984896/375042383 [00:37<01:02, 3750620.01it/s]
+[!]  37%|###7      | 140378112/375042383 [00:37<01:02, 3781355.23it/s]
+[!]  38%|###7      | 140771328/375042383 [00:37<01:01, 3784689.32it/s]
+[!]  38%|###7      | 141164544/375042383 [00:37<01:01, 3805557.94it/s]
+[!]  38%|###7      | 141557760/375042383 [00:37<01:02, 3762041.65it/s]
+[!]  38%|###7      | 141950976/375042383 [00:37<01:01, 3791793.02it/s]
+[!]  38%|###7      | 142344192/375042383 [00:37<01:01, 3799668.65it/s]
+[!]  38%|###8      | 142737408/375042383 [00:37<01:01, 3807016.64it/s]
+[!]  38%|###8      | 143130624/375042383 [00:37<01:00, 3803184.16it/s]
+[!]  38%|###8      | 143523840/375042383 [00:38<01:00, 3807502.29it/s]
+[!]  38%|###8      | 143917056/375042383 [00:38<01:00, 3821642.96it/s]
+[!]  38%|###8      | 144310272/375042383 [00:38<01:00, 3790991.03it/s]
+[!]  39%|###8      | 144703488/375042383 [00:38<01:00, 3795060.85it/s]
+[!]  39%|###8      | 145096704/375042383 [00:38<01:00, 3801820.44it/s]
+[!]  39%|###8      | 145489920/375042383 [00:38<01:00, 3806558.59it/s]
+[!]  39%|###8      | 145883136/375042383 [00:38<01:00, 3798833.12it/s]
+[!]  39%|###9      | 146276352/375042383 [00:38<01:00, 3771606.38it/s]
+[!]  39%|###9      | 146669568/375042383 [00:38<01:00, 3789098.90it/s]
+[!]  39%|###9      | 147062784/375042383 [00:39<01:37, 2343224.74it/s]
+[!]  39%|###9      | 147456000/375042383 [00:39<01:26, 2644966.23it/s]
+[!]  39%|###9      | 147849216/375042383 [00:39<01:17, 2913453.44it/s]
+[!]  40%|###9      | 148209664/375042383 [00:39<01:14, 3054659.99it/s]
+[!]  40%|###9      | 148602880/375042383 [00:39<01:09, 3261924.46it/s]
+[!]  40%|###9      | 148996096/375042383 [00:39<01:06, 3421824.47it/s]
+[!]  40%|###9      | 149389312/375042383 [00:39<01:03, 3532651.39it/s]
+[!]  40%|###9      | 149782528/375042383 [00:39<01:02, 3619069.17it/s]
+[!]  40%|####      | 150175744/375042383 [00:40<01:01, 3651729.26it/s]
+[!]  40%|####      | 150568960/375042383 [00:40<01:00, 3709018.94it/s]
+[!]  40%|####      | 150962176/375042383 [00:40<01:00, 3730669.25it/s]
+[!]  40%|####      | 151355392/375042383 [00:40<00:59, 3767002.06it/s]
+[!]  40%|####      | 151748608/375042383 [00:40<00:58, 3787088.22it/s]
+[!]  41%|####      | 152141824/375042383 [00:40<00:59, 3774353.38it/s]
+[!]  41%|####      | 152535040/375042383 [00:40<00:58, 3776332.25it/s]
+[!]  41%|####      | 152928256/375042383 [00:40<00:58, 3788627.63it/s]
+[!]  41%|####      | 153321472/375042383 [00:40<00:58, 3804858.59it/s]
+[!]  41%|####      | 153714688/375042383 [00:40<00:58, 3794264.87it/s]
+[!]  41%|####1     | 154107904/375042383 [00:41<00:58, 3807072.42it/s]
+[!]  41%|####1     | 154501120/375042383 [00:41<00:58, 3801090.03it/s]
+[!]  41%|####1     | 154894336/375042383 [00:41<00:57, 3817551.72it/s]
+[!]  41%|####1     | 155287552/375042383 [00:41<00:58, 3775853.36it/s]
+[!]  42%|####1     | 155680768/375042383 [00:41<00:57, 3788970.38it/s]
+[!]  42%|####1     | 156073984/375042383 [00:41<00:57, 3798986.00it/s]
+[!]  42%|####1     | 156467200/375042383 [00:41<00:57, 3807462.38it/s]
+[!]  42%|####1     | 156860416/375042383 [00:41<00:57, 3821617.60it/s]
+[!]  42%|####1     | 157253632/375042383 [00:41<00:57, 3781632.45it/s]
+[!]  42%|####2     | 157646848/375042383 [00:41<00:57, 3795052.66it/s]
+[!]  42%|####2     | 158040064/375042383 [00:42<00:57, 3803608.63it/s]
+[!]  42%|####2     | 158433280/375042383 [00:42<00:57, 3795633.11it/s]
+[!]  42%|####2     | 158826496/375042383 [00:42<00:56, 3811136.93it/s]
+[!]  42%|####2     | 159219712/375042383 [00:42<00:57, 3770683.89it/s]
+[!]  43%|####2     | 159612928/375042383 [00:42<00:56, 3791859.73it/s]
+[!]  43%|####2     | 160006144/375042383 [00:42<00:56, 3801686.23it/s]
+[!]  43%|####2     | 160399360/375042383 [00:42<00:56, 3815094.33it/s]
+[!]  43%|####2     | 160792576/375042383 [00:42<00:56, 3780021.14it/s]
+[!]  43%|####2     | 161185792/375042383 [00:42<00:56, 3785556.68it/s]
+[!]  43%|####3     | 161579008/375042383 [00:43<00:56, 3811465.25it/s]
+[!]  43%|####3     | 161972224/375042383 [00:43<00:55, 3816599.07it/s]
+[!]  43%|####3     | 162365440/375042383 [00:43<00:55, 3811133.14it/s]
+[!]  43%|####3     | 162758656/375042383 [00:43<00:55, 3800985.46it/s]
+[!]  44%|####3     | 163151872/375042383 [00:43<00:55, 3786772.07it/s]
+[!]  44%|####3     | 163545088/375042383 [00:43<00:55, 3801319.45it/s]
+[!]  44%|####3     | 163938304/375042383 [00:43<01:04, 3253962.30it/s]
+[!]  44%|####3     | 164331520/375042383 [00:43<01:01, 3411143.70it/s]
+[!]  44%|####3     | 164724736/375042383 [00:43<00:59, 3520657.49it/s]
+[!]  44%|####4     | 165117952/375042383 [00:43<00:57, 3619993.41it/s]
+[!]  44%|####4     | 165511168/375042383 [00:44<00:56, 3683002.82it/s]
+[!]  44%|####4     | 165904384/375042383 [00:44<00:56, 3682961.12it/s]
+[!]  44%|####4     | 166297600/375042383 [00:44<00:56, 3720195.89it/s]
+[!]  44%|####4     | 166690816/375042383 [00:44<00:55, 3748883.09it/s]
+[!]  45%|####4     | 167084032/375042383 [00:44<00:55, 3769179.70it/s]
+[!]  45%|####4     | 167477248/375042383 [00:44<00:54, 3776913.67it/s]
+[!]  45%|####4     | 167870464/375042383 [00:44<00:55, 3763037.69it/s]
+[!]  45%|####4     | 168263680/375042383 [00:44<00:54, 3782202.91it/s]
+[!]  45%|####4     | 168656896/375042383 [00:44<00:56, 3628594.71it/s]
+[!]  45%|####5     | 169082880/375042383 [00:45<00:54, 3795943.25it/s]
+[!]  45%|####5     | 169476096/375042383 [00:45<00:54, 3800749.81it/s]
+[!]  45%|####5     | 169869312/375042383 [00:45<00:53, 3807782.32it/s]
+[!]  45%|####5     | 170262528/375042383 [00:45<00:53, 3808231.38it/s]
+[!]  46%|####5     | 170655744/375042383 [00:45<00:53, 3804740.75it/s]
+[!]  46%|####5     | 171048960/375042383 [00:45<00:54, 3772369.88it/s]
+[!]  46%|####5     | 171442176/375042383 [00:45<00:53, 3786649.12it/s]
+[!]  46%|####5     | 171835392/375042383 [00:45<00:53, 3783437.34it/s]
+[!]  46%|####5     | 172228608/375042383 [00:45<00:53, 3787856.65it/s]
+[!]  46%|####6     | 172621824/375042383 [00:45<00:53, 3774723.19it/s]
+[!]  46%|####6     | 173015040/375042383 [00:46<00:53, 3783500.42it/s]
+[!]  46%|####6     | 173408256/375042383 [00:46<00:53, 3799155.57it/s]
+[!]  46%|####6     | 173801472/375042383 [00:46<00:52, 3812358.71it/s]
+[!]  46%|####6     | 174194688/375042383 [00:46<00:52, 3802998.16it/s]
+[!]  47%|####6     | 174587904/375042383 [00:46<00:53, 3781123.61it/s]
+[!]  47%|####6     | 174981120/375042383 [00:46<00:52, 3787811.59it/s]
+[!]  47%|####6     | 175374336/375042383 [00:46<00:52, 3810481.05it/s]
+[!]  47%|####6     | 175767552/375042383 [00:46<00:52, 3812626.59it/s]
+[!]  47%|####6     | 176160768/375042383 [00:46<00:52, 3780550.42it/s]
+[!]  47%|####7     | 176553984/375042383 [00:47<00:52, 3784773.49it/s]
+[!]  47%|####7     | 176947200/375042383 [00:47<00:52, 3795305.32it/s]
+[!]  47%|####7     | 177340416/375042383 [00:47<00:51, 3811457.54it/s]
+[!]  47%|####7     | 177733632/375042383 [00:47<00:51, 3817375.40it/s]
+[!]  47%|####7     | 178126848/375042383 [00:47<00:51, 3790205.23it/s]
+[!]  48%|####7     | 178520064/375042383 [00:47<00:51, 3802556.51it/s]
+[!]  48%|####7     | 178913280/375042383 [00:47<00:51, 3807881.99it/s]
+[!]  48%|####7     | 179306496/375042383 [00:47<00:51, 3819765.04it/s]
+[!]  48%|####7     | 179699712/375042383 [00:47<00:51, 3813210.18it/s]
+[!]  48%|####8     | 180092928/375042383 [00:47<00:51, 3785360.94it/s]
+[!]  48%|####8     | 180486144/375042383 [00:48<00:51, 3809039.46it/s]
+[!]  48%|####8     | 180879360/375042383 [00:48<00:50, 3816259.94it/s]
+[!]  48%|####8     | 181272576/375042383 [00:48<00:50, 3821859.24it/s]
+[!]  48%|####8     | 181665792/375042383 [00:48<00:50, 3815902.07it/s]
+[!]  49%|####8     | 182059008/375042383 [00:48<00:50, 3793494.57it/s]
+[!]  49%|####8     | 182452224/375042383 [00:48<00:50, 3794927.07it/s]
+[!]  49%|####8     | 182845440/375042383 [00:48<00:50, 3801584.49it/s]
+[!]  49%|####8     | 183238656/375042383 [00:48<00:50, 3809325.91it/s]
+[!]  49%|####8     | 183631872/375042383 [00:48<00:50, 3794277.44it/s]
+[!]  49%|####9     | 184025088/375042383 [00:48<00:50, 3813269.57it/s]
+[!]  49%|####9     | 184418304/375042383 [00:49<00:49, 3814956.33it/s]
+[!]  49%|####9     | 184811520/375042383 [00:49<00:49, 3812824.31it/s]
+[!]  49%|####9     | 185204736/375042383 [00:49<00:49, 3820049.05it/s]
+[!]  49%|####9     | 185597952/375042383 [00:49<00:49, 3807463.25it/s]
+[!]  50%|####9     | 185991168/375042383 [00:49<00:49, 3807479.08it/s]
+[!]  50%|####9     | 186384384/375042383 [00:49<00:49, 3816736.73it/s]
+[!]  50%|####9     | 186777600/375042383 [00:49<00:49, 3813804.43it/s]
+[!]  50%|####9     | 187170816/375042383 [00:49<00:49, 3807767.90it/s]
+[!]  50%|#####     | 187564032/375042383 [00:49<00:49, 3781355.42it/s]
+[!]  50%|#####     | 187957248/375042383 [00:50<00:49, 3795378.65it/s]
+[!]  50%|#####     | 188350464/375042383 [00:50<00:49, 3805335.97it/s]
+[!]  50%|#####     | 188743680/375042383 [00:50<00:49, 3801124.00it/s]
+[!]  50%|#####     | 189136896/375042383 [00:50<00:48, 3815873.58it/s]
+[!]  51%|#####     | 189530112/375042383 [00:50<00:49, 3780218.67it/s]
+[!]  51%|#####     | 189923328/375042383 [00:50<00:48, 3793223.33it/s]
+[!]  51%|#####     | 190316544/375042383 [00:50<00:48, 3811710.05it/s]
+[!]  51%|#####     | 190709760/375042383 [00:50<00:48, 3813204.87it/s]
+[!]  51%|#####     | 191102976/375042383 [00:50<00:48, 3800280.25it/s]
+[!]  51%|#####1    | 191496192/375042383 [00:50<00:48, 3781927.04it/s]
+[!]  51%|#####1    | 191889408/375042383 [00:51<00:48, 3801393.27it/s]
+[!]  51%|#####1    | 192282624/375042383 [00:51<00:47, 3816418.51it/s]
+[!]  51%|#####1    | 192675840/375042383 [00:51<00:47, 3809200.93it/s]
+[!]  51%|#####1    | 193069056/375042383 [00:51<00:48, 3770986.04it/s]
+[!]  52%|#####1    | 193462272/375042383 [00:51<00:47, 3785837.64it/s]
+[!]  52%|#####1    | 193855488/375042383 [00:51<00:47, 3801832.50it/s]
+[!]  52%|#####1    | 194248704/375042383 [00:51<00:47, 3806432.64it/s]
+[!]  52%|#####1    | 194641920/375042383 [00:51<00:47, 3813737.23it/s]
+[!]  52%|#####2    | 195035136/375042383 [00:51<00:48, 3746928.47it/s]
+[!]  52%|#####2    | 195428352/375042383 [00:51<00:47, 3756727.75it/s]
+[!]  52%|#####2    | 195821568/375042383 [00:52<00:47, 3747020.93it/s]
+[!]  52%|#####2    | 196214784/375042383 [00:52<00:47, 3768817.57it/s]
+[!]  52%|#####2    | 196608000/375042383 [00:52<00:47, 3794640.88it/s]
+[!]  53%|#####2    | 197001216/375042383 [00:52<00:46, 3806885.04it/s]
+[!]  53%|#####2    | 197394432/375042383 [00:52<00:47, 3776133.83it/s]
+[!]  53%|#####2    | 197787648/375042383 [00:52<00:46, 3777290.61it/s]
+[!]  53%|#####2    | 198180864/375042383 [00:52<00:46, 3789661.62it/s]
+[!]  53%|#####2    | 198574080/375042383 [00:52<00:46, 3803125.70it/s]
+[!]  53%|#####3    | 198967296/375042383 [00:52<00:46, 3800465.15it/s]
+[!]  53%|#####3    | 199360512/375042383 [00:53<00:46, 3771916.96it/s]
+[!]  53%|#####3    | 199753728/375042383 [00:53<00:46, 3785482.75it/s]
+[!]  53%|#####3    | 200146944/375042383 [00:53<00:46, 3793269.49it/s]
+[!]  53%|#####3    | 200540160/375042383 [00:53<00:45, 3802751.72it/s]
+[!]  54%|#####3    | 200933376/375042383 [00:53<00:45, 3787599.76it/s]
+[!]  54%|#####3    | 201326592/375042383 [00:53<00:45, 3808276.71it/s]
+[!]  54%|#####3    | 201719808/375042383 [00:53<00:45, 3809716.26it/s]
+[!]  54%|#####3    | 202113024/375042383 [00:53<00:45, 3793155.68it/s]
+[!]  54%|#####3    | 202506240/375042383 [00:53<00:45, 3802692.70it/s]
+[!]  54%|#####4    | 202899456/375042383 [00:53<00:45, 3781017.76it/s]
+[!]  54%|#####4    | 203292672/375042383 [00:54<00:45, 3804782.63it/s]
+[!]  54%|#####4    | 203685888/375042383 [00:54<00:45, 3798741.55it/s]
+[!]  54%|#####4    | 204079104/375042383 [00:54<00:44, 3804945.15it/s]
+[!]  55%|#####4    | 204472320/375042383 [00:54<00:44, 3817452.06it/s]
+[!]  55%|#####4    | 204865536/375042383 [00:54<01:12, 2354439.50it/s]
+[!]  55%|#####4    | 205258752/375042383 [00:54<01:04, 2652733.24it/s]
+[!]  55%|#####4    | 205651968/375042383 [00:54<00:57, 2922402.03it/s]
+[!]  55%|#####4    | 206045184/375042383 [00:54<00:53, 3146066.67it/s]
+[!]  55%|#####5    | 206438400/375042383 [00:55<00:50, 3310218.68it/s]
+[!]  55%|#####5    | 206831616/375042383 [00:55<00:48, 3446568.19it/s]
+[!]  55%|#####5    | 207224832/375042383 [00:55<00:47, 3532653.17it/s]
+[!]  55%|#####5    | 207618048/375042383 [00:55<00:46, 3607703.75it/s]
+[!]  55%|#####5    | 208011264/375042383 [00:55<00:45, 3680555.98it/s]
+[!]  56%|#####5    | 208404480/375042383 [00:55<00:44, 3719607.38it/s]
+[!]  56%|#####5    | 208797696/375042383 [00:55<00:44, 3746650.96it/s]
+[!]  56%|#####5    | 209190912/375042383 [00:55<00:44, 3735405.94it/s]
+[!]  56%|#####5    | 209584128/375042383 [00:55<00:44, 3751318.56it/s]
+[!]  56%|#####5    | 209977344/375042383 [00:56<00:43, 3760116.70it/s]
+[!]  56%|#####6    | 210370560/375042383 [00:56<00:43, 3790285.45it/s]
+[!]  56%|#####6    | 210763776/375042383 [00:56<00:43, 3773476.75it/s]
+[!]  56%|#####6    | 211156992/375042383 [00:56<00:43, 3779148.22it/s]
+[!]  56%|#####6    | 211550208/375042383 [00:56<00:43, 3792861.26it/s]
+[!]  57%|#####6    | 211943424/375042383 [00:56<00:42, 3807262.48it/s]
+[!]  57%|#####6    | 212336640/375042383 [00:56<00:42, 3801194.23it/s]
+[!]  57%|#####6    | 212729856/375042383 [00:56<00:42, 3800837.85it/s]
+[!]  57%|#####6    | 213123072/375042383 [00:56<00:42, 3770939.72it/s]
+[!]  57%|#####6    | 213516288/375042383 [00:56<00:42, 3789810.99it/s]
+[!]  57%|#####7    | 213909504/375042383 [00:57<00:42, 3808867.25it/s]
+[!]  57%|#####7    | 214302720/375042383 [00:57<00:42, 3813700.78it/s]
+[!]  57%|#####7    | 214695936/375042383 [00:57<00:42, 3789551.01it/s]
+[!]  57%|#####7    | 215089152/375042383 [00:57<00:42, 3786769.68it/s]
+[!]  57%|#####7    | 215482368/375042383 [00:57<00:42, 3790691.84it/s]
+[!]  58%|#####7    | 215875584/375042383 [00:57<00:41, 3803051.99it/s]
+[!]  58%|#####7    | 216268800/375042383 [00:57<00:41, 3801385.93it/s]
+[!]  58%|#####7    | 216662016/375042383 [00:57<00:41, 3782102.76it/s]
+[!]  58%|#####7    | 217055232/375042383 [00:57<00:41, 3798056.05it/s]
+[!]  58%|#####7    | 217448448/375042383 [00:57<00:41, 3799938.05it/s]
+[!]  58%|#####8    | 217841664/375042383 [00:58<00:41, 3814888.63it/s]
+[!]  58%|#####8    | 218234880/375042383 [00:58<00:41, 3817664.64it/s]
+[!]  58%|#####8    | 218628096/375042383 [00:58<00:41, 3784861.94it/s]
+[!]  58%|#####8    | 219021312/375042383 [00:58<00:41, 3797263.16it/s]
+[!]  59%|#####8    | 219414528/375042383 [00:58<00:40, 3802191.47it/s]
+[!]  59%|#####8    | 219807744/375042383 [00:58<00:40, 3821293.00it/s]
+[!]  59%|#####8    | 220200960/375042383 [00:58<00:40, 3820491.85it/s]
+[!]  59%|#####8    | 220594176/375042383 [00:58<00:40, 3786402.43it/s]
+[!]  59%|#####8    | 220987392/375042383 [00:58<00:40, 3804954.88it/s]
+[!]  59%|#####9    | 221380608/375042383 [00:59<00:40, 3810708.66it/s]
+[!]  59%|#####9    | 221773824/375042383 [00:59<00:40, 3816791.28it/s]
+[!]  59%|#####9    | 222167040/375042383 [00:59<00:40, 3806672.74it/s]
+[!]  59%|#####9    | 222560256/375042383 [00:59<00:40, 3801048.12it/s]
+[!]  59%|#####9    | 222953472/375042383 [00:59<00:39, 3811650.52it/s]
+[!]  60%|#####9    | 223346688/375042383 [00:59<00:39, 3817298.90it/s]
+[!]  60%|#####9    | 223739904/375042383 [00:59<00:39, 3818661.54it/s]
+[!]  60%|#####9    | 224133120/375042383 [00:59<00:39, 3810458.45it/s]
+[!]  60%|#####9    | 224526336/375042383 [00:59<00:39, 3800210.92it/s]
+[!]  60%|#####9    | 224919552/375042383 [00:59<00:39, 3805149.77it/s]
+[!]  60%|######    | 225312768/375042383 [01:00<00:39, 3806512.86it/s]
+[!]  60%|######    | 225705984/375042383 [01:00<00:39, 3819092.40it/s]
+[!]  60%|######    | 226099200/375042383 [01:00<00:39, 3798365.57it/s]
+[!]  60%|######    | 226492416/375042383 [01:00<00:39, 3801957.79it/s]
+[!]  60%|######    | 226885632/375042383 [01:00<00:38, 3817296.49it/s]
+[!]  61%|######    | 227278848/375042383 [01:00<00:38, 3819912.23it/s]
+[!]  61%|######    | 227672064/375042383 [01:00<00:38, 3820961.79it/s]
+[!]  61%|######    | 228065280/375042383 [01:00<00:38, 3797851.23it/s]
+[!]  61%|######    | 228458496/375042383 [01:00<00:38, 3803732.87it/s]
+[!]  61%|######1   | 228851712/375042383 [01:00<00:38, 3796886.30it/s]
+[!]  61%|######1   | 229244928/375042383 [01:01<00:38, 3803076.32it/s]
+[!]  61%|######1   | 229638144/375042383 [01:01<00:38, 3785449.11it/s]
+[!]  61%|######1   | 230031360/375042383 [01:01<00:38, 3792842.83it/s]
+[!]  61%|######1   | 230424576/375042383 [01:01<00:38, 3789840.53it/s]
+[!]  62%|######1   | 230817792/375042383 [01:01<00:37, 3799214.73it/s]
+[!]  62%|######1   | 231211008/375042383 [01:01<00:37, 3813256.48it/s]
+[!]  62%|######1   | 231604224/375042383 [01:01<00:37, 3775109.68it/s]
+[!]  62%|######1   | 231997440/375042383 [01:01<00:37, 3791813.92it/s]
+[!]  62%|######1   | 232390656/375042383 [01:01<00:37, 3798410.07it/s]
+[!]  62%|######2   | 232783872/375042383 [01:02<00:37, 3803843.61it/s]
+[!]  62%|######2   | 233177088/375042383 [01:02<00:37, 3807342.54it/s]
+[!]  62%|######2   | 233570304/375042383 [01:02<00:37, 3786559.43it/s]
+[!]  62%|######2   | 233963520/375042383 [01:02<00:37, 3797816.15it/s]
+[!]  62%|######2   | 234356736/375042383 [01:02<00:36, 3815598.69it/s]
+[!]  63%|######2   | 234749952/375042383 [01:02<00:36, 3811533.82it/s]
+[!]  63%|######2   | 235143168/375042383 [01:02<00:36, 3824070.13it/s]
+[!]  63%|######2   | 235536384/375042383 [01:02<00:36, 3776029.57it/s]
+[!]  63%|######2   | 235929600/375042383 [01:02<00:36, 3800417.75it/s]
+[!]  63%|######3   | 236322816/375042383 [01:02<00:36, 3805395.02it/s]
+[!]  63%|######3   | 236716032/375042383 [01:03<00:36, 3812796.49it/s]
+[!]  63%|######3   | 237109248/375042383 [01:03<00:36, 3795808.85it/s]
+[!]  63%|######3   | 237502464/375042383 [01:03<00:36, 3799452.59it/s]
+[!]  63%|######3   | 237895680/375042383 [01:03<00:36, 3804320.03it/s]
+[!]  64%|######3   | 238288896/375042383 [01:03<00:35, 3809344.11it/s]
+[!]  64%|######3   | 238682112/375042383 [01:03<00:35, 3827063.99it/s]
+[!]  64%|######3   | 239075328/375042383 [01:03<00:35, 3792090.28it/s]
+[!]  64%|######3   | 239468544/375042383 [01:03<00:35, 3808757.31it/s]
+[!]  64%|######3   | 239861760/375042383 [01:03<00:35, 3802684.26it/s]
+[!]  64%|######4   | 240254976/375042383 [01:03<00:35, 3817056.28it/s]
+[!]  64%|######4   | 240648192/375042383 [01:04<00:35, 3815655.78it/s]
+[!]  64%|######4   | 241041408/375042383 [01:04<00:35, 3799561.21it/s]
+[!]  64%|######4   | 241434624/375042383 [01:04<00:35, 3778579.98it/s]
+[!]  64%|######4   | 241827840/375042383 [01:04<00:35, 3797487.74it/s]
+[!]  65%|######4   | 242221056/375042383 [01:04<00:34, 3799090.83it/s]
+[!]  65%|######4   | 242614272/375042383 [01:04<00:34, 3804058.24it/s]
+[!]  65%|######4   | 243007488/375042383 [01:04<00:34, 3777150.37it/s]
+[!]  65%|######4   | 243400704/375042383 [01:04<00:34, 3774910.31it/s]
+[!]  65%|######5   | 243793920/375042383 [01:04<00:34, 3790901.82it/s]
+[!]  65%|######5   | 244187136/375042383 [01:05<00:34, 3804355.31it/s]
+[!]  65%|######5   | 244580352/375042383 [01:05<00:34, 3812787.56it/s]
+[!]  65%|######5   | 244973568/375042383 [01:05<00:34, 3793285.72it/s]
+[!]  65%|######5   | 245366784/375042383 [01:05<00:34, 3811703.94it/s]
+[!]  66%|######5   | 245760000/375042383 [01:05<00:34, 3800917.69it/s]
+[!]  66%|######5   | 246153216/375042383 [01:05<00:33, 3801288.15it/s]
+[!]  66%|######5   | 246546432/375042383 [01:05<00:33, 3799897.37it/s]
+[!]  66%|######5   | 246939648/375042383 [01:05<00:33, 3815974.73it/s]
+[!]  66%|######5   | 247332864/375042383 [01:05<00:33, 3820532.92it/s]
+[!]  66%|######6   | 247726080/375042383 [01:05<00:33, 3773728.63it/s]
+[!]  66%|######6   | 248119296/375042383 [01:06<00:33, 3788119.32it/s]
+[!]  66%|######6   | 248512512/375042383 [01:06<00:33, 3793341.62it/s]
+[!]  66%|######6   | 248905728/375042383 [01:06<00:33, 3808941.42it/s]
+[!]  66%|######6   | 249298944/375042383 [01:06<00:32, 3825956.54it/s]
+[!]  67%|######6   | 249692160/375042383 [01:06<00:33, 3785092.99it/s]
+[!]  67%|######6   | 250085376/375042383 [01:06<00:32, 3803942.31it/s]
+[!]  67%|######6   | 250478592/375042383 [01:06<00:32, 3810512.62it/s]
+[!]  67%|######6   | 250871808/375042383 [01:06<00:32, 3822109.17it/s]
+[!]  67%|######6   | 251265024/375042383 [01:06<00:32, 3804741.19it/s]
+[!]  67%|######7   | 251658240/375042383 [01:06<00:32, 3807397.04it/s]
+[!]  67%|######7   | 252051456/375042383 [01:07<00:32, 3808862.47it/s]
+[!]  67%|######7   | 252444672/375042383 [01:07<00:32, 3810123.95it/s]
+[!]  67%|######7   | 252837888/375042383 [01:07<00:31, 3821479.44it/s]
+[!]  68%|######7   | 253231104/375042383 [01:07<00:32, 3805120.63it/s]
+[!]  68%|######7   | 253624320/375042383 [01:07<00:31, 3807681.47it/s]
+[!]  68%|######7   | 254017536/375042383 [01:07<00:31, 3814694.09it/s]
+[!]  68%|######7   | 254410752/375042383 [01:07<00:31, 3798429.07it/s]
+[!]  68%|######7   | 254803968/375042383 [01:07<00:31, 3804575.61it/s]
+[!]  68%|######8   | 255197184/375042383 [01:07<00:31, 3793868.06it/s]
+[!]  68%|######8   | 255590400/375042383 [01:08<00:31, 3807917.15it/s]
+[!]  68%|######8   | 255983616/375042383 [01:08<00:31, 3812060.99it/s]
+[!]  68%|######8   | 256376832/375042383 [01:08<00:31, 3797849.64it/s]
+[!]  68%|######8   | 256770048/375042383 [01:08<00:31, 3786094.13it/s]
+[!]  69%|######8   | 257163264/375042383 [01:08<00:30, 3809593.44it/s]
+[!]  69%|######8   | 257556480/375042383 [01:08<00:30, 3817022.83it/s]
+[!]  69%|######8   | 257949696/375042383 [01:08<00:30, 3803231.22it/s]
+[!]  69%|######8   | 258342912/375042383 [01:08<00:30, 3807532.66it/s]
+[!]  69%|######8   | 258736128/375042383 [01:08<00:30, 3791383.90it/s]
+[!]  69%|######9   | 259129344/375042383 [01:08<00:30, 3797536.05it/s]
+[!]  69%|######9   | 259522560/375042383 [01:09<00:30, 3803579.97it/s]
+[!]  69%|######9   | 259915776/375042383 [01:09<00:30, 3796766.54it/s]
+[!]  69%|######9   | 260308992/375042383 [01:09<00:30, 3811426.68it/s]
+[!]  70%|######9   | 260702208/375042383 [01:09<00:30, 3793779.46it/s]
+[!]  70%|######9   | 261095424/375042383 [01:09<00:29, 3800762.51it/s]
+[!]  70%|######9   | 261488640/375042383 [01:09<00:29, 3798978.31it/s]
+[!]  70%|######9   | 261881856/375042383 [01:09<00:29, 3805211.50it/s]
+[!]  70%|######9   | 262275072/375042383 [01:09<00:29, 3790896.25it/s]
+[!]  70%|#######   | 262668288/375042383 [01:09<00:29, 3803393.35it/s]
+[!]  70%|#######   | 263061504/375042383 [01:09<00:29, 3813462.40it/s]
+[!]  70%|#######   | 263454720/375042383 [01:10<00:29, 3818875.84it/s]
+[!]  70%|#######   | 263847936/375042383 [01:10<00:29, 3814745.95it/s]
+[!]  70%|#######   | 264241152/375042383 [01:10<00:29, 3788270.07it/s]
+[!]  71%|#######   | 264634368/375042383 [01:10<00:29, 3804528.47it/s]
+[!]  71%|#######   | 265027584/375042383 [01:10<00:28, 3797582.84it/s]
+[!]  71%|#######   | 265420800/375042383 [01:10<00:28, 3805590.20it/s]
+[!]  71%|#######   | 265814016/375042383 [01:10<00:28, 3803181.82it/s]
+[!]  71%|#######   | 266207232/375042383 [01:10<00:28, 3785509.24it/s]
+[!]  71%|#######1  | 266600448/375042383 [01:10<00:28, 3799590.68it/s]
+[!]  71%|#######1  | 266993664/375042383 [01:11<00:28, 3804983.06it/s]
+[!]  71%|#######1  | 267386880/375042383 [01:11<00:28, 3791623.83it/s]
+[!]  71%|#######1  | 267780096/375042383 [01:11<00:28, 3812185.89it/s]
+[!]  72%|#######1  | 268173312/375042383 [01:11<00:28, 3784148.90it/s]
+[!]  72%|#######1  | 268566528/375042383 [01:11<00:28, 3795738.37it/s]
+[!]  72%|#######1  | 268959744/375042383 [01:11<00:28, 3786687.12it/s]
+[!]  72%|#######1  | 269352960/375042383 [01:11<00:27, 3804068.69it/s]
+[!]  72%|#######1  | 269746176/375042383 [01:11<00:27, 3786961.44it/s]
+[!]  72%|#######2  | 270139392/375042383 [01:11<00:27, 3771490.73it/s]
+[!]  72%|#######2  | 270532608/375042383 [01:11<00:27, 3784330.20it/s]
+[!]  72%|#######2  | 270925824/375042383 [01:12<00:27, 3807841.96it/s]
+[!]  72%|#######2  | 271319040/375042383 [01:12<00:27, 3798900.66it/s]
+[!]  72%|#######2  | 271712256/375042383 [01:12<00:27, 3768431.61it/s]
+[!]  73%|#######2  | 272105472/375042383 [01:12<00:27, 3775181.97it/s]
+[!]  73%|#######2  | 272498688/375042383 [01:12<00:27, 3792317.49it/s]
+[!]  73%|#######2  | 272891904/375042383 [01:12<00:26, 3805366.38it/s]
+[!]  73%|#######2  | 273285120/375042383 [01:12<00:26, 3809022.49it/s]
+[!]  73%|#######2  | 273678336/375042383 [01:12<00:26, 3778649.50it/s]
+[!]  73%|#######3  | 274071552/375042383 [01:13<00:41, 2414704.48it/s]
+[!]  73%|#######3  | 274464768/375042383 [01:13<00:37, 2716274.60it/s]
+[!]  73%|#######3  | 274857984/375042383 [01:13<00:33, 2969232.42it/s]
+[!]  73%|#######3  | 275251200/375042383 [01:13<00:31, 3181570.06it/s]
+[!]  73%|#######3  | 275644416/375042383 [01:13<00:29, 3348539.06it/s]
+[!]  74%|#######3  | 276037632/375042383 [01:13<00:28, 3474258.69it/s]
+[!]  74%|#######3  | 276430848/375042383 [01:13<00:27, 3553942.34it/s]
+[!]  74%|#######3  | 276824064/375042383 [01:13<00:27, 3627915.38it/s]
+[!]  74%|#######3  | 277217280/375042383 [01:13<00:26, 3691121.86it/s]
+[!]  74%|#######4  | 277610496/375042383 [01:14<00:26, 3730941.52it/s]
+[!]  74%|#######4  | 278003712/375042383 [01:14<00:25, 3744823.56it/s]
+[!]  74%|#######4  | 278396928/375042383 [01:14<00:25, 3770312.48it/s]
+[!]  74%|#######4  | 278790144/375042383 [01:14<00:25, 3774032.41it/s]
+[!]  74%|#######4  | 279183360/375042383 [01:14<00:25, 3788393.62it/s]
+[!]  75%|#######4  | 279576576/375042383 [01:14<00:25, 3793898.05it/s]
+[!]  75%|#######4  | 279969792/375042383 [01:14<00:25, 3793201.23it/s]
+[!]  75%|#######4  | 280363008/375042383 [01:14<00:24, 3792132.82it/s]
+[!]  75%|#######4  | 280756224/375042383 [01:14<00:24, 3807463.14it/s]
+[!]  75%|#######4  | 281149440/375042383 [01:14<00:24, 3800648.34it/s]
+[!]  75%|#######5  | 281542656/375042383 [01:15<00:24, 3758982.44it/s]
+[!]  75%|#######5  | 281935872/375042383 [01:15<00:24, 3784774.84it/s]
+[!]  75%|#######5  | 282329088/375042383 [01:15<00:24, 3798301.04it/s]
+[!]  75%|#######5  | 282722304/375042383 [01:15<00:24, 3808581.51it/s]
+[!]  75%|#######5  | 283115520/375042383 [01:15<00:24, 3809457.21it/s]
+[!]  76%|#######5  | 283508736/375042383 [01:15<00:24, 3788112.08it/s]
+[!]  76%|#######5  | 283901952/375042383 [01:15<00:24, 3794695.46it/s]
+[!]  76%|#######5  | 284295168/375042383 [01:15<00:23, 3805360.87it/s]
+[!]  76%|#######5  | 284688384/375042383 [01:15<00:23, 3815323.31it/s]
+[!]  76%|#######6  | 285081600/375042383 [01:15<00:23, 3827917.18it/s]
+[!]  76%|#######6  | 285474816/375042383 [01:16<00:23, 3786107.50it/s]
+[!]  76%|#######6  | 285868032/375042383 [01:16<00:23, 3798392.61it/s]
+[!]  76%|#######6  | 286261248/375042383 [01:16<00:24, 3628596.45it/s]
+[!]  76%|#######6  | 286687232/375042383 [01:16<00:23, 3793527.08it/s]
+[!]  77%|#######6  | 287080448/375042383 [01:16<00:23, 3793908.69it/s]
+[!]  77%|#######6  | 287473664/375042383 [01:16<00:23, 3802758.59it/s]
+[!]  77%|#######6  | 287866880/375042383 [01:16<00:22, 3809177.19it/s]
+[!]  77%|#######6  | 288260096/375042383 [01:16<00:22, 3789765.35it/s]
+[!]  77%|#######6  | 288653312/375042383 [01:16<00:22, 3786131.49it/s]
+[!]  77%|#######7  | 289046528/375042383 [01:17<00:22, 3806331.64it/s]
+[!]  77%|#######7  | 289439744/375042383 [01:17<00:22, 3812445.02it/s]
+[!]  77%|#######7  | 289832960/375042383 [01:17<00:22, 3822153.32it/s]
+[!]  77%|#######7  | 290226176/375042383 [01:17<00:22, 3803619.00it/s]
+[!]  77%|#######7  | 290619392/375042383 [01:17<00:22, 3797532.42it/s]
+[!]  78%|#######7  | 291012608/375042383 [01:17<00:22, 3800980.13it/s]
+[!]  78%|#######7  | 291405824/375042383 [01:17<00:21, 3810001.37it/s]
+[!]  78%|#######7  | 291799040/375042383 [01:17<00:21, 3817729.10it/s]
+[!]  78%|#######7  | 292192256/375042383 [01:17<00:21, 3799707.96it/s]
+[!]  78%|#######8  | 292585472/375042383 [01:17<00:21, 3805220.12it/s]
+[!]  78%|#######8  | 292978688/375042383 [01:18<00:21, 3802318.37it/s]
+[!]  78%|#######8  | 293371904/375042383 [01:18<00:21, 3813387.55it/s]
+[!]  78%|#######8  | 293765120/375042383 [01:18<00:21, 3802849.90it/s]
+[!]  78%|#######8  | 294158336/375042383 [01:18<00:21, 3811974.52it/s]
+[!]  79%|#######8  | 294551552/375042383 [01:18<00:21, 3784331.85it/s]
+[!]  79%|#######8  | 294944768/375042383 [01:18<00:21, 3794250.67it/s]
+[!]  79%|#######8  | 295337984/375042383 [01:18<00:20, 3804305.12it/s]
+[!]  79%|#######8  | 295731200/375042383 [01:18<00:20, 3808481.23it/s]
+[!]  79%|#######8  | 296124416/375042383 [01:18<00:20, 3783518.90it/s]
+[!]  79%|#######9  | 296517632/375042383 [01:18<00:20, 3776198.85it/s]
+[!]  79%|#######9  | 296910848/375042383 [01:19<00:20, 3788093.39it/s]
+[!]  79%|#######9  | 297304064/375042383 [01:19<00:20, 3802267.15it/s]
+[!]  79%|#######9  | 297697280/375042383 [01:19<00:20, 3801094.54it/s]
+[!]  79%|#######9  | 298090496/375042383 [01:19<00:20, 3810346.40it/s]
+[!]  80%|#######9  | 298483712/375042383 [01:19<00:20, 3791839.84it/s]
+[!]  80%|#######9  | 298876928/375042383 [01:19<00:20, 3791086.16it/s]
+[!]  80%|#######9  | 299270144/375042383 [01:19<00:19, 3810178.04it/s]
+[!]  80%|#######9  | 299663360/375042383 [01:19<00:19, 3810741.56it/s]
+[!]  80%|########  | 300056576/375042383 [01:19<00:19, 3820889.00it/s]
+[!]  80%|########  | 300449792/375042383 [01:20<00:19, 3787426.81it/s]
+[!]  80%|########  | 300843008/375042383 [01:20<00:19, 3805760.60it/s]
+[!]  80%|########  | 301236224/375042383 [01:20<00:19, 3814828.80it/s]
+[!]  80%|########  | 301629440/375042383 [01:20<00:19, 3814430.86it/s]
+[!]  81%|########  | 302022656/375042383 [01:20<00:19, 3805866.55it/s]
+[!]  81%|########  | 302415872/375042383 [01:20<00:19, 3790391.97it/s]
+[!]  81%|########  | 302809088/375042383 [01:20<00:19, 3793344.52it/s]
+[!]  81%|########  | 303202304/375042383 [01:20<00:18, 3803022.85it/s]
+[!]  81%|########  | 303595520/375042383 [01:20<00:18, 3814019.12it/s]
+[!]  81%|########1 | 303988736/375042383 [01:20<00:18, 3787129.02it/s]
+[!]  81%|########1 | 304381952/375042383 [01:21<00:18, 3782781.93it/s]
+[!]  81%|########1 | 304775168/375042383 [01:21<00:18, 3781929.07it/s]
+[!]  81%|########1 | 305168384/375042383 [01:21<00:18, 3789979.13it/s]
+[!]  81%|########1 | 305561600/375042383 [01:21<00:18, 3780641.39it/s]
+[!]  82%|########1 | 305954816/375042383 [01:21<00:18, 3804958.22it/s]
+[!]  82%|########1 | 306348032/375042383 [01:21<00:17, 3817214.76it/s]
+[!]  82%|########1 | 306741248/375042383 [01:21<00:18, 3793140.72it/s]
+[!]  82%|########1 | 307134464/375042383 [01:21<00:17, 3789061.31it/s]
+[!]  82%|########1 | 307527680/375042383 [01:21<00:17, 3806765.45it/s]
+[!]  82%|########2 | 307920896/375042383 [01:21<00:17, 3799339.65it/s]
+[!]  82%|########2 | 308314112/375042383 [01:22<00:17, 3814220.31it/s]
+[!]  82%|########2 | 308707328/375042383 [01:22<00:17, 3801241.12it/s]
+[!]  82%|########2 | 309100544/375042383 [01:22<00:17, 3770490.78it/s]
+[!]  83%|########2 | 309493760/375042383 [01:22<00:17, 3782643.94it/s]
+[!]  83%|########2 | 309886976/375042383 [01:22<00:17, 3799874.18it/s]
+[!]  83%|########2 | 310280192/375042383 [01:22<00:16, 3810721.08it/s]
+[!]  83%|########2 | 310673408/375042383 [01:22<00:16, 3804812.54it/s]
+[!]  83%|########2 | 311066624/375042383 [01:22<00:16, 3774478.12it/s]
+[!]  83%|########3 | 311459840/375042383 [01:22<00:16, 3781346.15it/s]
+[!]  83%|########3 | 311853056/375042383 [01:23<00:16, 3795917.19it/s]
+[!]  83%|########3 | 312246272/375042383 [01:23<00:16, 3787046.48it/s]
+[!]  83%|########3 | 312639488/375042383 [01:23<00:16, 3809993.71it/s]
+[!]  83%|########3 | 313032704/375042383 [01:23<00:16, 3774782.46it/s]
+[!]  84%|########3 | 313425920/375042383 [01:23<00:16, 3794702.47it/s]
+[!]  84%|########3 | 313819136/375042383 [01:23<00:16, 3799044.08it/s]
+[!]  84%|########3 | 314212352/375042383 [01:23<00:15, 3805887.30it/s]
+[!]  84%|########3 | 314605568/375042383 [01:23<00:15, 3793681.15it/s]
+[!]  84%|########3 | 314998784/375042383 [01:23<00:15, 3780732.01it/s]
+[!]  84%|########4 | 315392000/375042383 [01:23<00:15, 3803337.73it/s]
+[!]  84%|########4 | 315785216/375042383 [01:24<00:15, 3810087.93it/s]
+[!]  84%|########4 | 316178432/375042383 [01:24<00:15, 3805632.15it/s]
+[!]  84%|########4 | 316571648/375042383 [01:24<00:15, 3805248.68it/s]
+[!]  85%|########4 | 316964864/375042383 [01:24<00:15, 3776526.29it/s]
+[!]  85%|########4 | 317358080/375042383 [01:24<00:15, 3800967.02it/s]
+[!]  85%|########4 | 317751296/375042383 [01:24<00:15, 3803355.57it/s]
+[!]  85%|########4 | 318144512/375042383 [01:24<00:14, 3814218.96it/s]
+[!]  85%|########4 | 318537728/375042383 [01:24<00:14, 3784380.93it/s]
+[!]  85%|########5 | 318930944/375042383 [01:24<00:14, 3801298.13it/s]
+[!]  85%|########5 | 319324160/375042383 [01:24<00:14, 3815029.86it/s]
+[!]  85%|########5 | 319717376/375042383 [01:25<00:14, 3804224.24it/s]
+[!]  85%|########5 | 320110592/375042383 [01:25<00:14, 3819330.66it/s]
+[!]  85%|########5 | 320503808/375042383 [01:25<00:14, 3777675.21it/s]
+[!]  86%|########5 | 320897024/375042383 [01:25<00:14, 3808339.35it/s]
+[!]  86%|########5 | 321290240/375042383 [01:25<00:14, 3800095.44it/s]
+[!]  86%|########5 | 321683456/375042383 [01:25<00:13, 3812599.99it/s]
+[!]  86%|########5 | 322076672/375042383 [01:25<00:13, 3826743.55it/s]
+[!]  86%|########5 | 322469888/375042383 [01:26<00:22, 2347708.64it/s]
+[!]  86%|########6 | 322863104/375042383 [01:26<00:19, 2663529.13it/s]
+[!]  86%|########6 | 323256320/375042383 [01:26<00:17, 2917050.68it/s]
+[!]  86%|########6 | 323649536/375042383 [01:26<00:16, 3144411.69it/s]
+[!]  86%|########6 | 324042752/375042383 [01:26<00:15, 3314142.28it/s]
+[!]  87%|########6 | 324435968/375042383 [01:26<00:14, 3450687.90it/s]
+[!]  87%|########6 | 324829184/375042383 [01:26<00:14, 3539633.75it/s]
+[!]  87%|########6 | 325222400/375042383 [01:26<00:13, 3600165.58it/s]
+[!]  87%|########6 | 325615616/375042383 [01:26<00:13, 3676655.83it/s]
+[!]  87%|########6 | 326008832/375042383 [01:26<00:13, 3717026.75it/s]
+[!]  87%|########7 | 326402048/375042383 [01:27<00:12, 3756935.32it/s]
+[!]  87%|########7 | 326795264/375042383 [01:27<00:12, 3729278.15it/s]
+[!]  87%|########7 | 327188480/375042383 [01:27<00:12, 3764700.36it/s]
+[!]  87%|########7 | 327581696/375042383 [01:27<00:12, 3780363.23it/s]
+[!]  87%|########7 | 327974912/375042383 [01:27<00:12, 3785775.98it/s]
+[!]  88%|########7 | 328368128/375042383 [01:27<00:12, 3806182.01it/s]
+[!]  88%|########7 | 328761344/375042383 [01:27<00:12, 3765702.94it/s]
+[!]  88%|########7 | 329154560/375042383 [01:27<00:12, 3788152.28it/s]
+[!]  88%|########7 | 329547776/375042383 [01:27<00:11, 3805182.63it/s]
+[!]  88%|########7 | 329940992/375042383 [01:28<00:11, 3805574.10it/s]
+[!]  88%|########8 | 330334208/375042383 [01:28<00:11, 3782389.29it/s]
+[!]  88%|########8 | 330727424/375042383 [01:28<00:11, 3780564.70it/s]
+[!]  88%|########8 | 331120640/375042383 [01:28<00:11, 3798546.91it/s]
+[!]  88%|########8 | 331513856/375042383 [01:28<00:11, 3803910.72it/s]
+[!]  88%|########8 | 331907072/375042383 [01:28<00:11, 3810635.69it/s]
+[!]  89%|########8 | 332300288/375042383 [01:28<00:11, 3771196.55it/s]
+[!]  89%|########8 | 332693504/375042383 [01:28<00:11, 3797317.33it/s]
+[!]  89%|########8 | 333086720/375042383 [01:28<00:11, 3772045.34it/s]
+[!]  89%|########8 | 333479936/375042383 [01:28<00:10, 3791748.20it/s]
+[!]  89%|########9 | 333873152/375042383 [01:29<00:10, 3807516.05it/s]
+[!]  89%|########9 | 334266368/375042383 [01:29<00:10, 3799495.33it/s]
+[!]  89%|########9 | 334659584/375042383 [01:29<00:10, 3817322.99it/s]
+[!]  89%|########9 | 335052800/375042383 [01:29<00:10, 3784350.72it/s]
+[!]  89%|########9 | 335446016/375042383 [01:29<00:10, 3808861.65it/s]
+[!]  90%|########9 | 335839232/375042383 [01:29<00:10, 3797314.61it/s]
+[!]  90%|########9 | 336232448/375042383 [01:29<00:10, 3823020.64it/s]
+[!]  90%|########9 | 336625664/375042383 [01:29<00:10, 3827223.82it/s]
+[!]  90%|########9 | 337018880/375042383 [01:29<00:10, 3792511.44it/s]
+[!]  90%|########9 | 337412096/375042383 [01:29<00:09, 3813073.09it/s]
+[!]  90%|######### | 337805312/375042383 [01:30<00:09, 3807355.12it/s]
+[!]  90%|######### | 338198528/375042383 [01:30<00:09, 3822243.27it/s]
+[!]  90%|######### | 338591744/375042383 [01:30<00:09, 3775905.13it/s]
+[!]  90%|######### | 338984960/375042383 [01:30<00:09, 3803079.42it/s]
+[!]  90%|######### | 339378176/375042383 [01:30<00:09, 3795502.66it/s]
+[!]  91%|######### | 339771392/375042383 [01:30<00:09, 3800619.39it/s]
+[!]  91%|######### | 340164608/375042383 [01:30<00:09, 3814802.74it/s]
+[!]  91%|######### | 340557824/375042383 [01:30<00:09, 3773954.00it/s]
+[!]  91%|######### | 340951040/375042383 [01:30<00:08, 3802977.05it/s]
+[!]  91%|#########1| 341344256/375042383 [01:31<00:08, 3795648.78it/s]
+[!]  91%|#########1| 341737472/375042383 [01:31<00:08, 3821551.64it/s]
+[!]  91%|#########1| 342130688/375042383 [01:31<00:08, 3819136.03it/s]
+[!]  91%|#########1| 342523904/375042383 [01:31<00:08, 3770417.30it/s]
+[!]  91%|#########1| 342917120/375042383 [01:31<00:08, 3793981.56it/s]
+[!]  92%|#########1| 343310336/375042383 [01:31<00:08, 3798152.48it/s]
+[!]  92%|#########1| 343703552/375042383 [01:31<00:08, 3807295.34it/s]
+[!]  92%|#########1| 344096768/375042383 [01:31<00:08, 3782129.51it/s]
+[!]  92%|#########1| 344489984/375042383 [01:31<00:08, 3789623.63it/s]
+[!]  92%|#########1| 344883200/375042383 [01:31<00:07, 3788895.29it/s]
+[!]  92%|#########2| 345276416/375042383 [01:32<00:07, 3801565.18it/s]
+[!]  92%|#########2| 345669632/375042383 [01:32<00:07, 3811937.81it/s]
+[!]  92%|#########2| 346062848/375042383 [01:32<00:07, 3798422.68it/s]
+[!]  92%|#########2| 346456064/375042383 [01:32<00:07, 3805564.00it/s]
+[!]  92%|#########2| 346849280/375042383 [01:32<00:07, 3798677.69it/s]
+[!]  93%|#########2| 347242496/375042383 [01:32<00:07, 3811334.02it/s]
+[!]  93%|#########2| 347635712/375042383 [01:32<00:07, 3794136.74it/s]
+[!]  93%|#########2| 348028928/375042383 [01:32<00:07, 3779057.81it/s]
+[!]  93%|#########2| 348422144/375042383 [01:32<00:07, 3802338.29it/s]
+[!]  93%|#########3| 348815360/375042383 [01:32<00:06, 3795412.96it/s]
+[!]  93%|#########3| 349208576/375042383 [01:33<00:06, 3795877.57it/s]
+[!]  93%|#########3| 349601792/375042383 [01:33<00:06, 3787298.02it/s]
+[!]  93%|#########3| 349995008/375042383 [01:33<00:06, 3802818.59it/s]
+[!]  93%|#########3| 350388224/375042383 [01:33<00:06, 3810095.51it/s]
+[!]  94%|#########3| 350781440/375042383 [01:33<00:06, 3799834.78it/s]
+[!]  94%|#########3| 351174656/375042383 [01:33<00:06, 3829364.15it/s]
+[!]  94%|#########3| 351567872/375042383 [01:33<00:06, 3801459.25it/s]
+[!]  94%|#########3| 351961088/375042383 [01:33<00:06, 3808979.23it/s]
+[!]  94%|#########3| 352354304/375042383 [01:33<00:05, 3810863.39it/s]
+[!]  94%|#########4| 352747520/375042383 [01:34<00:05, 3802062.00it/s]
+[!]  94%|#########4| 353140736/375042383 [01:34<00:05, 3802241.77it/s]
+[!]  94%|#########4| 353533952/375042383 [01:34<00:05, 3810313.32it/s]
+[!]  94%|#########4| 353927168/375042383 [01:34<00:05, 3798576.46it/s]
+[!]  94%|#########4| 354320384/375042383 [01:34<00:05, 3816257.72it/s]
+[!]  95%|#########4| 354713600/375042383 [01:34<00:05, 3789982.30it/s]
+[!]  95%|#########4| 355106816/375042383 [01:34<00:05, 3800485.86it/s]
+[!]  95%|#########4| 355500032/375042383 [01:34<00:05, 3811191.31it/s]
+[!]  95%|#########4| 355893248/375042383 [01:34<00:05, 3798515.22it/s]
+[!]  95%|#########4| 356286464/375042383 [01:34<00:04, 3799038.63it/s]
+[!]  95%|#########5| 356679680/375042383 [01:35<00:04, 3801898.62it/s]
+[!]  95%|#########5| 357072896/375042383 [01:35<00:04, 3807275.14it/s]
+[!]  95%|#########5| 357466112/375042383 [01:35<00:04, 3815787.97it/s]
+[!]  95%|#########5| 357859328/375042383 [01:35<00:04, 3784646.30it/s]
+[!]  96%|#########5| 358252544/375042383 [01:35<00:04, 3788786.93it/s]
+[!]  96%|#########5| 358645760/375042383 [01:35<00:04, 3791928.75it/s]
+[!]  96%|#########5| 359038976/375042383 [01:35<00:04, 3799806.07it/s]
+[!]  96%|#########5| 359432192/375042383 [01:35<00:04, 3804362.73it/s]
+[!]  96%|#########5| 359825408/375042383 [01:35<00:04, 3773551.68it/s]
+[!]  96%|#########6| 360218624/375042383 [01:35<00:03, 3783729.27it/s]
+[!]  96%|#########6| 360611840/375042383 [01:36<00:03, 3779783.12it/s]
+[!]  96%|#########6| 361005056/375042383 [01:36<00:03, 3793769.62it/s]
+[!]  96%|#########6| 361398272/375042383 [01:36<00:03, 3789806.21it/s]
+[!]  96%|#########6| 361791488/375042383 [01:36<00:03, 3792805.61it/s]
+[!]  97%|#########6| 362184704/375042383 [01:36<00:03, 3794591.07it/s]
+[!]  97%|#########6| 362577920/375042383 [01:36<00:03, 3808920.41it/s]
+[!]  97%|#########6| 362971136/375042383 [01:36<00:03, 3824775.84it/s]
+[!]  97%|#########6| 363364352/375042383 [01:36<00:03, 3786820.28it/s]
+[!]  97%|#########6| 363757568/375042383 [01:36<00:02, 3796984.67it/s]
+[!]  97%|#########7| 364150784/375042383 [01:37<00:02, 3801052.30it/s]
+[!]  97%|#########7| 364544000/375042383 [01:37<00:02, 3800601.88it/s]
+[!]  97%|#########7| 364937216/375042383 [01:37<00:02, 3781710.32it/s]
+[!]  97%|#########7| 365330432/375042383 [01:37<00:02, 3798595.11it/s]
+[!]  98%|#########7| 365723648/375042383 [01:37<00:02, 3789112.95it/s]
+[!]  98%|#########7| 366116864/375042383 [01:37<00:02, 3807105.11it/s]
+[!]  98%|#########7| 366510080/375042383 [01:37<00:02, 3810659.07it/s]
+[!]  98%|#########7| 366903296/375042383 [01:37<00:02, 3803839.97it/s]
+[!]  98%|#########7| 367296512/375042383 [01:37<00:02, 3795734.10it/s]
+[!]  98%|#########8| 367689728/375042383 [01:37<00:01, 3796558.57it/s]
+[!]  98%|#########8| 368082944/375042383 [01:38<00:01, 3811937.99it/s]
+[!]  98%|#########8| 368476160/375042383 [01:38<00:01, 3799900.94it/s]
+[!]  98%|#########8| 368869376/375042383 [01:38<00:01, 3772011.81it/s]
+[!]  98%|#########8| 369262592/375042383 [01:38<00:01, 3797205.99it/s]
+[!]  99%|#########8| 369655808/375042383 [01:38<00:01, 3797324.29it/s]
+[!]  99%|#########8| 370049024/375042383 [01:38<00:01, 3809907.54it/s]
+[!]  99%|#########8| 370442240/375042383 [01:38<00:01, 3809641.14it/s]
+[!]  99%|#########8| 370835456/375042383 [01:38<00:01, 3767979.47it/s]
+[!]  99%|#########8| 371228672/375042383 [01:38<00:01, 3780850.92it/s]
+[!]  99%|#########9| 371621888/375042383 [01:38<00:00, 3797093.58it/s]
+[!]  99%|#########9| 372015104/375042383 [01:39<00:00, 3803332.40it/s]
+[!]  99%|#########9| 372408320/375042383 [01:39<00:00, 3788694.77it/s]
+[!]  99%|#########9| 372801536/375042383 [01:39<00:00, 3777375.55it/s]
+[!] 100%|#########9| 373194752/375042383 [01:39<00:00, 3789376.66it/s]
+[!] 100%|#########9| 373587968/375042383 [01:39<00:00, 3802672.28it/s]
+[!] 100%|#########9| 373981184/375042383 [01:39<00:00, 3810795.56it/s]
+[!] 100%|#########9| 374374400/375042383 [01:39<00:00, 3766995.80it/s]
+[!] 100%|#########9| 374767616/375042383 [01:39<00:00, 3793201.34it/s]
+[!] 100%|##########| 375042383/375042383 [01:39<00:00, 3754588.70it/s]
+ [!]Downloading https://cdn-lfs.huggingface.co/repos/0d/db/0ddb8d3fcb6ee9737d9dd7e090e6c6cb6e40728d12307180160e7f654cb345de/e3893a92c5c1907136b6cc75404094db767c1e0cfefe1b43e87dad72af2e4c9f?response-content-disposition=attachment%3B+filename*%3DUTF-8%27%27face_yolov8m.pt%3B+filename%3D%22face_yolov8m.pt%22%3B&Expires=1698415953&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTY5ODQxNTk1M319LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5odWdnaW5nZmFjZS5jby9yZXBvcy8wZC9kYi8wZGRiOGQzZmNiNmVlOTczN2Q5ZGQ3ZTA5MGU2YzZjYjZlNDA3MjhkMTIzMDcxODAxNjBlN2Y2NTRjYjM0NWRlL2UzODkzYTkyYzVjMTkwNzEzNmI2Y2M3NTQwNDA5NGRiNzY3YzFlMGNmZWZlMWI0M2U4N2RhZDcyYWYyZTRjOWY%7EcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj0qIn1dfQ__&Signature=CgY8dJ-36P%7EKFziBW0cRyeUPOofHErhLC16oIzVOafwRwuDXOzI3EiTNpzzm4KEQgXFqgJdpSDlqY4Y9qlFIWzDi39yAFwTOxkPhB6p47CG%7Ebepf4gBB-fae3dnbWoBlm8Rsqv9zCEF7zcoMnuOQ1T5J-FU5zc9IJHWqSm7wxgQyD3aNB1c-qioxLF9mEzjTq3%7E-Fd4g0PhWTATneryQ1HIKXXr7my5AFlIIsKFRhXakgaMmgOVp3-jQrq1RMiI2GyXraUhsdKXX-7DCFatC28rvXfaMesy4xtg7lJRj0zRug3bV917mSIv8Qcf9icAT%7EnqVIz4EpUprRfWlSoiSVQ__&Key-Pair-Id=KVTP0A1DKRTAX to D:\Documents\projects\super-puper-ai\ComfyUI\models\ultralytics\bbox\face_yolov8m.pt
+ 
+[!]   0%|          | 0/51996128 [00:00<?, ?it/s]
+[!]   1%|          | 360448/51996128 [00:00<00:14, 3508724.04it/s]
+[!]   1%|1         | 753664/51996128 [00:00<00:13, 3676445.57it/s]
+[!]   2%|2         | 1146880/51996128 [00:00<00:13, 3740754.97it/s]
+[!]   3%|2         | 1540096/51996128 [00:00<00:13, 3771136.46it/s]
+[!]   4%|3         | 1933312/51996128 [00:00<00:13, 3761559.87it/s]
+[!]   4%|4         | 2326528/51996128 [00:00<00:13, 3793005.29it/s]
+[!]   5%|5         | 2719744/51996128 [00:00<00:12, 3795215.61it/s]
+[!]   6%|5         | 3112960/51996128 [00:00<00:12, 3810874.99it/s]
+[!]   7%|6         | 3506176/51996128 [00:00<00:12, 3803218.51it/s]
+[!]   7%|7         | 3899392/51996128 [00:01<00:13, 3614314.56it/s]
+[!]   8%|8         | 4292608/51996128 [00:01<00:12, 3674326.99it/s]
+[!]   9%|9         | 4685824/51996128 [00:01<00:12, 3715968.91it/s]
+[!]  10%|9         | 5079040/51996128 [00:01<00:12, 3735378.90it/s]
+[!]  11%|#         | 5472256/51996128 [00:01<00:12, 3759851.23it/s]
+[!]  11%|#1        | 5865472/51996128 [00:01<00:12, 3766178.25it/s]
+[!]  12%|#2        | 6258688/51996128 [00:01<00:12, 3787660.23it/s]
+[!]  13%|#2        | 6651904/51996128 [00:01<00:11, 3800586.76it/s]
+[!]  14%|#3        | 7045120/51996128 [00:01<00:11, 3783701.65it/s]
+[!]  14%|#4        | 7438336/51996128 [00:01<00:11, 3796675.92it/s]
+[!]  15%|#5        | 7831552/51996128 [00:02<00:11, 3799556.16it/s]
+[!]  16%|#5        | 8224768/51996128 [00:02<00:11, 3819791.39it/s]
+[!]  17%|#6        | 8617984/51996128 [00:02<00:11, 3821281.45it/s]
+[!]  17%|#7        | 9011200/51996128 [00:02<00:11, 3793598.53it/s]
+[!]  18%|#8        | 9404416/51996128 [00:02<00:11, 3789793.06it/s]
+[!]  19%|#8        | 9797632/51996128 [00:02<00:11, 3798103.72it/s]
+[!]  20%|#9        | 10190848/51996128 [00:02<00:10, 3815017.08it/s]
+[!]  20%|##        | 10584064/51996128 [00:02<00:10, 3815939.51it/s]
+[!]  21%|##1       | 10977280/51996128 [00:02<00:10, 3787236.66it/s]
+[!]  22%|##1       | 11370496/51996128 [00:03<00:10, 3802957.32it/s]
+[!]  23%|##2       | 11763712/51996128 [00:03<00:10, 3805256.00it/s]
+[!]  23%|##3       | 12156928/51996128 [00:03<00:10, 3812823.20it/s]
+[!]  24%|##4       | 12550144/51996128 [00:03<00:10, 3825984.92it/s]
+[!]  25%|##4       | 12943360/51996128 [00:03<00:10, 3791565.37it/s]
+[!]  26%|##5       | 13336576/51996128 [00:03<00:10, 3801329.33it/s]
+[!]  26%|##6       | 13729792/51996128 [00:03<00:10, 3809555.73it/s]
+[!]  27%|##7       | 14123008/51996128 [00:03<00:09, 3814662.97it/s]
+[!]  28%|##7       | 14516224/51996128 [00:03<00:09, 3793438.03it/s]
+[!]  29%|##8       | 14909440/51996128 [00:03<00:09, 3782214.57it/s]
+[!]  29%|##9       | 15302656/51996128 [00:04<00:09, 3806619.07it/s]
+[!]  30%|###       | 15695872/51996128 [00:04<00:09, 3815159.84it/s]
+[!]  31%|###       | 16089088/51996128 [00:04<00:09, 3821920.97it/s]
+[!]  32%|###1      | 16482304/51996128 [00:04<00:09, 3802289.75it/s]
+[!]  32%|###2      | 16875520/51996128 [00:04<00:09, 3785766.28it/s]
+[!]  33%|###3      | 17268736/51996128 [00:04<00:09, 3802999.79it/s]
+[!]  34%|###3      | 17661952/51996128 [00:04<00:09, 3808480.72it/s]
+[!]  35%|###4      | 18055168/51996128 [00:04<00:08, 3808280.95it/s]
+[!]  35%|###5      | 18448384/51996128 [00:04<00:08, 3776931.65it/s]
+[!]  36%|###6      | 18841600/51996128 [00:04<00:08, 3785372.23it/s]
+[!]  37%|###6      | 19234816/51996128 [00:05<00:08, 3798562.08it/s]
+[!]  38%|###7      | 19628032/51996128 [00:05<00:08, 3812679.88it/s]
+[!]  39%|###8      | 20021248/51996128 [00:05<00:08, 3812247.15it/s]
+[!]  39%|###9      | 20414464/51996128 [00:05<00:08, 3805350.48it/s]
+[!]  40%|####      | 20807680/51996128 [00:05<00:08, 3788620.61it/s]
+[!]  41%|####      | 21200896/51996128 [00:05<00:08, 3791315.29it/s]
+[!]  42%|####1     | 21594112/51996128 [00:05<00:08, 3795691.85it/s]
+[!]  42%|####2     | 21987328/51996128 [00:05<00:07, 3808830.99it/s]
+[!]  43%|####3     | 22380544/51996128 [00:05<00:07, 3775274.10it/s]
+[!]  44%|####3     | 22773760/51996128 [00:06<00:07, 3790588.77it/s]
+[!]  45%|####4     | 23166976/51996128 [00:06<00:07, 3796668.19it/s]
+[!]  45%|####5     | 23560192/51996128 [00:06<00:07, 3818200.02it/s]
+[!]  46%|####6     | 23953408/51996128 [00:06<00:07, 3825370.61it/s]
+[!]  47%|####6     | 24346624/51996128 [00:06<00:07, 3783511.61it/s]
+[!]  48%|####7     | 24739840/51996128 [00:06<00:07, 3799018.97it/s]
+[!]  48%|####8     | 25133056/51996128 [00:06<00:07, 3807754.43it/s]
+[!]  49%|####9     | 25526272/51996128 [00:06<00:06, 3807788.39it/s]
+[!]  50%|####9     | 25919488/51996128 [00:06<00:06, 3782290.52it/s]
+[!]  51%|#####     | 26312704/51996128 [00:06<00:06, 3793094.15it/s]
+[!]  51%|#####1    | 26705920/51996128 [00:07<00:06, 3794264.18it/s]
+[!]  52%|#####2    | 27099136/51996128 [00:07<00:06, 3818430.20it/s]
+[!]  53%|#####2    | 27492352/51996128 [00:07<00:06, 3810466.22it/s]
+[!]  54%|#####3    | 27885568/51996128 [00:07<00:06, 3790558.12it/s]
+[!]  54%|#####4    | 28278784/51996128 [00:07<00:06, 3777324.44it/s]
+[!]  55%|#####5    | 28672000/51996128 [00:07<00:06, 3788901.90it/s]
+[!]  56%|#####5    | 29065216/51996128 [00:07<00:06, 3812325.65it/s]
+[!]  57%|#####6    | 29458432/51996128 [00:07<00:05, 3810324.17it/s]
+[!]  57%|#####7    | 29851648/51996128 [00:07<00:05, 3789581.80it/s]
+[!]  58%|#####8    | 30244864/51996128 [00:07<00:05, 3788821.62it/s]
+[!]  59%|#####8    | 30638080/51996128 [00:08<00:05, 3799750.22it/s]
+[!]  60%|#####9    | 31031296/51996128 [00:08<00:05, 3805529.65it/s]
+[!]  60%|######    | 31424512/51996128 [00:08<00:05, 3803347.35it/s]
+[!]  61%|######1   | 31817728/51996128 [00:08<00:05, 3772844.55it/s]
+[!]  62%|######1   | 32210944/51996128 [00:08<00:05, 3795887.68it/s]
+[!]  63%|######2   | 32604160/51996128 [00:08<00:05, 3811010.08it/s]
+[!]  63%|######3   | 32997376/51996128 [00:08<00:04, 3810098.49it/s]
+[!]  64%|######4   | 33390592/51996128 [00:08<00:04, 3783169.64it/s]
+[!]  65%|######4   | 33783808/51996128 [00:08<00:04, 3812923.35it/s]
+[!]  66%|######5   | 34177024/51996128 [00:09<00:04, 3810443.63it/s]
+[!]  66%|######6   | 34570240/51996128 [00:09<00:04, 3820626.23it/s]
+[!]  67%|######7   | 34963456/51996128 [00:09<00:04, 3821331.69it/s]
+[!]  68%|######7   | 35356672/51996128 [00:09<00:04, 3795212.33it/s]
+[!]  69%|######8   | 35749888/51996128 [00:09<00:04, 3807519.67it/s]
+[!]  70%|######9   | 36143104/51996128 [00:09<00:04, 3814426.90it/s]
+[!]  70%|#######   | 36536320/51996128 [00:09<00:04, 3821156.38it/s]
+[!]  71%|#######1  | 36929536/51996128 [00:09<00:03, 3821995.17it/s]
+[!]  72%|#######1  | 37322752/51996128 [00:09<00:03, 3788929.03it/s]
+[!]  73%|#######2  | 37715968/51996128 [00:09<00:03, 3808525.90it/s]
+[!]  73%|#######3  | 38109184/51996128 [00:10<00:03, 3811237.86it/s]
+[!]  74%|#######4  | 38502400/51996128 [00:10<00:03, 3824289.85it/s]
+[!]  75%|#######4  | 38895616/51996128 [00:10<00:03, 3789146.19it/s]
+[!]  76%|#######5  | 39288832/51996128 [00:10<00:03, 3786656.24it/s]
+[!]  76%|#######6  | 39682048/51996128 [00:10<00:03, 3806933.98it/s]
+[!]  77%|#######7  | 40075264/51996128 [00:10<00:03, 3821247.47it/s]
+[!]  78%|#######7  | 40468480/51996128 [00:10<00:03, 3820165.31it/s]
+[!]  79%|#######8  | 40861696/51996128 [00:10<00:02, 3814444.58it/s]
+[!]  79%|#######9  | 41254912/51996128 [00:10<00:02, 3817875.59it/s]
+[!]  80%|########  | 41648128/51996128 [00:10<00:02, 3809308.71it/s]
+[!]  81%|########  | 42041344/51996128 [00:11<00:02, 3803845.26it/s]
+[!]  82%|########1 | 42434560/51996128 [00:11<00:02, 3814804.57it/s]
+[!]  82%|########2 | 42827776/51996128 [00:11<00:02, 3818979.42it/s]
+[!]  83%|########3 | 43220992/51996128 [00:11<00:02, 3820356.21it/s]
+[!]  84%|########3 | 43614208/51996128 [00:11<00:02, 3807587.18it/s]
+[!]  85%|########4 | 44007424/51996128 [00:11<00:02, 3787529.72it/s]
+[!]  85%|########5 | 44400640/51996128 [00:11<00:01, 3804824.52it/s]
+[!]  86%|########6 | 44793856/51996128 [00:11<00:01, 3801786.58it/s]
+[!]  87%|########6 | 45187072/51996128 [00:11<00:01, 3821306.84it/s]
+[!]  88%|########7 | 45580288/51996128 [00:12<00:01, 3788249.24it/s]
+[!]  88%|########8 | 45973504/51996128 [00:12<00:01, 3801561.99it/s]
+[!]  89%|########9 | 46366720/51996128 [00:12<00:01, 3801347.54it/s]
+[!]  90%|########9 | 46759936/51996128 [00:12<00:01, 3813656.75it/s]
+[!]  91%|######### | 47153152/51996128 [00:12<00:01, 3825235.65it/s]
+[!]  91%|#########1| 47546368/51996128 [00:12<00:01, 3787743.75it/s]
+[!]  92%|#########2| 47939584/51996128 [00:12<00:01, 3807574.12it/s]
+[!]  93%|#########2| 48332800/51996128 [00:12<00:00, 3809448.41it/s]
+[!]  94%|#########3| 48726016/51996128 [00:12<00:00, 3815890.31it/s]
+[!]  94%|#########4| 49119232/51996128 [00:12<00:00, 3796336.55it/s]
+[!]  95%|#########5| 49512448/51996128 [00:13<00:00, 3789894.72it/s]
+[!]  96%|#########5| 49905664/51996128 [00:13<00:00, 3809982.33it/s]
+[!]  97%|#########6| 50298880/51996128 [00:13<00:00, 3810364.18it/s]
+[!]  97%|#########7| 50692096/51996128 [00:13<00:00, 3818174.24it/s]
+[!]  98%|#########8| 51085312/51996128 [00:13<00:00, 3769370.77it/s]
+[!]  99%|#########9| 51478528/51996128 [00:13<00:00, 3784588.45it/s]
+[!] 100%|#########9| 51871744/51996128 [00:13<00:00, 3798576.41it/s]
+[!] 100%|##########| 51996128/51996128 [00:13<00:00, 3796466.33it/s]
+ [!]Downloading https://cdn-lfs.huggingface.co/repos/0d/db/0ddb8d3fcb6ee9737d9dd7e090e6c6cb6e40728d12307180160e7f654cb345de/30878cea9870964d4a238339e9dcff002078bbbaa1a058b07e11c167f67eca1c?response-content-disposition=attachment%3B+filename*%3DUTF-8%27%27hand_yolov8s.pt%3B+filename%3D%22hand_yolov8s.pt%22%3B&Expires=1698417134&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTY5ODQxNzEzNH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5odWdnaW5nZmFjZS5jby9yZXBvcy8wZC9kYi8wZGRiOGQzZmNiNmVlOTczN2Q5ZGQ3ZTA5MGU2YzZjYjZlNDA3MjhkMTIzMDcxODAxNjBlN2Y2NTRjYjM0NWRlLzMwODc4Y2VhOTg3MDk2NGQ0YTIzODMzOWU5ZGNmZjAwMjA3OGJiYmFhMWEwNThiMDdlMTFjMTY3ZjY3ZWNhMWM%7EcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj0qIn1dfQ__&Signature=YZREO7KRxRtL6tZPhEDU5SQlG0ewjSBoONs%7EDABVCU-vxWRsbYF2CoYDJKp6sV0vlMYSKeVEHuyKRMhi8Cj151%7EYiKakByENH90EAZUIIlATz4vTRZOGA9J9lzFIY%7EW1WZM%7EnbepKmj0jC5rxr%7E9ovQ%7E7bh%7EqM5VlTZaEBdii-Urq87xAsaGKH-cxBajCALDmGpH33jDQEtZkn%7EGD92UruHTRgXeD1pVcgrGPXLs%7EfIeOdeHAcr66Je-NYya9gmUlPBeNHX6J1q-J0tMXV975pqbwtOf8C5Czh8EKvcH52ZZE6VG6V7UsScVPGsTfZuZT4yff6sScdCQf7NP-96IRw__&Key-Pair-Id=KVTP0A1DKRTAX to D:\Documents\projects\super-puper-ai\ComfyUI\models\ultralytics\bbox\hand_yolov8s.pt
+ 
+[!]   0%|          | 0/22484536 [00:00<?, ?it/s]
+[!]   2%|1         | 360448/22484536 [00:00<00:06, 3483178.83it/s]
+[!]   3%|3         | 753664/22484536 [00:00<00:05, 3680808.81it/s]
+[!]   5%|5         | 1146880/22484536 [00:00<00:05, 3690347.26it/s]
+[!]   7%|6         | 1540096/22484536 [00:00<00:05, 3726521.42it/s]
+[!]   9%|8         | 1933312/22484536 [00:00<00:05, 3753791.32it/s]
+[!]  10%|#         | 2326528/22484536 [00:00<00:05, 3775085.62it/s]
+[!]  12%|#2        | 2719744/22484536 [00:00<00:05, 3737235.55it/s]
+[!]  14%|#3        | 3112960/22484536 [00:00<00:05, 3764612.41it/s]
+[!]  16%|#5        | 3506176/22484536 [00:00<00:05, 3777710.27it/s]
+[!]  17%|#7        | 3899392/22484536 [00:01<00:04, 3799334.97it/s]
+[!]  19%|#9        | 4292608/22484536 [00:01<00:04, 3809175.99it/s]
+[!]  21%|##        | 4685824/22484536 [00:01<00:04, 3769553.33it/s]
+[!]  23%|##2       | 5079040/22484536 [00:01<00:04, 3779664.48it/s]
+[!]  24%|##4       | 5472256/22484536 [00:01<00:04, 3801987.07it/s]
+[!]  26%|##6       | 5865472/22484536 [00:01<00:04, 3808466.37it/s]
+[!]  28%|##7       | 6258688/22484536 [00:01<00:04, 3767142.66it/s]
+[!]  30%|##9       | 6651904/22484536 [00:01<00:04, 3791444.33it/s]
+[!]  31%|###1      | 7045120/22484536 [00:01<00:04, 3790007.29it/s]
+[!]  33%|###3      | 7438336/22484536 [00:01<00:03, 3808896.50it/s]
+[!]  35%|###4      | 7831552/22484536 [00:02<00:03, 3817828.54it/s]
+[!]  37%|###6      | 8224768/22484536 [00:02<00:03, 3786839.32it/s]
+[!]  38%|###8      | 8617984/22484536 [00:02<00:03, 3795334.35it/s]
+[!]  40%|####      | 9011200/22484536 [00:02<00:03, 3807574.84it/s]
+[!]  42%|####1     | 9404416/22484536 [00:02<00:03, 3819421.04it/s]
+[!]  44%|####3     | 9797632/22484536 [00:02<00:03, 3820076.27it/s]
+[!]  45%|####5     | 10190848/22484536 [00:02<00:03, 3809692.24it/s]
+[!]  47%|####7     | 10584064/22484536 [00:02<00:03, 3790969.37it/s]
+[!]  49%|####8     | 10977280/22484536 [00:02<00:03, 3809267.37it/s]
+[!]  51%|#####     | 11370496/22484536 [00:03<00:02, 3818326.23it/s]
+[!]  52%|#####2    | 11763712/22484536 [00:03<00:02, 3817487.46it/s]
+[!]  54%|#####4    | 12156928/22484536 [00:03<00:02, 3812657.19it/s]
+[!]  56%|#####5    | 12550144/22484536 [00:03<00:02, 3804388.06it/s]
+[!]  58%|#####7    | 12943360/22484536 [00:03<00:02, 3822035.37it/s]
+[!]  59%|#####9    | 13336576/22484536 [00:03<00:02, 3813245.68it/s]
+[!]  61%|######1   | 13729792/22484536 [00:03<00:02, 3823616.04it/s]
+[!]  63%|######2   | 14123008/22484536 [00:03<00:02, 3803671.83it/s]
+[!]  65%|######4   | 14516224/22484536 [00:03<00:02, 3780891.61it/s]
+[!]  66%|######6   | 14909440/22484536 [00:03<00:01, 3791847.66it/s]
+[!]  68%|######8   | 15302656/22484536 [00:04<00:01, 3821683.57it/s]
+[!]  70%|######9   | 15695872/22484536 [00:04<00:01, 3825111.66it/s]
+[!]  72%|#######1  | 16089088/22484536 [00:04<00:01, 3782347.74it/s]
+[!]  73%|#######3  | 16482304/22484536 [00:04<00:01, 3798263.10it/s]
+[!]  75%|#######5  | 16875520/22484536 [00:04<00:01, 3811401.20it/s]
+[!]  77%|#######6  | 17268736/22484536 [00:04<00:01, 3816962.19it/s]
+[!]  79%|#######8  | 17661952/22484536 [00:04<00:01, 3807991.51it/s]
+[!]  80%|########  | 18055168/22484536 [00:04<00:01, 3781301.70it/s]
+[!]  82%|########2 | 18448384/22484536 [00:04<00:01, 3785446.61it/s]
+[!]  84%|########3 | 18841600/22484536 [00:04<00:00, 3813862.01it/s]
+[!]  86%|########5 | 19234816/22484536 [00:05<00:00, 3819193.50it/s]
+[!]  87%|########7 | 19628032/22484536 [00:05<00:00, 3822979.62it/s]
+[!]  89%|########9 | 20021248/22484536 [00:05<00:00, 3780961.08it/s]
+[!]  91%|######### | 20414464/22484536 [00:05<00:00, 3780309.10it/s]
+[!]  93%|#########2| 20807680/22484536 [00:05<00:00, 3807354.95it/s]
+[!]  94%|#########4| 21200896/22484536 [00:05<00:00, 3816702.41it/s]
+[!]  96%|#########6| 21594112/22484536 [00:05<00:00, 3817859.19it/s]
+[!]  98%|#########7| 21987328/22484536 [00:05<00:00, 3773494.45it/s]
+[!] 100%|#########9| 22380544/22484536 [00:05<00:00, 3797601.69it/s]
+[!] 100%|##########| 22484536/22484536 [00:05<00:00, 3794375.34it/s]
+ [!]Downloading https://cdn-lfs.huggingface.co/repos/0d/db/0ddb8d3fcb6ee9737d9dd7e090e6c6cb6e40728d12307180160e7f654cb345de/1fd7e562f240a5debd48bf737753de6fb60c63f8664121bb522f090a885d8254?response-content-disposition=attachment%3B+filename*%3DUTF-8%27%27person_yolov8m-seg.pt%3B+filename%3D%22person_yolov8m-seg.pt%22%3B&Expires=1698414678&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTY5ODQxNDY3OH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5odWdnaW5nZmFjZS5jby9yZXBvcy8wZC9kYi8wZGRiOGQzZmNiNmVlOTczN2Q5ZGQ3ZTA5MGU2YzZjYjZlNDA3MjhkMTIzMDcxODAxNjBlN2Y2NTRjYjM0NWRlLzFmZDdlNTYyZjI0MGE1ZGViZDQ4YmY3Mzc3NTNkZTZmYjYwYzYzZjg2NjQxMjFiYjUyMmYwOTBhODg1ZDgyNTQ%7EcmVzcG9uc2UtY29udGVudC1kaXNwb3NpdGlvbj0qIn1dfQ__&Signature=AXV%7Eq1OJDdhrxqPFffkmcVmIMo75eXOSsJJ5fsb9%7EMK553bmcJWd7SXcM1g3H7Vw4-3kFiIfTxQS8GCKkLV%7EUO%7EssXl6Vjaun1jLADG2kqfBztrKsWSPTYpAGK9LGdX48r80q1vELLT68kYRFcqeNf20DZRqvKXLkbMPHTc9f7rVd8bHoUUNebePreK7v%7E9U-iYjD2vBmYKCw1vrjOWNSLxCjcZ6UH8wLaQjgLbOTIKEkbyK3MGule46RzBrBGOWmzfOZ8UX6ryBH4WPTdAZe-yna6sk20EpzRd%7EzLrbWC5QBS6ML9YRIho%7Ei7A3ih3LRrmu0t05vR8ez2ifyToYDA__&Key-Pair-Id=KVTP0A1DKRTAX to D:\Documents\projects\super-puper-ai\ComfyUI\models\ultralytics\segm\person_yolov8m-seg.pt
+ 
+[!]   0%|          | 0/54791722 [00:00<?, ?it/s]
+[!]   1%|          | 360448/54791722 [00:00<00:15, 3499521.97it/s]
+[!]   1%|1         | 753664/54791722 [00:00<00:14, 3661465.27it/s]
+[!]   2%|2         | 1146880/54791722 [00:00<00:14, 3748000.71it/s]
+[!]   3%|2         | 1540096/54791722 [00:00<00:14, 3722358.13it/s]
+[!]   4%|3         | 1933312/54791722 [00:00<00:14, 3770963.36it/s]
+[!]   4%|4         | 2326528/54791722 [00:00<00:13, 3783463.48it/s]
+[!]   5%|4         | 2719744/54791722 [00:00<00:13, 3801553.61it/s]
+[!]   6%|5         | 3112960/54791722 [00:00<00:13, 3783770.97it/s]
+[!]   6%|6         | 3506176/54791722 [00:00<00:13, 3774088.56it/s]
+[!]   7%|7         | 3899392/54791722 [00:01<00:13, 3803158.86it/s]
+[!]   8%|7         | 4292608/54791722 [00:01<00:13, 3799142.86it/s]
+[!]   9%|8         | 4685824/54791722 [00:01<00:13, 3815457.15it/s]
+[!]   9%|9         | 5079040/54791722 [00:01<00:13, 3775582.51it/s]
+[!]  10%|9         | 5472256/54791722 [00:01<00:12, 3799074.60it/s]
+[!]  11%|#         | 5865472/54791722 [00:01<00:12, 3800120.90it/s]
+[!]  11%|#1        | 6258688/54791722 [00:01<00:12, 3809132.98it/s]
+[!]  12%|#2        | 6651904/54791722 [00:01<00:12, 3822346.31it/s]
+[!]  13%|#2        | 7045120/54791722 [00:01<00:12, 3782909.58it/s]
+[!]  14%|#3        | 7438336/54791722 [00:01<00:12, 3786808.58it/s]
+[!]  14%|#4        | 7831552/54791722 [00:02<00:12, 3793277.27it/s]
+[!]  15%|#5        | 8224768/54791722 [00:02<00:12, 3804237.17it/s]
+[!]  16%|#5        | 8617984/54791722 [00:02<00:12, 3797020.05it/s]
+[!]  16%|#6        | 9011200/54791722 [00:02<00:12, 3782902.93it/s]
+[!]  17%|#7        | 9404416/54791722 [00:02<00:11, 3788922.33it/s]
+[!]  18%|#7        | 9797632/54791722 [00:02<00:11, 3802653.74it/s]
+[!]  19%|#8        | 10190848/54791722 [00:02<00:11, 3821443.69it/s]
+[!]  19%|#9        | 10584064/54791722 [00:02<00:11, 3768993.33it/s]
+[!]  20%|##        | 10977280/54791722 [00:02<00:11, 3791764.62it/s]
+[!]  21%|##        | 11370496/54791722 [00:03<00:11, 3804408.37it/s]
+[!]  21%|##1       | 11763712/54791722 [00:03<00:11, 3820193.47it/s]
+[!]  22%|##2       | 12156928/54791722 [00:03<00:11, 3814083.05it/s]
+[!]  23%|##2       | 12550144/54791722 [00:03<00:11, 3798566.37it/s]
+[!]  24%|##3       | 12943360/54791722 [00:03<00:10, 3805662.38it/s]
+[!]  24%|##4       | 13336576/54791722 [00:03<00:10, 3793053.52it/s]
+[!]  25%|##5       | 13729792/54791722 [00:03<00:10, 3817685.92it/s]
+[!]  26%|##5       | 14123008/54791722 [00:03<00:10, 3824149.99it/s]
+[!]  26%|##6       | 14516224/54791722 [00:03<00:10, 3802455.14it/s]
+[!]  27%|##7       | 14909440/54791722 [00:03<00:10, 3800881.76it/s]
+[!]  28%|##7       | 15302656/54791722 [00:04<00:10, 3812239.13it/s]
+[!]  29%|##8       | 15695872/54791722 [00:04<00:10, 3826494.39it/s]
+[!]  29%|##9       | 16089088/54791722 [00:04<00:10, 3812855.13it/s]
+[!]  30%|###       | 16482304/54791722 [00:04<00:10, 3814658.01it/s]
+[!]  31%|###       | 16875520/54791722 [00:04<00:10, 3785543.46it/s]
+[!]  31%|###       | 16973824/54791722 [00:04<00:09, 3786422.80it/s]
+[!] Traceback (most recent call last):
+[!]   File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Impact-Pack\impact_subpack\install.py", line 31, in <module>
+[!]     download_url("https://huggingface.co/Bingsu/adetailer/resolve/main/person_yolov8m-seg.pt",
+[!]   File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torchvision\datasets\utils.py", line 144, in download_url
+[!]     _urlretrieve(url, fpath)
+[!]   File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torchvision\datasets\utils.py", line 48, in _urlretrieve
+[!]     _save_response_content(iter(lambda: response.read(chunk_size), b""), filename, length=response.length)
+[!]   File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torchvision\datasets\utils.py", line 37, in _save_response_content
+[!]     for chunk in content:
+[!]   File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torchvision\datasets\utils.py", line 48, in <lambda>
+[!]     _save_response_content(iter(lambda: response.read(chunk_size), b""), filename, length=response.length)
+[!]   File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\http\client.py", line 463, in read
+[!]     n = self.readinto(b)
+[!]   File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\http\client.py", line 507, in readinto
+[!]     n = self.fp.readinto(b)
+[!]   File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\socket.py", line 704, in readinto
+[!]     return self._sock.recv_into(b)
+[!]   File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\ssl.py", line 1242, in recv_into
+[!]     return self.read(nbytes, buffer)
+[!]   File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\ssl.py", line 1100, in read
+[!]     return self._sslobj.read(len, buffer)
+[!] KeyboardInterrupt
+ [!]### ComfyUI-Impact-Pack: Updating subpack
+ Traceback (most recent call last):
+[!]   File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Impact-Pack\install.py", line 190, in <module>
+[!]     install()
+[!]   File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Impact-Pack\install.py", line 180, in install
+[!]     subprocess.run([sys.executable, 'install.py'], cwd=subpack_path)
+[!]   File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\subprocess.py", line 507, in run
+[!]     stdout, stderr = process.communicate(input, timeout=timeout)
+[!]   File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\subprocess.py", line 1126, in communicate
+[!]     self.wait()
+[!]   File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\subprocess.py", line 1189, in wait
+[!]     return self._wait(timeout=timeout)
+[!]   File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\subprocess.py", line 1486, in _wait
+[!]     result = _winapi.WaitForSingleObject(self._handle,
+[!] KeyboardInterrupt
+
+Stopped server
