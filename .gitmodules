@@ -1,3 +1,15 @@
 [submodule "./custom_nodes/ComfyUI-Manager"]
 	path = custom_nodes/ComfyUI-Manager
 	url = https://github.com/ltdrdata/ComfyUI-Manager.git
+
+[submodule "./custom_nodes/ComfyUI-AnimateDiff-Evolved"]
+	path = custom_nodes/ComfyUI-AnimateDiff-Evolved
+	url = https://github.com/Kosinkadink/ComfyUI-AnimateDiff-Evolved
+
+[submodule "./custom_nodes/comfyui-animatediff"]
+	path = custom_nodes/comfyui-animatediff
+	url = https://github.com/ArtVentureX/comfyui-animatediff
+
+[submodule "./custom_nodes/ComfyUI-VideoHelperSuite"]
+	path = custom_nodes/ComfyUI-VideoHelperSuite
+	url = https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite
