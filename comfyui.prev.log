@@ -1,19 +1,73 @@
-** ComfyUI start up time: 2023-10-23 13:19:31.471516
+** ComfyUI start up time: 2023-10-24 16:21:15.457308
 
 Prestartup times for custom nodes:
    0.0 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager
 
+Using directml with device: 
+Total VRAM 1024 MB, total RAM 32699 MB
+Set vram state to: NORMAL_VRAM
+Device: privateuseone
+VAE dtype: torch.float32
+Using sub quadratic optimization for cross attention, if you have memory or speed issues try using: --use-split-cross-attention
 Traceback (most recent call last):
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\main.py", line 72, in <module>
-    import execution
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\execution.py", line 12, in <module>
-    import nodes
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\nodes.py", line 20, in <module>
-    import comfy.diffusers_load
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\diffusers_load.py", line 4, in <module>
-    import comfy.sd
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\sd.py", line 5, in <module>
-    from comfy import model_management
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\model_management.py", line 33, in <module>
-    import torch_directml
-ModuleNotFoundError: No module named 'torch_directml'
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\nodes.py", line 1735, in load_custom_node
+    module_spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\comfyui-animatediff\__init__.py", line 2, in <module>
+    from .animatediff.nodes import NODE_CLASS_MAPPINGS, NODE_DISPLAY_NAME_MAPPINGS
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\comfyui-animatediff\animatediff\nodes.py", line 16, in <module>
+    from .sampler import AnimateDiffSampler, AnimateDiffSlidingWindowOptions
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\comfyui-animatediff\animatediff\sampler.py", line 14, in <module>
+    from .sliding_schedule import ContextSchedules
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\comfyui-animatediff\animatediff\sliding_schedule.py", line 147
+    match name:
+          ^
+SyntaxError: invalid syntax
+
+Cannot import D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\comfyui-animatediff module for custom nodes: invalid syntax (sliding_schedule.py, line 147)
+Using sub quadratic optimization for cross attention, if you have memory or speed issues try using: --use-split-cross-attention
+### Loading: ComfyUI-Manager (V0.36)
+### ComfyUI Revision: 1604 [200ac913] | Released on '2023-10-23'
+[VideoHelperSuite] - [0;32mINFO[0m - ffmpeg could not be found. Using ffmpeg from imageio-ffmpeg.
+
+Import times for custom nodes:
+   0.0 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\base64_images.py
+   0.0 seconds (IMPORT FAILED): D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\comfyui-animatediff
+   0.0 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved
+   0.2 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-VideoHelperSuite
+   0.5 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager
+
+Traceback (most recent call last):
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\debugpy\__main__.py", line 39, in <module>
+    cli.main()
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\debugpy\server\cli.py", line 430, in main
+    run()
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\debugpy\server\cli.py", line 284, in run_file
+    runpy.run_path(target, run_name="__main__")
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\debugpy\_vendored\pydevd\_pydevd_bundle\pydevd_runpy.py", line 321, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\debugpy\_vendored\pydevd\_pydevd_bundle\pydevd_runpy.py", line 135, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\debugpy\_vendored\pydevd\_pydevd_bundle\pydevd_runpy.py", line 124, in _run_code
+    exec(code, run_globals)
+  File "main.py", line 168, in <module>
+    server.add_routes()
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\server.py", line 522, in add_routes
+    for name, dir in nodes.EXTENSION_WEB_DIRS.items():
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\server.py", line 522, in add_routes
+    for name, dir in nodes.EXTENSION_WEB_DIRS.items():
+  File "_pydevd_bundle/pydevd_cython.pyx", line 1457, in _pydevd_bundle.pydevd_cython.SafeCallWrapper.__call__
+  File "_pydevd_bundle/pydevd_cython.pyx", line 701, in _pydevd_bundle.pydevd_cython.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle/pydevd_cython.pyx", line 1152, in _pydevd_bundle.pydevd_cython.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle/pydevd_cython.pyx", line 1135, in _pydevd_bundle.pydevd_cython.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle/pydevd_cython.pyx", line 312, in _pydevd_bundle.pydevd_cython.PyDBFrame.do_wait_suspend
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\debugpy\_vendored\pydevd\pydevd.py", line 2070, in do_wait_suspend
+    keep_suspended = self._do_wait_suspend(thread, frame, event, arg, suspend_type, from_this_thread, frames_tracker)
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\debugpy\_vendored\pydevd\pydevd.py", line 2106, in _do_wait_suspend
+    time.sleep(0.01)
+KeyboardInterrupt

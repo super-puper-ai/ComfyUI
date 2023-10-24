@@ -1,35 +1,7 @@
-** ComfyUI start up time: 2023-10-20 13:39:54.118205
-
-#######################################################################
-[ComfyUI-Manager] Starting dependency installation/(de)activation for the extension
-
-
-## ComfyUI-Manager: EXECUTE => ['C:\\Users\\majul\\miniconda3\\envs\\env_pytorch39\\python.exe', '-m', 'pip', 'install', 'opencv-python']
-
-## Execute install/(de)activation script for 'D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-VideoHelperSuite'
- Requirement already satisfied: opencv-python in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (4.8.1.78)
- Requirement already satisfied: numpy>=1.17.0 in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from opencv-python) (1.25.2)
-[!] DEPRECATION: torchsde 0.2.5 has a non-standard dependency specifier numpy>=1.19.*; python_version >= "3.7". pip 23.3 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of torchsde or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063
-
-## ComfyUI-Manager: EXECUTE => ['C:\\Users\\majul\\miniconda3\\envs\\env_pytorch39\\python.exe', '-m', 'pip', 'install', 'imageio-ffmpeg']
-
-## Execute install/(de)activation script for 'D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-VideoHelperSuite'
- Collecting imageio-ffmpeg
-   Obtaining dependency information for imageio-ffmpeg from https://files.pythonhosted.org/packages/c6/01/716106099e48c4f419876d5814679a94dd7d6f441217c97c1b608123c6bb/imageio_ffmpeg-0.4.9-py3-none-win_amd64.whl.metadata
-   Downloading imageio_ffmpeg-0.4.9-py3-none-win_amd64.whl.metadata (1.7 kB)
- Requirement already satisfied: setuptools in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from imageio-ffmpeg) (68.0.0)
- Downloading imageio_ffmpeg-0.4.9-py3-none-win_amd64.whl (22.6 MB)
-    ---------------------------------------- 22.6/22.6 MB 3.2 MB/s eta 0:00:00
-[!] DEPRECATION: torchsde 0.2.5 has a non-standard dependency specifier numpy>=1.19.*; python_version >= "3.7". pip 23.3 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of torchsde or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063
- Installing collected packages: imageio-ffmpeg
- Successfully installed imageio-ffmpeg-0.4.9
-
-[ComfyUI-Manager] Startup script completed.
-#######################################################################
-
+** ComfyUI start up time: 2023-10-24 16:20:42.534857
 
 Prestartup times for custom nodes:
-  17.4 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager
+   0.0 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager
 
 Using directml with device: 
 Total VRAM 1024 MB, total RAM 32699 MB
@@ -56,7 +28,7 @@ SyntaxError: invalid syntax
 Cannot import D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\comfyui-animatediff module for custom nodes: invalid syntax (sliding_schedule.py, line 147)
 Using sub quadratic optimization for cross attention, if you have memory or speed issues try using: --use-split-cross-attention
 ### Loading: ComfyUI-Manager (V0.36)
-### ComfyUI Revision: 1602 [585f993c] | Released on '2023-10-20'
+### ComfyUI Revision: 1604 [200ac913] | Released on '2023-10-23'
 [VideoHelperSuite] - [0;32mINFO[0m - ffmpeg could not be found. Using ffmpeg from imageio-ffmpeg.
 
 Import times for custom nodes:
@@ -64,1328 +36,35 @@ Import times for custom nodes:
    0.0 seconds (IMPORT FAILED): D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\comfyui-animatediff
    0.0 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved
    0.5 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager
-   1.0 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-VideoHelperSuite
+   0.9 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-VideoHelperSuite
 
-Starting server
-
-To see the GUI go to: http://0.0.0.0:8188
-FETCH DATA from: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager\extension-node-map.json
-[AnimateDiffEvo] - [0;33mWARNING[0m - ffmpeg could not be found. Outputs that require it have been disabled
-got prompt
-ERROR:root:Failed to validate prompt for output 21:
-ERROR:root:* VAEDecode 8:
-ERROR:root:  - Required input is missing: samples
-ERROR:root:  - Required input is missing: vae
-ERROR:root:Output will be ignored
-invalid prompt: {'type': 'prompt_outputs_failed_validation', 'message': 'Prompt outputs failed validation', 'details': '', 'extra_info': {}}
-got prompt
-model_type V_PREDICTION
-adm 0
-Using split attention in VAE
-Working with z of shape (1, 4, 32, 32) = 4096 dimensions.
-Using split attention in VAE
-missing {'cond_stage_model.text_projection', 'cond_stage_model.logit_scale'}
-left over keys: dict_keys(['cond_stage_model.model.logit_scale', 'cond_stage_model.model.text_projection'])
-[AnimateDiffEvo] - [0;32mINFO[0m - Loading motion module mm-Stabilized_high.pth
-Requested to load SD2ClipModel
-Loading 1 new model
-warning, embedding:easynegative, does not exist, ignoring
-warning, embedding:badhandv4, does not exist, ignoring
-[AnimateDiffEvo] - [0;32mINFO[0m - Regular AnimateDiff activated - latents passed in (1) less or equal to context_length 16.
-[AnimateDiffEvo] - [0;32mINFO[0m - Injecting motion module mm-Stabilized_high.pth version v1.
-Requested to load BaseModel
-Loading 1 new model
-D:\Documents\projects\super-puper-ai\ComfyUI\comfy\k_diffusion\external.py:63: UserWarning: The operator 'aten::linspace.out' is not currently supported on the DML backend and will fall back to run on the CPU. This may have performance implications. (Triggered internally at D:\a\_work\1\s\pytorch-directml-plugin\torch_directml\csrc\dml\dml_cpu_fallback.cpp:17.)
-  t = torch.linspace(t_max, 0, n, device=self.sigmas.device)
-100%|██████████████████████████████████████████████████████████████████████████████████| 20/20 [00:07<00:00,  2.98it/s]100%|██████████████████████████████████████████████████████████████████████████████████| 20/20 [00:07<00:00,  2.52it/s]
-[AnimateDiffEvo] - [0;32mINFO[0m - Ejecting motion module mm-Stabilized_high.pth version v1.
-[AnimateDiffEvo] - [0;32mINFO[0m - Cleaning motion module from unet.
-[AnimateDiffEvo] - [0;32mINFO[0m - Removing motion module mm-Stabilized_high.pth from cache
-D:\Documents\projects\super-puper-ai\ComfyUI\comfy\model_base.py:48: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
-  self.register_buffer('betas', torch.tensor(betas, dtype=torch.float32))
-D:\Documents\projects\super-puper-ai\ComfyUI\comfy\model_base.py:49: UserWarning: To copy construct from a tensor, it is recommended to use sourceTensor.clone().detach() or sourceTensor.clone().detach().requires_grad_(True), rather than torch.tensor(sourceTensor).
-  self.register_buffer('alphas_cumprod', torch.tensor(alphas_cumprod, dtype=torch.float32))
-Prompt executed in 67.69 seconds
-got prompt
-ERROR:root:Failed to validate prompt for output 21:
-ERROR:root:* VAEDecode 8:
-ERROR:root:  - Required input is missing: vae
-ERROR:root:Output will be ignored
-invalid prompt: {'type': 'prompt_outputs_failed_validation', 'message': 'Prompt outputs failed validation', 'details': '', 'extra_info': {}}
-got prompt
-model_type V_PREDICTION
-adm 0
-Using split attention in VAE
-Working with z of shape (1, 4, 32, 32) = 4096 dimensions.
-Using split attention in VAE
-missing {'cond_stage_model.text_projection', 'cond_stage_model.logit_scale'}
-left over keys: dict_keys(['cond_stage_model.model.logit_scale', 'cond_stage_model.model.text_projection'])
-[AnimateDiffEvo] - [0;32mINFO[0m - Loading motion module mm-Stabilized_high.pth
-Requested to load SD2ClipModel
-Loading 1 new model
-[AnimateDiffEvo] - [0;32mINFO[0m - Regular AnimateDiff activated - latents passed in (16) less or equal to context_length None.
-[AnimateDiffEvo] - [0;32mINFO[0m - Injecting motion module mm-Stabilized_high.pth version v1.
-Requested to load BaseModel
-Loading 1 new model
-
-[AnimateDiffEvo] - [0;32mINFO[0m - Ejecting motion module mm-Stabilized_high.pth version v1.
-[AnimateDiffEvo] - [0;32mINFO[0m - Cleaning motion module from unet.
-[AnimateDiffEvo] - [0;32mINFO[0m - Removing motion module mm-Stabilized_high.pth from cache
-ERROR:root:!!! Exception during processing !!!
-ERROR:root:Traceback (most recent call last):
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\execution.py", line 155, in recursive_execute
-    output_data, output_ui = get_output_data(obj, input_data_all)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\execution.py", line 85, in get_output_data
-    return_values = map_node_over_list(obj, input_data_all, obj.FUNCTION, allow_interrupt=True)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\execution.py", line 78, in map_node_over_list
-    results.append(getattr(obj, func)(**slice_dict(input_data_all, i)))
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\nodes.py", line 1237, in sample
-    return common_ksampler(model, seed, steps, cfg, sampler_name, scheduler, positive, negative, latent_image, denoise=denoise)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\nodes.py", line 1207, in common_ksampler
-    samples = comfy.sample.sample(model, noise, steps, cfg, sampler_name, scheduler, positive, negative, latent_image,
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\sampling.py", line 163, in animatediff_sample
-    return wrap_function_to_inject_xformers_bug_info(orig_comfy_sample)(model, *args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\model_utils.py", line 185, in wrapped_function
-    return function_to_wrap(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\sample.py", line 97, in sample
-    samples = sampler.sample(noise, positive_copy, negative_copy, cfg=cfg, latent_image=latent_image, start_step=start_step, last_step=last_step, force_full_denoise=force_full_denoise, denoise_mask=noise_mask, sigmas=sigmas, callback=callback, disable_pbar=disable_pbar, seed=seed)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 781, in sample
-    return sample(self.model, noise, positive, negative, cfg, self.device, sampler(), sigmas, self.model_options, latent_image=latent_image, denoise_mask=denoise_mask, callback=callback, disable_pbar=disable_pbar, seed=seed)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 686, in sample
-    samples = sampler.sample(model_wrap, sigmas, extra_args, callback, noise, latent_image, denoise_mask, disable_pbar)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 638, in sample
-    samples = getattr(k_diffusion_sampling, "sample_{}".format(sampler_name))(model_k, noise, sigmas, extra_args=extra_args, callback=k_callback, disable=disable_pbar, **extra_options)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\utils\_contextlib.py", line 115, in decorate_context
-    return func(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\k_diffusion\sampling.py", line 137, in sample_euler
-    denoised = model(x, sigma_hat * s_in, **extra_args)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 326, in forward
-    out = self.inner_model(x, sigma, cond=cond, uncond=uncond, cond_scale=cond_scale, model_options=model_options, seed=seed)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\k_diffusion\external.py", line 184, in forward
-    return self.get_v(input * c_in, self.sigma_to_t(sigma), **kwargs) * c_out + input * c_skip
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 305, in get_v
-    return self.inner_model.apply_model(x, t, cond, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 314, in apply_model
-    out = sampling_function(self.inner_model.apply_model, x, timestep, uncond, cond, cond_scale, model_options=model_options, seed=seed)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\sampling.py", line 537, in sliding_sampling_function
-    cond, uncond = calc_cond_uncond_batch(model_function, cond, uncond, x, timestep, max_total_area, cond_concat, model_options)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\sampling.py", line 433, in calc_cond_uncond_batch
-    output = model_function(input_x, timestep_, **c).chunk(batch_chunks)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\model_base.py", line 64, in apply_model
-    return self.diffusion_model(xc, t, context=context, y=c_adm, control=control, transformer_options=transformer_options).float()
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\diffusionmodules\openaimodel.py", line 625, in forward
-    h = forward_timestep_embed(module, h, emb, context, transformer_options)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\sampling.py", line 75, in forward_timestep_embed
-    x = layer(x, context, transformer_options)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\attention.py", line 534, in forward
-    x = block(x, context=context[i], transformer_options=transformer_options)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\attention.py", line 364, in forward
-    return checkpoint(self._forward, (x, context, transformer_options), self.parameters(), self.checkpoint)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\diffusionmodules\util.py", line 123, in checkpoint
-    return func(*inputs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\attention.py", line 429, in _forward
-    n = self.attn1(n, context=context_attn1, value=value_attn1)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\attention.py", line 340, in forward
-    out = optimized_attention(q, k, v, self.heads)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\attention.py", line 172, in attention_sub_quad
-    hidden_states = efficient_dot_product_attention(
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\sub_quadratic_attention.py", line 243, in efficient_dot_product_attention
-    res = torch.cat([
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\sub_quadratic_attention.py", line 244, in <listcomp>
-    compute_query_chunk_attn(
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\sub_quadratic_attention.py", line 115, in _query_chunk_attention
-    chunks: List[AttnChunk] = [
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\sub_quadratic_attention.py", line 116, in <listcomp>
-    chunk_scanner(chunk) for chunk in torch.arange(0, k_tokens, kv_chunk_size)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\sub_quadratic_attention.py", line 113, in chunk_scanner
-    return summarize_chunk(query, key_chunk, value_chunk)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\sub_quadratic_attention.py", line 77, in _summarize_chunk
-    attn_weights = torch.baddbmm(
-RuntimeError: Could not allocate tensor with 1006632960 bytes. There is not enough GPU video memory available!
-
-Prompt executed in 17.99 seconds
-got prompt
-[AnimateDiffEvo] - [0;32mINFO[0m - Loading motion module mm-Stabilized_high.pth
-[AnimateDiffEvo] - [0;32mINFO[0m - Regular AnimateDiff activated - latents passed in (16) less or equal to context_length None.
-[AnimateDiffEvo] - [0;32mINFO[0m - Injecting motion module mm-Stabilized_high.pth version v1.
-Requested to load BaseModel
-Loading 1 new model
-
-[AnimateDiffEvo] - [0;32mINFO[0m - Ejecting motion module mm-Stabilized_high.pth version v1.
-[AnimateDiffEvo] - [0;32mINFO[0m - Cleaning motion module from unet.
-[AnimateDiffEvo] - [0;32mINFO[0m - Removing motion module mm-Stabilized_high.pth from cache
-ERROR:root:!!! Exception during processing !!!
-ERROR:root:Traceback (most recent call last):
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\execution.py", line 155, in recursive_execute
-    output_data, output_ui = get_output_data(obj, input_data_all)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\execution.py", line 85, in get_output_data
-    return_values = map_node_over_list(obj, input_data_all, obj.FUNCTION, allow_interrupt=True)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\execution.py", line 78, in map_node_over_list
-    results.append(getattr(obj, func)(**slice_dict(input_data_all, i)))
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\nodes.py", line 1237, in sample
-    return common_ksampler(model, seed, steps, cfg, sampler_name, scheduler, positive, negative, latent_image, denoise=denoise)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\nodes.py", line 1207, in common_ksampler
-    samples = comfy.sample.sample(model, noise, steps, cfg, sampler_name, scheduler, positive, negative, latent_image,
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\sampling.py", line 163, in animatediff_sample
-    return wrap_function_to_inject_xformers_bug_info(orig_comfy_sample)(model, *args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\model_utils.py", line 185, in wrapped_function
-    return function_to_wrap(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\sample.py", line 97, in sample
-    samples = sampler.sample(noise, positive_copy, negative_copy, cfg=cfg, latent_image=latent_image, start_step=start_step, last_step=last_step, force_full_denoise=force_full_denoise, denoise_mask=noise_mask, sigmas=sigmas, callback=callback, disable_pbar=disable_pbar, seed=seed)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 781, in sample
-    return sample(self.model, noise, positive, negative, cfg, self.device, sampler(), sigmas, self.model_options, latent_image=latent_image, denoise_mask=denoise_mask, callback=callback, disable_pbar=disable_pbar, seed=seed)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 686, in sample
-    samples = sampler.sample(model_wrap, sigmas, extra_args, callback, noise, latent_image, denoise_mask, disable_pbar)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 638, in sample
-    samples = getattr(k_diffusion_sampling, "sample_{}".format(sampler_name))(model_k, noise, sigmas, extra_args=extra_args, callback=k_callback, disable=disable_pbar, **extra_options)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\utils\_contextlib.py", line 115, in decorate_context
-    return func(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\k_diffusion\sampling.py", line 137, in sample_euler
-    denoised = model(x, sigma_hat * s_in, **extra_args)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 326, in forward
-    out = self.inner_model(x, sigma, cond=cond, uncond=uncond, cond_scale=cond_scale, model_options=model_options, seed=seed)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\k_diffusion\external.py", line 184, in forward
-    return self.get_v(input * c_in, self.sigma_to_t(sigma), **kwargs) * c_out + input * c_skip
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 305, in get_v
-    return self.inner_model.apply_model(x, t, cond, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 314, in apply_model
-    out = sampling_function(self.inner_model.apply_model, x, timestep, uncond, cond, cond_scale, model_options=model_options, seed=seed)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\sampling.py", line 537, in sliding_sampling_function
-    cond, uncond = calc_cond_uncond_batch(model_function, cond, uncond, x, timestep, max_total_area, cond_concat, model_options)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\sampling.py", line 433, in calc_cond_uncond_batch
-    output = model_function(input_x, timestep_, **c).chunk(batch_chunks)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\model_base.py", line 64, in apply_model
-    return self.diffusion_model(xc, t, context=context, y=c_adm, control=control, transformer_options=transformer_options).float()
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\diffusionmodules\openaimodel.py", line 625, in forward
-    h = forward_timestep_embed(module, h, emb, context, transformer_options)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\sampling.py", line 75, in forward_timestep_embed
-    x = layer(x, context, transformer_options)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\attention.py", line 534, in forward
-    x = block(x, context=context[i], transformer_options=transformer_options)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\attention.py", line 364, in forward
-    return checkpoint(self._forward, (x, context, transformer_options), self.parameters(), self.checkpoint)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\diffusionmodules\util.py", line 123, in checkpoint
-    return func(*inputs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\attention.py", line 429, in _forward
-    n = self.attn1(n, context=context_attn1, value=value_attn1)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\attention.py", line 340, in forward
-    out = optimized_attention(q, k, v, self.heads)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\attention.py", line 172, in attention_sub_quad
-    hidden_states = efficient_dot_product_attention(
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\sub_quadratic_attention.py", line 243, in efficient_dot_product_attention
-    res = torch.cat([
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\sub_quadratic_attention.py", line 244, in <listcomp>
-    compute_query_chunk_attn(
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\sub_quadratic_attention.py", line 159, in _get_attention_scores_no_kv_chunking
-    attn_probs = attn_scores.softmax(dim=-1)
-RuntimeError: Could not allocate tensor with 701890560 bytes. There is not enough GPU video memory available!
-
-Prompt executed in 25.13 seconds
-got prompt
-[AnimateDiffEvo] - [0;32mINFO[0m - Loading motion module mm-Stabilized_high.pth
-[AnimateDiffEvo] - [0;32mINFO[0m - Regular AnimateDiff activated - latents passed in (16) less or equal to context_length None.
-[AnimateDiffEvo] - [0;32mINFO[0m - Injecting motion module mm-Stabilized_high.pth version v1.
-Requested to load BaseModel
-Loading 1 new model
-
-[AnimateDiffEvo] - [0;32mINFO[0m - Ejecting motion module mm-Stabilized_high.pth version v1.
-[AnimateDiffEvo] - [0;32mINFO[0m - Cleaning motion module from unet.
-[AnimateDiffEvo] - [0;32mINFO[0m - Removing motion module mm-Stabilized_high.pth from cache
-ERROR:root:!!! Exception during processing !!!
-ERROR:root:Traceback (most recent call last):
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\execution.py", line 155, in recursive_execute
-    output_data, output_ui = get_output_data(obj, input_data_all)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\execution.py", line 85, in get_output_data
-    return_values = map_node_over_list(obj, input_data_all, obj.FUNCTION, allow_interrupt=True)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\execution.py", line 78, in map_node_over_list
-    results.append(getattr(obj, func)(**slice_dict(input_data_all, i)))
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\nodes.py", line 1237, in sample
-    return common_ksampler(model, seed, steps, cfg, sampler_name, scheduler, positive, negative, latent_image, denoise=denoise)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\nodes.py", line 1207, in common_ksampler
-    samples = comfy.sample.sample(model, noise, steps, cfg, sampler_name, scheduler, positive, negative, latent_image,
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\sampling.py", line 163, in animatediff_sample
-    return wrap_function_to_inject_xformers_bug_info(orig_comfy_sample)(model, *args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\model_utils.py", line 185, in wrapped_function
-    return function_to_wrap(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\sample.py", line 97, in sample
-    samples = sampler.sample(noise, positive_copy, negative_copy, cfg=cfg, latent_image=latent_image, start_step=start_step, last_step=last_step, force_full_denoise=force_full_denoise, denoise_mask=noise_mask, sigmas=sigmas, callback=callback, disable_pbar=disable_pbar, seed=seed)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 781, in sample
-    return sample(self.model, noise, positive, negative, cfg, self.device, sampler(), sigmas, self.model_options, latent_image=latent_image, denoise_mask=denoise_mask, callback=callback, disable_pbar=disable_pbar, seed=seed)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 686, in sample
-    samples = sampler.sample(model_wrap, sigmas, extra_args, callback, noise, latent_image, denoise_mask, disable_pbar)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 638, in sample
-    samples = getattr(k_diffusion_sampling, "sample_{}".format(sampler_name))(model_k, noise, sigmas, extra_args=extra_args, callback=k_callback, disable=disable_pbar, **extra_options)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\utils\_contextlib.py", line 115, in decorate_context
-    return func(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\k_diffusion\sampling.py", line 137, in sample_euler
-    denoised = model(x, sigma_hat * s_in, **extra_args)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 326, in forward
-    out = self.inner_model(x, sigma, cond=cond, uncond=uncond, cond_scale=cond_scale, model_options=model_options, seed=seed)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\k_diffusion\external.py", line 184, in forward
-    return self.get_v(input * c_in, self.sigma_to_t(sigma), **kwargs) * c_out + input * c_skip
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 305, in get_v
-    return self.inner_model.apply_model(x, t, cond, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 314, in apply_model
-    out = sampling_function(self.inner_model.apply_model, x, timestep, uncond, cond, cond_scale, model_options=model_options, seed=seed)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\sampling.py", line 537, in sliding_sampling_function
-    cond, uncond = calc_cond_uncond_batch(model_function, cond, uncond, x, timestep, max_total_area, cond_concat, model_options)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\sampling.py", line 433, in calc_cond_uncond_batch
-    output = model_function(input_x, timestep_, **c).chunk(batch_chunks)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\model_base.py", line 64, in apply_model
-    return self.diffusion_model(xc, t, context=context, y=c_adm, control=control, transformer_options=transformer_options).float()
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\diffusionmodules\openaimodel.py", line 657, in forward
-    h = forward_timestep_embed(module, h, emb, context, transformer_options, output_shape)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\sampling.py", line 73, in forward_timestep_embed
-    x = layer(x, context)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\motion_module_ad.py", line 136, in forward
-    return self.temporal_transformer(input_tensor, encoder_hidden_states, attention_mask)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\motion_module_ad.py", line 208, in forward
-    hidden_states = block(
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\motion_module_ad.py", line 287, in forward
-    norm_hidden_states = norm(hidden_states)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\normalization.py", line 190, in forward
-    return F.layer_norm(
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\functional.py", line 2515, in layer_norm
-    return torch.layer_norm(input, normalized_shape, weight, bias, eps, torch.backends.cudnn.enabled)
-RuntimeError: Could not allocate tensor with 20213760 bytes. There is not enough GPU video memory available!
-
-Prompt executed in 33.74 seconds
-got prompt
-[AnimateDiffEvo] - [0;32mINFO[0m - Loading motion module mm-Stabilized_high.pth
-[AnimateDiffEvo] - [0;32mINFO[0m - Regular AnimateDiff activated - latents passed in (16) less or equal to context_length None.
-[AnimateDiffEvo] - [0;32mINFO[0m - Injecting motion module mm-Stabilized_high.pth version v1.
-Requested to load BaseModel
-Loading 1 new model
-100%|██████████████████████████████████████████████████████████████████████████████████| 20/20 [00:34<00:00,  1.70s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 20/20 [00:34<00:00,  1.73s/it]
-[AnimateDiffEvo] - [0;32mINFO[0m - Ejecting motion module mm-Stabilized_high.pth version v1.
-[AnimateDiffEvo] - [0;32mINFO[0m - Cleaning motion module from unet.
-[AnimateDiffEvo] - [0;32mINFO[0m - Removing motion module mm-Stabilized_high.pth from cache
-Prompt executed in 55.95 seconds
-got prompt
-[AnimateDiffEvo] - [0;32mINFO[0m - Loading motion module mm-Stabilized_high.pth
-[AnimateDiffEvo] - [0;32mINFO[0m - Regular AnimateDiff activated - latents passed in (16) less or equal to context_length None.
-[AnimateDiffEvo] - [0;32mINFO[0m - Injecting motion module mm-Stabilized_high.pth version v1.
-Requested to load BaseModel
-Loading 1 new model
-100%|██████████████████████████████████████████████████████████████████████████████████| 20/20 [00:29<00:00,  1.40s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 20/20 [00:29<00:00,  1.49s/it]
-[AnimateDiffEvo] - [0;32mINFO[0m - Ejecting motion module mm-Stabilized_high.pth version v1.
-[AnimateDiffEvo] - [0;32mINFO[0m - Cleaning motion module from unet.
-[AnimateDiffEvo] - [0;32mINFO[0m - Removing motion module mm-Stabilized_high.pth from cache
-Prompt executed in 61.56 seconds
-FETCH DATA from: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager\extension-node-map.json
-[AnimateDiffEvo] - [0;33mWARNING[0m - ffmpeg could not be found. Outputs that require it have been disabled
-got prompt
-Global Step: 560001
-Using split attention in VAE
-Working with z of shape (1, 4, 32, 32) = 4096 dimensions.
-Using split attention in VAE
-Leftover VAE keys ['model_ema.decay', 'model_ema.num_updates']
-Prompt executed in 5.87 seconds
-got prompt
-[AnimateDiffEvo] - [0;32mINFO[0m - Loading motion module mm-Stabilized_high.pth
-[AnimateDiffEvo] - [0;32mINFO[0m - Regular AnimateDiff activated - latents passed in (16) less or equal to context_length None.
-[AnimateDiffEvo] - [0;32mINFO[0m - Injecting motion module mm-Stabilized_high.pth version v1.
-Requested to load BaseModel
-Loading 1 new model
-
-[AnimateDiffEvo] - [0;32mINFO[0m - Ejecting motion module mm-Stabilized_high.pth version v1.
-[AnimateDiffEvo] - [0;32mINFO[0m - Cleaning motion module from unet.
-[AnimateDiffEvo] - [0;32mINFO[0m - Removing motion module mm-Stabilized_high.pth from cache
-ERROR:root:!!! Exception during processing !!!
-ERROR:root:Traceback (most recent call last):
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\execution.py", line 155, in recursive_execute
-    output_data, output_ui = get_output_data(obj, input_data_all)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\execution.py", line 85, in get_output_data
-    return_values = map_node_over_list(obj, input_data_all, obj.FUNCTION, allow_interrupt=True)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\execution.py", line 78, in map_node_over_list
-    results.append(getattr(obj, func)(**slice_dict(input_data_all, i)))
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\nodes.py", line 1237, in sample
-    return common_ksampler(model, seed, steps, cfg, sampler_name, scheduler, positive, negative, latent_image, denoise=denoise)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\nodes.py", line 1207, in common_ksampler
-    samples = comfy.sample.sample(model, noise, steps, cfg, sampler_name, scheduler, positive, negative, latent_image,
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\sampling.py", line 163, in animatediff_sample
-    return wrap_function_to_inject_xformers_bug_info(orig_comfy_sample)(model, *args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\model_utils.py", line 185, in wrapped_function
-    return function_to_wrap(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\sample.py", line 97, in sample
-    samples = sampler.sample(noise, positive_copy, negative_copy, cfg=cfg, latent_image=latent_image, start_step=start_step, last_step=last_step, force_full_denoise=force_full_denoise, denoise_mask=noise_mask, sigmas=sigmas, callback=callback, disable_pbar=disable_pbar, seed=seed)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 781, in sample
-    return sample(self.model, noise, positive, negative, cfg, self.device, sampler(), sigmas, self.model_options, latent_image=latent_image, denoise_mask=denoise_mask, callback=callback, disable_pbar=disable_pbar, seed=seed)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 686, in sample
-    samples = sampler.sample(model_wrap, sigmas, extra_args, callback, noise, latent_image, denoise_mask, disable_pbar)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 638, in sample
-    samples = getattr(k_diffusion_sampling, "sample_{}".format(sampler_name))(model_k, noise, sigmas, extra_args=extra_args, callback=k_callback, disable=disable_pbar, **extra_options)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\utils\_contextlib.py", line 115, in decorate_context
-    return func(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\k_diffusion\sampling.py", line 137, in sample_euler
-    denoised = model(x, sigma_hat * s_in, **extra_args)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 326, in forward
-    out = self.inner_model(x, sigma, cond=cond, uncond=uncond, cond_scale=cond_scale, model_options=model_options, seed=seed)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\k_diffusion\external.py", line 184, in forward
-    return self.get_v(input * c_in, self.sigma_to_t(sigma), **kwargs) * c_out + input * c_skip
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 305, in get_v
-    return self.inner_model.apply_model(x, t, cond, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 314, in apply_model
-    out = sampling_function(self.inner_model.apply_model, x, timestep, uncond, cond, cond_scale, model_options=model_options, seed=seed)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\sampling.py", line 537, in sliding_sampling_function
-    cond, uncond = calc_cond_uncond_batch(model_function, cond, uncond, x, timestep, max_total_area, cond_concat, model_options)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\sampling.py", line 433, in calc_cond_uncond_batch
-    output = model_function(input_x, timestep_, **c).chunk(batch_chunks)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\model_base.py", line 64, in apply_model
-    return self.diffusion_model(xc, t, context=context, y=c_adm, control=control, transformer_options=transformer_options).float()
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\diffusionmodules\openaimodel.py", line 625, in forward
-    h = forward_timestep_embed(module, h, emb, context, transformer_options)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\sampling.py", line 75, in forward_timestep_embed
-    x = layer(x, context, transformer_options)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\attention.py", line 534, in forward
-    x = block(x, context=context[i], transformer_options=transformer_options)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\attention.py", line 364, in forward
-    return checkpoint(self._forward, (x, context, transformer_options), self.parameters(), self.checkpoint)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\diffusionmodules\util.py", line 123, in checkpoint
-    return func(*inputs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\attention.py", line 429, in _forward
-    n = self.attn1(n, context=context_attn1, value=value_attn1)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\attention.py", line 340, in forward
-    out = optimized_attention(q, k, v, self.heads)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\attention.py", line 172, in attention_sub_quad
-    hidden_states = efficient_dot_product_attention(
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\sub_quadratic_attention.py", line 243, in efficient_dot_product_attention
-    res = torch.cat([
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\sub_quadratic_attention.py", line 244, in <listcomp>
-    compute_query_chunk_attn(
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\sub_quadratic_attention.py", line 159, in _get_attention_scores_no_kv_chunking
-    attn_probs = attn_scores.softmax(dim=-1)
-RuntimeError: Could not allocate tensor with 738918400 bytes. There is not enough GPU video memory available!
-
-Prompt executed in 27.66 seconds
-got prompt
-[AnimateDiffEvo] - [0;32mINFO[0m - Loading motion module mm-Stabilized_high.pth
-[AnimateDiffEvo] - [0;32mINFO[0m - Regular AnimateDiff activated - latents passed in (16) less or equal to context_length None.
-[AnimateDiffEvo] - [0;32mINFO[0m - Injecting motion module mm-Stabilized_high.pth version v1.
-Requested to load BaseModel
-Loading 1 new model
-FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
-100%|██████████████████████████████████████████████████████████████████████████████████| 20/20 [01:25<00:00,  5.44s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 20/20 [01:25<00:00,  4.26s/it]
-[AnimateDiffEvo] - [0;32mINFO[0m - Ejecting motion module mm-Stabilized_high.pth version v1.
-[AnimateDiffEvo] - [0;32mINFO[0m - Cleaning motion module from unet.
-[AnimateDiffEvo] - [0;32mINFO[0m - Removing motion module mm-Stabilized_high.pth from cache
-Prompt executed in 108.83 seconds
-FETCH DATA from: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager\extension-node-map.json
-[AnimateDiffEvo] - [0;33mWARNING[0m - ffmpeg could not be found. Outputs that require it have been disabled
-got prompt
-[AnimateDiffEvo] - [0;32mINFO[0m - Loading motion module mm_sd_v15.ckpt
-[AnimateDiffEvo] - [0;32mINFO[0m - Regular AnimateDiff activated - latents passed in (16) less or equal to context_length None.
-[AnimateDiffEvo] - [0;32mINFO[0m - Injecting motion module mm_sd_v15.ckpt version v1.
-Requested to load BaseModel
-Loading 1 new model
-100%|██████████████████████████████████████████████████████████████████████████████████| 20/20 [01:35<00:00,  3.70s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 20/20 [01:35<00:00,  4.77s/it]
-[AnimateDiffEvo] - [0;32mINFO[0m - Ejecting motion module mm_sd_v15.ckpt version v1.
-[AnimateDiffEvo] - [0;32mINFO[0m - Cleaning motion module from unet.
-[AnimateDiffEvo] - [0;32mINFO[0m - Removing motion module mm_sd_v15.ckpt from cache
-Prompt executed in 122.27 seconds
-FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/model-list.json
-got prompt
-[AnimateDiffEvo] - [0;32mINFO[0m - Loading motion module mm_sd_v15.ckpt
-[AnimateDiffEvo] - [0;32mINFO[0m - Regular AnimateDiff activated - latents passed in (16) less or equal to context_length None.
-[AnimateDiffEvo] - [0;32mINFO[0m - Injecting motion module mm_sd_v15.ckpt version v1.
-Requested to load BaseModel
-Loading 1 new model
-got prompt
-
-[AnimateDiffEvo] - [0;32mINFO[0m - Ejecting motion module mm_sd_v15.ckpt version v1.
-[AnimateDiffEvo] - [0;32mINFO[0m - Cleaning motion module from unet.
-[AnimateDiffEvo] - [0;32mINFO[0m - Removing motion module mm_sd_v15.ckpt from cache
-Prompt executed in 54.92 seconds
-got prompt
-[AnimateDiffEvo] - [0;32mINFO[0m - Loading motion module mm_sd_v15.ckpt
-[AnimateDiffEvo] - [0;32mINFO[0m - Regular AnimateDiff activated - latents passed in (16) less or equal to context_length 16.
-[AnimateDiffEvo] - [0;32mINFO[0m - Injecting motion module mm_sd_v15.ckpt version v1.
-Requested to load BaseModel
-Loading 1 new model
-FETCH DATA from: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager\extension-node-map.json
-[AnimateDiffEvo] - [0;33mWARNING[0m - ffmpeg could not be found. Outputs that require it have been disabled
-FETCH DATA from: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager\extension-node-map.json
-[AnimateDiffEvo] - [0;33mWARNING[0m - ffmpeg could not be found. Outputs that require it have been disabled
-100%|██████████████████████████████████████████████████████████████████████████████████| 20/20 [01:30<00:00,  4.27s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 20/20 [01:30<00:00,  4.55s/it]
-[AnimateDiffEvo] - [0;32mINFO[0m - Ejecting motion module mm_sd_v15.ckpt version v1.
-[AnimateDiffEvo] - [0;32mINFO[0m - Cleaning motion module from unet.
-[AnimateDiffEvo] - [0;32mINFO[0m - Removing motion module mm_sd_v15.ckpt from cache
-Prompt executed in 147.36 seconds
-got prompt
-model_type V_PREDICTION
-adm 0
-Using split attention in VAE
-Working with z of shape (1, 4, 32, 32) = 4096 dimensions.
-Using split attention in VAE
-missing {'cond_stage_model.text_projection', 'cond_stage_model.logit_scale'}
-left over keys: dict_keys(['cond_stage_model.model.logit_scale', 'cond_stage_model.model.text_projection'])
-Requested to load SD2ClipModel
-Loading 1 new model
-Requested to load BaseModel
-Loading 1 new model
-FETCH DATA from: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager\extension-node-map.json
-[AnimateDiffEvo] - [0;33mWARNING[0m - ffmpeg could not be found. Outputs that require it have been disabled
-100%|██████████████████████████████████████████████████████████████████████████████████| 20/20 [01:16<00:00,  3.98s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 20/20 [01:16<00:00,  3.85s/it]
-Global Step: 560001
-Using split attention in VAE
-Working with z of shape (1, 4, 32, 32) = 4096 dimensions.
-Using split attention in VAE
-Leftover VAE keys ['model_ema.decay', 'model_ema.num_updates']
-Prompt executed in 127.39 seconds
-got prompt
-ERROR:root:Failed to validate prompt for output 35:
-ERROR:root:* ADE_AnimateDiffLoaderWithContext 27:
-ERROR:root:  - Value not in list: model_name: 'mm_sd_v14.ckpt' not in ['mm-Stabilized_high.pth', 'mm_sd_v15.ckpt']
-ERROR:root:* VAELoader 2:
-ERROR:root:  - Value not in list: vae_name: 'vae-ft-mse-840000-ema-pruned.safetensors' not in ['vae-ft-ema-560000-ema-pruned.ckpt']
-ERROR:root:Output will be ignored
-invalid prompt: {'type': 'prompt_outputs_failed_validation', 'message': 'Prompt outputs failed validation', 'details': '', 'extra_info': {}}
-FETCH DATA from: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager\extension-node-map.json
-[AnimateDiffEvo] - [0;33mWARNING[0m - ffmpeg could not be found. Outputs that require it have been disabled
-got prompt
-ERROR:root:Failed to validate prompt for output 35:
-ERROR:root:* ADE_AnimateDiffLoaderWithContext 27:
-ERROR:root:  - Value not in list: model_name: 'mm_sd_v14.ckpt' not in ['mm-Stabilized_high.pth', 'mm_sd_v15.ckpt']
-ERROR:root:* VAELoader 2:
-ERROR:root:  - Value not in list: vae_name: 'vae-ft-mse-840000-ema-pruned.safetensors' not in ['vae-ft-ema-560000-ema-pruned.ckpt', 'vae-ft-ema-840000-ema-pruned.pt']
-ERROR:root:Output will be ignored
-invalid prompt: {'type': 'prompt_outputs_failed_validation', 'message': 'Prompt outputs failed validation', 'details': '', 'extra_info': {}}
-got prompt
-ERROR:root:Failed to validate prompt for output 35:
-ERROR:root:* ADE_AnimateDiffLoaderWithContext 27:
-ERROR:root:  - Value not in list: model_name: 'mm_sd_v14.ckpt' not in ['mm-Stabilized_high.pth', 'mm_sd_v15.ckpt']
-ERROR:root:Output will be ignored
-invalid prompt: {'type': 'prompt_outputs_failed_validation', 'message': 'Prompt outputs failed validation', 'details': '', 'extra_info': {}}
-got prompt
-model_type EPS
-adm 0
-Using split attention in VAE
-Working with z of shape (1, 4, 32, 32) = 4096 dimensions.
-Using split attention in VAE
-missing {'cond_stage_model.text_projection', 'cond_stage_model.logit_scale'}
-left over keys: dict_keys(['cond_stage_model.transformer.text_model.embeddings.position_ids'])
-[AnimateDiffEvo] - [0;32mINFO[0m - Loading motion module mm_sd_v15.ckpt
-Requested to load SD1ClipModel
-Loading 1 new model
-[AnimateDiffEvo] - [0;32mINFO[0m - Regular AnimateDiff activated - latents passed in (16) less or equal to context_length None.
-[AnimateDiffEvo] - [0;32mINFO[0m - Injecting motion module mm_sd_v15.ckpt version v1.
-Requested to load BaseModel
-Loading 1 new model
-
-[AnimateDiffEvo] - [0;32mINFO[0m - Ejecting motion module mm_sd_v15.ckpt version v1.
-[AnimateDiffEvo] - [0;32mINFO[0m - Cleaning motion module from unet.
-[AnimateDiffEvo] - [0;32mINFO[0m - Removing motion module mm_sd_v15.ckpt from cache
-ERROR:root:!!! Exception during processing !!!
-ERROR:root:Traceback (most recent call last):
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\execution.py", line 155, in recursive_execute
-    output_data, output_ui = get_output_data(obj, input_data_all)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\execution.py", line 85, in get_output_data
-    return_values = map_node_over_list(obj, input_data_all, obj.FUNCTION, allow_interrupt=True)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\execution.py", line 78, in map_node_over_list
-    results.append(getattr(obj, func)(**slice_dict(input_data_all, i)))
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\nodes.py", line 1237, in sample
-    return common_ksampler(model, seed, steps, cfg, sampler_name, scheduler, positive, negative, latent_image, denoise=denoise)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\nodes.py", line 1207, in common_ksampler
-    samples = comfy.sample.sample(model, noise, steps, cfg, sampler_name, scheduler, positive, negative, latent_image,
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\sampling.py", line 163, in animatediff_sample
-    return wrap_function_to_inject_xformers_bug_info(orig_comfy_sample)(model, *args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\model_utils.py", line 185, in wrapped_function
-    return function_to_wrap(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\sample.py", line 97, in sample
-    samples = sampler.sample(noise, positive_copy, negative_copy, cfg=cfg, latent_image=latent_image, start_step=start_step, last_step=last_step, force_full_denoise=force_full_denoise, denoise_mask=noise_mask, sigmas=sigmas, callback=callback, disable_pbar=disable_pbar, seed=seed)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 781, in sample
-    return sample(self.model, noise, positive, negative, cfg, self.device, sampler(), sigmas, self.model_options, latent_image=latent_image, denoise_mask=denoise_mask, callback=callback, disable_pbar=disable_pbar, seed=seed)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 686, in sample
-    samples = sampler.sample(model_wrap, sigmas, extra_args, callback, noise, latent_image, denoise_mask, disable_pbar)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 638, in sample
-    samples = getattr(k_diffusion_sampling, "sample_{}".format(sampler_name))(model_k, noise, sigmas, extra_args=extra_args, callback=k_callback, disable=disable_pbar, **extra_options)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\utils\_contextlib.py", line 115, in decorate_context
-    return func(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\k_diffusion\sampling.py", line 137, in sample_euler
-    denoised = model(x, sigma_hat * s_in, **extra_args)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 326, in forward
-    out = self.inner_model(x, sigma, cond=cond, uncond=uncond, cond_scale=cond_scale, model_options=model_options, seed=seed)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\k_diffusion\external.py", line 129, in forward
-    eps = self.get_eps(input * c_in, self.sigma_to_t(sigma), **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\k_diffusion\external.py", line 155, in get_eps
-    return self.inner_model.apply_model(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\samplers.py", line 314, in apply_model
-    out = sampling_function(self.inner_model.apply_model, x, timestep, uncond, cond, cond_scale, model_options=model_options, seed=seed)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\sampling.py", line 537, in sliding_sampling_function
-    cond, uncond = calc_cond_uncond_batch(model_function, cond, uncond, x, timestep, max_total_area, cond_concat, model_options)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\sampling.py", line 433, in calc_cond_uncond_batch
-    output = model_function(input_x, timestep_, **c).chunk(batch_chunks)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\model_base.py", line 64, in apply_model
-    return self.diffusion_model(xc, t, context=context, y=c_adm, control=control, transformer_options=transformer_options).float()
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\diffusionmodules\openaimodel.py", line 625, in forward
-    h = forward_timestep_embed(module, h, emb, context, transformer_options)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\sampling.py", line 75, in forward_timestep_embed
-    x = layer(x, context, transformer_options)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\attention.py", line 534, in forward
-    x = block(x, context=context[i], transformer_options=transformer_options)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\attention.py", line 364, in forward
-    return checkpoint(self._forward, (x, context, transformer_options), self.parameters(), self.checkpoint)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\diffusionmodules\util.py", line 123, in checkpoint
-    return func(*inputs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\attention.py", line 429, in _forward
-    n = self.attn1(n, context=context_attn1, value=value_attn1)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\attention.py", line 340, in forward
-    out = optimized_attention(q, k, v, self.heads)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\attention.py", line 172, in attention_sub_quad
-    hidden_states = efficient_dot_product_attention(
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\sub_quadratic_attention.py", line 243, in efficient_dot_product_attention
-    res = torch.cat([
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\sub_quadratic_attention.py", line 244, in <listcomp>
-    compute_query_chunk_attn(
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\sub_quadratic_attention.py", line 115, in _query_chunk_attention
-    chunks: List[AttnChunk] = [
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\sub_quadratic_attention.py", line 116, in <listcomp>
-    chunk_scanner(chunk) for chunk in torch.arange(0, k_tokens, kv_chunk_size)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\sub_quadratic_attention.py", line 113, in chunk_scanner
-    return summarize_chunk(query, key_chunk, value_chunk)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\ldm\modules\sub_quadratic_attention.py", line 77, in _summarize_chunk
-    attn_weights = torch.baddbmm(
-RuntimeError: Could not allocate tensor with 1073741824 bytes. There is not enough GPU video memory available!
-
-Prompt executed in 83.97 seconds
-got prompt
-[AnimateDiffEvo] - [0;32mINFO[0m - Loading motion module mm_sd_v15.ckpt
-[AnimateDiffEvo] - [0;32mINFO[0m - Regular AnimateDiff activated - latents passed in (16) less or equal to context_length None.
-[AnimateDiffEvo] - [0;32mINFO[0m - Injecting motion module mm_sd_v15.ckpt version v1.
-Requested to load BaseModel
-Loading 1 new model
-100%|██████████████████████████████████████████████████████████████████████████████████| 20/20 [01:43<00:00,  5.51s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 20/20 [01:43<00:00,  5.18s/it]
-[AnimateDiffEvo] - [0;32mINFO[0m - Ejecting motion module mm_sd_v15.ckpt version v1.
-[AnimateDiffEvo] - [0;32mINFO[0m - Cleaning motion module from unet.
-[AnimateDiffEvo] - [0;32mINFO[0m - Removing motion module mm_sd_v15.ckpt from cache
-Global Step: 840001
-Using split attention in VAE
-Working with z of shape (1, 4, 32, 32) = 4096 dimensions.
-Using split attention in VAE
-Leftover VAE keys ['model_ema.decay', 'model_ema.num_updates']
-Prompt executed in 126.34 seconds
-got prompt
-Prompt executed in 3.30 seconds
-got prompt
-[AnimateDiffEvo] - [0;32mINFO[0m - Loading motion module mm_sd_v15.ckpt
-[AnimateDiffEvo] - [0;32mINFO[0m - Regular AnimateDiff activated - latents passed in (16) less or equal to context_length None.
-[AnimateDiffEvo] - [0;32mINFO[0m - Injecting motion module mm_sd_v15.ckpt version v1.
-Requested to load BaseModel
-Loading 1 new model
-100%|██████████████████████████████████████████████████████████████████████████████████| 20/20 [01:24<00:00,  3.95s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 20/20 [01:24<00:00,  4.23s/it]
-[AnimateDiffEvo] - [0;32mINFO[0m - Ejecting motion module mm_sd_v15.ckpt version v1.
-[AnimateDiffEvo] - [0;32mINFO[0m - Cleaning motion module from unet.
-[AnimateDiffEvo] - [0;32mINFO[0m - Removing motion module mm_sd_v15.ckpt from cache
-Prompt executed in 102.26 seconds
-FETCH DATA from: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager\extension-node-map.json
-[AnimateDiffEvo] - [0;33mWARNING[0m - ffmpeg could not be found. Outputs that require it have been disabled
-got prompt
-model_type V_PREDICTION
-adm 0
-Using split attention in VAE
-Working with z of shape (1, 4, 32, 32) = 4096 dimensions.
-Using split attention in VAE
-got prompt
-missing {'cond_stage_model.text_projection', 'cond_stage_model.logit_scale'}
-left over keys: dict_keys(['cond_stage_model.model.logit_scale', 'cond_stage_model.model.text_projection'])
-Requested to load SD2ClipModel
-Loading 1 new model
-Requested to load BaseModel
-Loading 1 new model
-100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:22<00:00,  1.07it/s]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:22<00:00,  1.09it/s]
-======image_to_buffer=======
-images: 0
-{'promptId': 'e6f486a9-a198-4d35-845e-5a6fd312c7d4'}
-C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\urllib3\connectionpool.py:1095: InsecureRequestWarning: Unverified HTTPS request is being made to host '192.168.0.100'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-  warnings.warn(
-<Response [500]>
-<Response [500]>
-Prompt executed in 68.16 seconds
-100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:23<00:00,  1.06it/s]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:23<00:00,  1.09it/s]
-======image_to_buffer=======
-images: 0
-{'promptId': 'dd5b2fe6-837f-458a-8bee-417c41e7d9b2'}
-C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\urllib3\connectionpool.py:1095: InsecureRequestWarning: Unverified HTTPS request is being made to host '192.168.0.100'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-  warnings.warn(
-<Response [500]>
-<Response [500]>
-Prompt executed in 25.96 seconds
-got prompt
-100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:26<00:00,  1.08s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:26<00:00,  1.06s/it]
-======image_to_buffer=======
-images: 0
-{'promptId': '4f739c83-92ad-4fbe-93d1-51e5d286ff2d'}
-C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\urllib3\connectionpool.py:1095: InsecureRequestWarning: Unverified HTTPS request is being made to host '192.168.0.100'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-  warnings.warn(
-<Response [500]>
-<Response [500]>
-Prompt executed in 29.93 seconds
-got prompt
-100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:23<00:00,  1.05it/s]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:23<00:00,  1.05it/s]
-======image_to_buffer=======
-images: 0
-{'promptId': 'b65f263f-47b9-4c63-a328-b3de9b963720'}
-C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\urllib3\connectionpool.py:1095: InsecureRequestWarning: Unverified HTTPS request is being made to host '192.168.0.100'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-  warnings.warn(
-<Response [500]>
-<Response [500]>
-Prompt executed in 26.62 seconds
-got prompt
-100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:22<00:00,  1.08it/s]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:22<00:00,  1.10it/s]
-======image_to_buffer=======
-images: 0
-{'promptId': '24920150-a851-4b69-9968-446116a2d223'}
-C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\urllib3\connectionpool.py:1095: InsecureRequestWarning: Unverified HTTPS request is being made to host '192.168.0.100'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-  warnings.warn(
-<Response [502]>
-<Response [502]>
-Prompt executed in 62.72 seconds
-got prompt
-100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:22<00:00,  1.08it/s]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:22<00:00,  1.09it/s]
-======image_to_buffer=======
-images: 0
-{'promptId': '524b1bee-117c-4b11-b065-ad800f2cd791'}
-C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\urllib3\connectionpool.py:1095: InsecureRequestWarning: Unverified HTTPS request is being made to host '192.168.0.100'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-  warnings.warn(
-<Response [500]>
-<Response [500]>
-Prompt executed in 49.27 seconds
-got prompt
-100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:24<00:00,  1.00s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:24<00:00,  1.00it/s]
-======image_to_buffer=======
-images: 0
-{'promptId': 'd5c546d7-5f3b-4126-a15c-3f1283e14da8'}
-C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\urllib3\connectionpool.py:1095: InsecureRequestWarning: Unverified HTTPS request is being made to host '192.168.0.100'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-  warnings.warn(
-<Response [504]>
-<Response [504]>
-Prompt executed in 87.92 seconds
-got prompt
-100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:24<00:00,  1.01it/s]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:24<00:00,  1.02it/s]
-======image_to_buffer=======
-images: 0
-{'promptId': '5a17e000-6b44-4008-b07f-8288c40c1b06'}
-C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\urllib3\connectionpool.py:1095: InsecureRequestWarning: Unverified HTTPS request is being made to host '192.168.0.100'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-  warnings.warn(
-<Response [504]>
-<Response [504]>
-Prompt executed in 87.60 seconds
-got prompt
-100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:23<00:00,  1.02it/s]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:23<00:00,  1.04it/s]
-======image_to_buffer=======
-images: 0
-{'promptId': 'bb885bfd-c8de-4c31-9247-598bd732263f'}
-C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\urllib3\connectionpool.py:1095: InsecureRequestWarning: Unverified HTTPS request is being made to host '192.168.0.100'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-  warnings.warn(
-<Response [500]>
-<Response [500]>
-Prompt executed in 30.89 seconds
-got prompt
-100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:28<00:00,  1.13s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:28<00:00,  1.13s/it]
-======image_to_buffer=======
-images: 0
-{'promptId': '81029b92-b2ec-4f18-affc-642d97bc36f4'}
-C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\urllib3\connectionpool.py:1095: InsecureRequestWarning: Unverified HTTPS request is being made to host '192.168.0.100'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-  warnings.warn(
-<Response [500]>
-<Response [500]>
-Prompt executed in 30.98 seconds
-got prompt
-100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:27<00:00,  1.11s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:27<00:00,  1.11s/it]
-======image_to_buffer=======
-images: 0
-{'promptId': 'ab40f0fc-768c-471c-ad93-a28df3ad0e02'}
-C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\urllib3\connectionpool.py:1095: InsecureRequestWarning: Unverified HTTPS request is being made to host '192.168.0.100'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-  warnings.warn(
-<Response [500]>
-<Response [500]>
-Prompt executed in 30.63 seconds
-got prompt
-100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:50<00:00,  2.00s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:50<00:00,  2.03s/it]
-======image_to_buffer=======
-images: 0
-{'promptId': '447f1069-24c0-4b04-89c3-f621ed565cbc'}
-C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\urllib3\connectionpool.py:1095: InsecureRequestWarning: Unverified HTTPS request is being made to host '192.168.0.100'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-  warnings.warn(
-<Response [500]>
-<Response [500]>
-Prompt executed in 53.97 seconds
-got prompt
-100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:50<00:00,  2.02s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:50<00:00,  2.01s/it]
-======image_to_buffer=======
-images: 0
-{'promptId': '1cfd83c4-0855-4d18-a9ff-a93557b5cd30'}
-C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\urllib3\connectionpool.py:1095: InsecureRequestWarning: Unverified HTTPS request is being made to host '192.168.0.100'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-  warnings.warn(
-<Response [201]>
-<Response [201]>
-Prompt executed in 54.79 seconds
-got prompt
-100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:52<00:00,  2.25s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:52<00:00,  2.11s/it]
-======image_to_buffer=======
-images: 0
-{'promptId': '24578a13-b4c3-4538-a2f9-f879dd3583d8'}
-C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\urllib3\connectionpool.py:1095: InsecureRequestWarning: Unverified HTTPS request is being made to host '192.168.0.100'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-  warnings.warn(
-<Response [201]>
-<Response [201]>
-Prompt executed in 57.46 seconds
-got prompt
-100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:52<00:00,  2.04s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:52<00:00,  2.12s/it]
-======image_to_buffer=======
-images: 0
-{'promptId': '25cd4391-fab8-4f52-bc35-2fc55ce7be81'}
-C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\urllib3\connectionpool.py:1095: InsecureRequestWarning: Unverified HTTPS request is being made to host '192.168.0.100'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-  warnings.warn(
-<Response [201]>
-<Response [201]>
-Prompt executed in 56.49 seconds
-got prompt
-got prompt
-100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:45<00:00,  1.65s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:45<00:00,  1.83s/it]
-Global Step: 560001
-Using split attention in VAE
-Working with z of shape (1, 4, 32, 32) = 4096 dimensions.
-Using split attention in VAE
-Leftover VAE keys ['model_ema.decay', 'model_ema.num_updates']
-Prompt executed in 50.72 seconds
-100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:19<00:00,  1.27it/s]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:19<00:00,  1.26it/s]
-======image_to_buffer=======
-images: 0
-{'promptId': '4d0cbc9a-f4e2-4967-bb24-99e8c53af94e'}
-C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\urllib3\connectionpool.py:1095: InsecureRequestWarning: Unverified HTTPS request is being made to host '192.168.0.100'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-  warnings.warn(
-<Response [201]>
-<Response [201]>
-Prompt executed in 22.80 seconds
-got prompt
-FETCH DATA from: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager\extension-node-map.json
-[AnimateDiffEvo] - [0;33mWARNING[0m - ffmpeg could not be found. Outputs that require it have been disabled
-got prompt
-
-Prompt executed in 13.23 seconds
-got prompt
-got prompt
-100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:41<00:00,  1.53s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:41<00:00,  1.66s/it]
-Prompt executed in 43.47 seconds
-got prompt
-100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:40<00:00,  1.65s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:40<00:00,  1.63s/it]
-======image_to_buffer=======
-images: 0
-{'promptId': '653347c8-327e-4c60-b428-728d04a5f243'}
-C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\urllib3\connectionpool.py:1095: InsecureRequestWarning: Unverified HTTPS request is being made to host '192.168.0.100'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-  warnings.warn(
-<Response [201]>
-<Response [201]>
-Prompt executed in 44.24 seconds
-got prompt
-100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:38<00:00,  1.50s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:38<00:00,  1.53s/it]
-Prompt executed in 40.61 seconds
-got prompt
-100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:45<00:00,  1.83s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:45<00:00,  1.81s/it]
-======image_to_buffer=======
-images: 0
-{'promptId': '409282d8-6155-4e0d-b97e-a32065dc0da1'}
-C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\urllib3\connectionpool.py:1095: InsecureRequestWarning: Unverified HTTPS request is being made to host '192.168.0.100'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-  warnings.warn(
-<Response [201]>
-<Response [201]>
-Prompt executed in 49.15 seconds
-100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:46<00:00,  1.82s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:46<00:00,  1.87s/it]
-Global Step: 560001
-Using split attention in VAE
-Working with z of shape (1, 4, 32, 32) = 4096 dimensions.
-Using split attention in VAE
-Leftover VAE keys ['model_ema.decay', 'model_ema.num_updates']
-Prompt executed in 50.70 seconds
-FETCH DATA from: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager\extension-node-map.json
-[AnimateDiffEvo] - [0;33mWARNING[0m - ffmpeg could not be found. Outputs that require it have been disabled
-FETCH DATA from: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager\extension-node-map.json
-[AnimateDiffEvo] - [0;33mWARNING[0m - ffmpeg could not be found. Outputs that require it have been disabled
-got prompt
-ERROR:root:Failed to validate prompt for output 9:
-ERROR:root:* CheckpointLoaderSimple 4:
-ERROR:root:  - Value not in list: ckpt_name: 'v1-5-pruned-emaonly.ckpt' not in ['artiusV21NSFW_v21.safetensors', 'cardosAnime_v20.safetensors', 'epicphotogasm_v1.safetensors', 'meichidarkMix_meichidarkV45.safetensors']
-ERROR:root:Output will be ignored
-invalid prompt: {'type': 'prompt_outputs_failed_validation', 'message': 'Prompt outputs failed validation', 'details': '', 'extra_info': {}}
-got prompt
-C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\_utils.py:776: UserWarning: TypedStorage is deprecated. It will be removed in the future and UntypedStorage will be the only storage class. This should only matter to you if you are using storages directly.  To access UntypedStorage directly, use tensor.untyped_storage() instead of tensor.storage()
-  return self.fget.__get__(instance, owner)()
-100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:54<00:00,  2.14s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:54<00:00,  2.17s/it]
-ERROR:root:!!! Exception during processing !!!
-ERROR:root:Traceback (most recent call last):
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\execution.py", line 155, in recursive_execute
-    output_data, output_ui = get_output_data(obj, input_data_all)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\execution.py", line 85, in get_output_data
-    return_values = map_node_over_list(obj, input_data_all, obj.FUNCTION, allow_interrupt=True)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\execution.py", line 78, in map_node_over_list
-    results.append(getattr(obj, func)(**slice_dict(input_data_all, i)))
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy_extras\nodes_upscale_model.py", line 52, in upscale
-    s = comfy.utils.tiled_scale(in_img, lambda a: upscale_model(a), tile_x=tile, tile_y=tile, overlap=overlap, upscale_amount=upscale_model.scale, pbar=pbar)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\utils\_contextlib.py", line 115, in decorate_context
-    return func(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\utils.py", line 400, in tiled_scale
-    ps = function(s_in).cpu()
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy_extras\nodes_upscale_model.py", line 52, in <lambda>
-    s = comfy.utils.tiled_scale(in_img, lambda a: upscale_model(a), tile_x=tile, tile_y=tile, overlap=overlap, upscale_amount=upscale_model.scale, pbar=pbar)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy_extras\chainner_models\architecture\RRDB.py", line 296, in forward
-    return self.model(x)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\container.py", line 217, in forward
-    input = module(input)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\conv.py", line 463, in forward
-    return self._conv_forward(input, self.weight, self.bias)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\conv.py", line 459, in _conv_forward
-    return F.conv2d(input, weight, bias, self.stride,
-RuntimeError: Could not allocate tensor with 754974720 bytes. There is not enough GPU video memory available!
-
-Prompt executed in 68.16 seconds
-got prompt
-100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:05<00:00,  5.10it/s]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:05<00:00,  4.92it/s]
-ERROR:root:!!! Exception during processing !!!
-ERROR:root:Traceback (most recent call last):
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\execution.py", line 155, in recursive_execute
-    output_data, output_ui = get_output_data(obj, input_data_all)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\execution.py", line 85, in get_output_data
-    return_values = map_node_over_list(obj, input_data_all, obj.FUNCTION, allow_interrupt=True)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\execution.py", line 78, in map_node_over_list
-    results.append(getattr(obj, func)(**slice_dict(input_data_all, i)))
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy_extras\nodes_upscale_model.py", line 52, in upscale
-    s = comfy.utils.tiled_scale(in_img, lambda a: upscale_model(a), tile_x=tile, tile_y=tile, overlap=overlap, upscale_amount=upscale_model.scale, pbar=pbar)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\utils\_contextlib.py", line 115, in decorate_context
-    return func(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\utils.py", line 400, in tiled_scale
-    ps = function(s_in).cpu()
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy_extras\nodes_upscale_model.py", line 52, in <lambda>
-    s = comfy.utils.tiled_scale(in_img, lambda a: upscale_model(a), tile_x=tile, tile_y=tile, overlap=overlap, upscale_amount=upscale_model.scale, pbar=pbar)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy_extras\chainner_models\architecture\RRDB.py", line 296, in forward
-    return self.model(x)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\container.py", line 217, in forward
-    input = module(input)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\conv.py", line 463, in forward
-    return self._conv_forward(input, self.weight, self.bias)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\conv.py", line 459, in _conv_forward
-    return F.conv2d(input, weight, bias, self.stride,
-RuntimeError: Could not allocate tensor with 1073741824 bytes. There is not enough GPU video memory available!
-
-Prompt executed in 17.98 seconds
-got prompt
-Prompt executed in 0.59 seconds
-got prompt
-Prompt executed in 0.00 seconds
-got prompt
-Prompt executed in 0.00 seconds
-got prompt
-Prompt executed in 0.00 seconds
-got prompt
-Prompt executed in 0.00 seconds
-got prompt
-100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:05<00:00,  4.68it/s]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:05<00:00,  4.50it/s]
-Prompt executed in 6.37 seconds
-got prompt
-100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [01:02<00:00,  2.58s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [01:02<00:00,  2.50s/it]
-ERROR:root:!!! Exception during processing !!!
-ERROR:root:Traceback (most recent call last):
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\execution.py", line 155, in recursive_execute
-    output_data, output_ui = get_output_data(obj, input_data_all)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\execution.py", line 85, in get_output_data
-    return_values = map_node_over_list(obj, input_data_all, obj.FUNCTION, allow_interrupt=True)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\execution.py", line 78, in map_node_over_list
-    results.append(getattr(obj, func)(**slice_dict(input_data_all, i)))
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy_extras\nodes_upscale_model.py", line 52, in upscale
-    s = comfy.utils.tiled_scale(in_img, lambda a: upscale_model(a), tile_x=tile, tile_y=tile, overlap=overlap, upscale_amount=upscale_model.scale, pbar=pbar)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\utils\_contextlib.py", line 115, in decorate_context
-    return func(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\utils.py", line 400, in tiled_scale
-    ps = function(s_in).cpu()
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy_extras\nodes_upscale_model.py", line 52, in <lambda>
-    s = comfy.utils.tiled_scale(in_img, lambda a: upscale_model(a), tile_x=tile, tile_y=tile, overlap=overlap, upscale_amount=upscale_model.scale, pbar=pbar)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy_extras\chainner_models\architecture\RRDB.py", line 296, in forward
-    return self.model(x)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\container.py", line 217, in forward
-    input = module(input)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\upsampling.py", line 156, in forward
-    return F.interpolate(input, self.size, self.scale_factor, self.mode, self.align_corners,
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\functional.py", line 3931, in interpolate
-    return torch._C._nn.upsample_nearest2d(input, output_size, scale_factors)
-RuntimeError: Could not allocate tensor with 754974720 bytes. There is not enough GPU video memory available!
-
-Prompt executed in 75.30 seconds
-got prompt
-ERROR:root:!!! Exception during processing !!!
-ERROR:root:Traceback (most recent call last):
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\execution.py", line 155, in recursive_execute
-    output_data, output_ui = get_output_data(obj, input_data_all)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\execution.py", line 85, in get_output_data
-    return_values = map_node_over_list(obj, input_data_all, obj.FUNCTION, allow_interrupt=True)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\execution.py", line 78, in map_node_over_list
-    results.append(getattr(obj, func)(**slice_dict(input_data_all, i)))
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy_extras\nodes_upscale_model.py", line 52, in upscale
-    s = comfy.utils.tiled_scale(in_img, lambda a: upscale_model(a), tile_x=tile, tile_y=tile, overlap=overlap, upscale_amount=upscale_model.scale, pbar=pbar)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\utils\_contextlib.py", line 115, in decorate_context
-    return func(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy\utils.py", line 400, in tiled_scale
-    ps = function(s_in).cpu()
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy_extras\nodes_upscale_model.py", line 52, in <lambda>
-    s = comfy.utils.tiled_scale(in_img, lambda a: upscale_model(a), tile_x=tile, tile_y=tile, overlap=overlap, upscale_amount=upscale_model.scale, pbar=pbar)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\comfy_extras\chainner_models\architecture\RRDB.py", line 296, in forward
-    return self.model(x)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\container.py", line 217, in forward
-    input = module(input)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\module.py", line 1501, in _call_impl
-    return forward_call(*args, **kwargs)
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\modules\upsampling.py", line 156, in forward
-    return F.interpolate(input, self.size, self.scale_factor, self.mode, self.align_corners,
-  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torch\nn\functional.py", line 3931, in interpolate
-    return torch._C._nn.upsample_nearest2d(input, output_size, scale_factors)
-RuntimeError: Could not allocate tensor with 754974720 bytes. There is not enough GPU video memory available!
-
-Prompt executed in 9.43 seconds
-got prompt
-100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [01:00<00:00,  2.33s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [01:00<00:00,  2.41s/it]
-======image_to_buffer=======
-images: 0
-{'promptId': '484298df-1749-4162-bdae-853005f3d167'}
-C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\urllib3\connectionpool.py:1095: InsecureRequestWarning: Unverified HTTPS request is being made to host '192.168.0.100'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-  warnings.warn(
-<Response [201]>
-<Response [201]>
-Prompt executed in 65.89 seconds
-FETCH DATA from: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager\extension-node-map.json
-[AnimateDiffEvo] - [0;33mWARNING[0m - ffmpeg could not be found. Outputs that require it have been disabled
-got prompt
-100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [01:00<00:00,  2.48s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [01:00<00:00,  2.43s/it]
-======image_to_buffer=======
-images: 0
-{'promptId': '6bf305a7-a7d6-45e3-af7c-7d6b4327b1b7'}
-C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\urllib3\connectionpool.py:1095: InsecureRequestWarning: Unverified HTTPS request is being made to host '192.168.0.100'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-  warnings.warn(
-<Response [201]>
-<Response [201]>
-Prompt executed in 66.26 seconds
-got prompt
-100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:58<00:00,  2.30s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:58<00:00,  2.33s/it]
-======image_to_buffer=======
-images: 0
-{'promptId': '030bd574-8767-4277-871b-ae71fb29e32e'}
-C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\urllib3\connectionpool.py:1095: InsecureRequestWarning: Unverified HTTPS request is being made to host '192.168.0.100'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-  warnings.warn(
-<Response [201]>
-<Response [201]>
-Prompt executed in 81.13 seconds
-got prompt
-100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:58<00:00,  2.31s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:58<00:00,  2.33s/it]
-======image_to_buffer=======
-images: 0
-{'promptId': 'de465ddb-6dff-4f4b-b2c0-8aa4569396b7'}
-C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\urllib3\connectionpool.py:1095: InsecureRequestWarning: Unverified HTTPS request is being made to host '192.168.0.100'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-  warnings.warn(
-<Response [201]>
-<Response [201]>
-Prompt executed in 67.88 seconds
-got prompt
-100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:57<00:00,  2.29s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:57<00:00,  2.30s/it]
-======image_to_buffer=======
-images: 0
-{'promptId': '70c89fc3-32e7-40be-afc5-645ed265950b'}
-C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\urllib3\connectionpool.py:1095: InsecureRequestWarning: Unverified HTTPS request is being made to host '192.168.0.100'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-  warnings.warn(
-<Response [201]>
-<Response [201]>
-Prompt executed in 61.84 seconds
-got prompt
-100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:57<00:00,  2.29s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:57<00:00,  2.30s/it]
-======image_to_buffer=======
-images: 0
-{'promptId': 'a7b839f4-5e4f-4022-ae80-cf81d630c77b'}
-C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\urllib3\connectionpool.py:1095: InsecureRequestWarning: Unverified HTTPS request is being made to host '192.168.0.100'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-  warnings.warn(
-<Response [201]>
-<Response [201]>
-Prompt executed in 61.93 seconds
-got prompt
-100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:56<00:00,  2.26s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:56<00:00,  2.27s/it]
-======image_to_buffer=======
-images: 0
-{'promptId': '6a8c5d57-867e-45b4-a669-bf9809fe6dd6'}
-C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\urllib3\connectionpool.py:1095: InsecureRequestWarning: Unverified HTTPS request is being made to host '192.168.0.100'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-  warnings.warn(
-<Response [201]>
-<Response [201]>
-Prompt executed in 61.18 seconds
-got prompt
-100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:57<00:00,  2.30s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:57<00:00,  2.29s/it]
-======image_to_buffer=======
-images: 0
-{'promptId': '2b0fd97d-cea4-490d-8a82-8cfdaefd1f52'}
-C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\urllib3\connectionpool.py:1095: InsecureRequestWarning: Unverified HTTPS request is being made to host '192.168.0.100'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-  warnings.warn(
-<Response [201]>
-<Response [201]>
-Prompt executed in 61.86 seconds
-got prompt
-got prompt
-100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:56<00:00,  2.29s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:56<00:00,  2.28s/it]
-======image_to_buffer=======
-images: 0
-{'promptId': '0fee2898-6c0b-47be-9664-38f047a8dab3'}
-C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\urllib3\connectionpool.py:1095: InsecureRequestWarning: Unverified HTTPS request is being made to host '192.168.0.100'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-  warnings.warn(
-<Response [201]>
-<Response [201]>
-Prompt executed in 61.48 seconds
-100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:57<00:00,  2.33s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:57<00:00,  2.30s/it]
-======image_to_buffer=======
-images: 0
-{'promptId': '51900f72-af3f-4518-a5f8-425572f2758d'}
-C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\urllib3\connectionpool.py:1095: InsecureRequestWarning: Unverified HTTPS request is being made to host '192.168.0.100'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-  warnings.warn(
-<Response [201]>
-<Response [201]>
-Prompt executed in 61.65 seconds
-got prompt
-100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:57<00:00,  2.29s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [00:57<00:00,  2.31s/it]
-======image_to_buffer=======
-images: 0
-{'promptId': 'df828cc8-bfd8-4391-bfb5-353e63a56c05'}
-C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\urllib3\connectionpool.py:1095: InsecureRequestWarning: Unverified HTTPS request is being made to host '192.168.0.100'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-  warnings.warn(
-<Response [201]>
-<Response [201]>
-Prompt executed in 62.17 seconds
-got prompt
-100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [01:01<00:00,  2.46s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [01:01<00:00,  2.45s/it]
-======image_to_buffer=======
-images: 0
-{'promptId': 'cca5fec5-1809-4da9-8c00-de24a8e528e2'}
-C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\urllib3\connectionpool.py:1095: InsecureRequestWarning: Unverified HTTPS request is being made to host '192.168.0.100'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-  warnings.warn(
-<Response [201]>
-<Response [201]>
-Prompt executed in 65.57 seconds
-got prompt
-100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [01:00<00:00,  2.44s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [01:00<00:00,  2.44s/it]
-======image_to_buffer=======
-images: 0
-{'promptId': '164d773b-edaa-4009-bff6-434bd3670a8e'}
-C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\urllib3\connectionpool.py:1095: InsecureRequestWarning: Unverified HTTPS request is being made to host '192.168.0.100'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-  warnings.warn(
-<Response [201]>
-<Response [201]>
-Prompt executed in 65.28 seconds
-got prompt
-model_type EPS
-adm 0
-Using split attention in VAE
-Working with z of shape (1, 4, 32, 32) = 4096 dimensions.
-Using split attention in VAE
-missing {'cond_stage_model.text_projection', 'cond_stage_model.logit_scale'}
-left over keys: dict_keys(['cond_stage_model.transformer.text_model.embeddings.position_ids'])
-Requested to load SD1ClipModel
-Loading 1 new model
-Requested to load BaseModel
-Loading 1 new model
-100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [01:17<00:00,  3.26s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [01:17<00:00,  3.12s/it]
-======image_to_buffer=======
-images: 0
-{'promptId': '5b2b6a50-916b-4c13-96fa-67e13e571dc9'}
-C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\urllib3\connectionpool.py:1095: InsecureRequestWarning: Unverified HTTPS request is being made to host '192.168.0.100'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-  warnings.warn(
-<Response [201]>
-<Response [201]>
-Prompt executed in 149.19 seconds
-got prompt
-100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [01:20<00:00,  3.18s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [01:20<00:00,  3.20s/it]
-======image_to_buffer=======
-images: 0
-{'promptId': '831d82d7-4261-4da0-a334-1fde04f6eeaa'}
-C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\urllib3\connectionpool.py:1095: InsecureRequestWarning: Unverified HTTPS request is being made to host '192.168.0.100'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-  warnings.warn(
-<Response [201]>
-<Response [201]>
-Prompt executed in 84.67 seconds
-got prompt
-got prompt
-
-Prompt executed in 69.49 seconds
-
-Prompt executed in 22.96 seconds
-got prompt
-
-Prompt executed in 12.40 seconds
-got prompt
-
-Prompt executed in 26.47 seconds
-got prompt
-100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [01:21<00:00,  3.38s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [01:21<00:00,  3.26s/it]
-======image_to_buffer=======
-images: 0
-{'promptId': '698da110-6a4c-406a-b647-b44cfd8ca39f'}
-C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\urllib3\connectionpool.py:1095: InsecureRequestWarning: Unverified HTTPS request is being made to host '192.168.0.100'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-  warnings.warn(
-<Response [201]>
-<Response [201]>
-Prompt executed in 85.50 seconds
-got prompt
-got prompt
-100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [01:19<00:00,  3.17s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [01:19<00:00,  3.18s/it]
-======image_to_buffer=======
-images: 0
-{'promptId': '40c52117-4c31-4a11-acf7-4d1610b41e37'}
-C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\urllib3\connectionpool.py:1095: InsecureRequestWarning: Unverified HTTPS request is being made to host '192.168.0.100'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-  warnings.warn(
-<Response [201]>
-<Response [201]>
-Prompt executed in 83.73 seconds
-got prompt
-got prompt
-100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [01:21<00:00,  3.11s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [01:21<00:00,  3.25s/it]
-======image_to_buffer=======
-images: 0
-{'promptId': 'b7dd9726-6db8-41eb-b9d4-e2c7f2b23e0d'}
-C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\urllib3\connectionpool.py:1095: InsecureRequestWarning: Unverified HTTPS request is being made to host '192.168.0.100'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-  warnings.warn(
-<Response [201]>
-<Response [201]>
-Prompt executed in 85.38 seconds
-100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [01:20<00:00,  3.48s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [01:20<00:00,  3.22s/it]
-======image_to_buffer=======
-images: 0
-{'promptId': '1b93c9cd-a3a6-42ac-ac37-212d9dbc12c3'}
-C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\urllib3\connectionpool.py:1095: InsecureRequestWarning: Unverified HTTPS request is being made to host '192.168.0.100'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-  warnings.warn(
-<Response [201]>
-<Response [201]>
-Prompt executed in 84.87 seconds
-got prompt
-got prompt
-100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [01:21<00:00,  3.36s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [01:21<00:00,  3.26s/it]
-======image_to_buffer=======
-images: 0
-{'promptId': '52c9b9cd-d237-42bf-ab91-0f2d67d438dd'}
-C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\urllib3\connectionpool.py:1095: InsecureRequestWarning: Unverified HTTPS request is being made to host '192.168.0.100'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-  warnings.warn(
-<Response [201]>
-<Response [201]>
-Prompt executed in 85.46 seconds
-100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [01:22<00:00,  3.38s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [01:22<00:00,  3.29s/it]
-======image_to_buffer=======
-images: 0
-{'promptId': 'c3ed65cd-9592-4970-a9e1-602f8c583000'}
-C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\urllib3\connectionpool.py:1095: InsecureRequestWarning: Unverified HTTPS request is being made to host '192.168.0.100'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-  warnings.warn(
-<Response [201]>
-<Response [201]>
-Prompt executed in 86.28 seconds
-got prompt
-100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [01:20<00:00,  3.26s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [01:20<00:00,  3.23s/it]
-======image_to_buffer=======
-images: 0
-{'promptId': '2e2e69fa-be3a-4e0a-939d-f954d7c14252'}
-C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\urllib3\connectionpool.py:1095: InsecureRequestWarning: Unverified HTTPS request is being made to host '192.168.0.100'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-  warnings.warn(
-<Response [201]>
-<Response [201]>
-Prompt executed in 84.78 seconds
-100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [01:20<00:00,  3.42s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [01:20<00:00,  3.21s/it]
-======image_to_buffer=======
-images: 0
-{'promptId': '49b73f7d-096e-47dc-bc06-08ee531b1c87'}
-C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\urllib3\connectionpool.py:1095: InsecureRequestWarning: Unverified HTTPS request is being made to host '192.168.0.100'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-  warnings.warn(
-<Response [201]>
-<Response [201]>
-Prompt executed in 84.51 seconds
-got prompt
-100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [01:18<00:00,  3.13s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 25/25 [01:18<00:00,  3.15s/it]
-======image_to_buffer=======
-images: 0
-{'promptId': '30e7b848-faf5-423c-b553-f90d518d67a8'}
-C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\urllib3\connectionpool.py:1095: InsecureRequestWarning: Unverified HTTPS request is being made to host '192.168.0.100'. Adding certificate verification is strongly advised. See: https://urllib3.readthedocs.io/en/latest/advanced-usage.html#tls-warnings
-  warnings.warn(
-<Response [201]>
-<Response [201]>
-Prompt executed in 83.51 seconds
+Traceback (most recent call last):
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\runpy.py", line 197, in _run_module_as_main
+    return _run_code(code, main_globals, None,
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\runpy.py", line 87, in _run_code
+    exec(code, run_globals)
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\debugpy\__main__.py", line 39, in <module>
+    cli.main()
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\debugpy\server\cli.py", line 430, in main
+    run()
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\debugpy\server\cli.py", line 284, in run_file
+    runpy.run_path(target, run_name="__main__")
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\debugpy\_vendored\pydevd\_pydevd_bundle\pydevd_runpy.py", line 321, in run_path
+    return _run_module_code(code, init_globals, run_name,
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\debugpy\_vendored\pydevd\_pydevd_bundle\pydevd_runpy.py", line 135, in _run_module_code
+    _run_code(code, mod_globals, init_globals,
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\debugpy\_vendored\pydevd\_pydevd_bundle\pydevd_runpy.py", line 124, in _run_code
+    exec(code, run_globals)
+  File "main.py", line 201, in <module>
+    loop.run_until_complete(run(server, address=args.listen, port=args.port, verbose=not args.dont_print_server, call_on_start=call_on_start))
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\asyncio\base_events.py", line 647, in run_until_complete
+    return future.result()
+  File "main.py", line 105, in run
+    await asyncio.gather(server.start(address, port, verbose, call_on_start), server.publish_loop())
+  File "D:\Documents\projects\super-puper-ai\ComfyUI\server.py", line 613, in start
+    await site.start()
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\aiohttp\web_runner.py", line 121, in start
+    self._server = await loop.create_server(
+  File "C:\Users\majul\miniconda3\envs\env_pytorch39\lib\asyncio\base_events.py", line 1506, in create_server
+    raise OSError(err.errno, 'error while attempting '
+OSError: [Errno 10048] error while attempting to bind on address ('127.0.0.1', 8188): обычно разрешается только одно использование адреса сокета (протокол/сетевой адрес/порт)

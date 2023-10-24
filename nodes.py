@@ -1759,11 +1759,13 @@ def load_custom_nodes():
     node_paths = folder_paths.get_folder_paths("custom_nodes")
     node_import_times = []
     for custom_node_path in node_paths:
+        print(f'========= custom_node_path {custom_node_path} =========')
         possible_modules = os.listdir(custom_node_path)
         if "__pycache__" in possible_modules:
             possible_modules.remove("__pycache__")
 
         for possible_module in possible_modules:
+            print(f'========= possible_module {possible_module} =========')
             module_path = os.path.join(custom_node_path, possible_module)
             if os.path.isfile(module_path) and os.path.splitext(module_path)[1] != ".py": continue
             if module_path.endswith(".disabled"): continue
