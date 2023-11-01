@@ -13,3 +13,7 @@
 [submodule "./custom_nodes/ComfyUI-VideoHelperSuite"]
 	path = custom_nodes/ComfyUI-VideoHelperSuite
 	url = https://github.com/Kosinkadink/ComfyUI-VideoHelperSuite
+
+[submodule "./custom_nodes/efficiency-nodes-comfyui"]
+	path = custom_nodes/efficiency-nodes-comfyui
+	url = https://github.com/jags111/efficiency-nodes-comfyui
