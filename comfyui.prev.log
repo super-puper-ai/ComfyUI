@@ -1,7 +1,7 @@
-** ComfyUI start up time: 2023-10-24 17:35:57.378678
+** ComfyUI start up time: 2023-11-01 12:04:22.971992
 
 Prestartup times for custom nodes:
-   0.0 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager
+   0.1 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager
 
 Using directml with device: 
 Total VRAM 1024 MB, total RAM 32699 MB
@@ -31,44 +31,39 @@ SyntaxError: invalid syntax
 Cannot import D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\comfyui-animatediff module for custom nodes: invalid syntax (sliding_schedule.py, line 147)
 ========= possible_module ComfyUI-AnimateDiff-Evolved =========
 Using sub quadratic optimization for cross attention, if you have memory or speed issues try using: --use-split-cross-attention
-========= possible_module ComfyUI-Impact-Pack =========
-### Loading: ComfyUI-Impact-Pack (V4.26.1)
-## ComfyUI-Impact-Pack: Updating dependencies
-### ComfyUI-Impact-Pack: Check dependencies
-### ComfyUI-Impact-Pack: Check basic models
-### ComfyUI-Impact-Pack: Updating subpack
-### ComfyUI-Impact-Pack: onnx model directory created (D:\Documents\projects\super-puper-ai\ComfyUI\models\onnx)
-### Loading: ComfyUI-Impact-Pack (Subpack: V0.2.4)
+[AnimateDiffEvo] - [0;31mERROR[0m - No motion models found. Please download one and place in: ['D:\\Documents\\projects\\super-puper-ai\\ComfyUI\\custom_nodes\\ComfyUI-AnimateDiff-Evolved\\models']
 ========= possible_module ComfyUI-Manager =========
 ### Loading: ComfyUI-Manager (V0.36)
-
-
-## [WARN] ComfyUI-Manager: Your ComfyUI version (1) is too old. Please update to the latest version. ##
-
-
-### ComfyUI Revision: 1 [9d5a2a3b] | Released on '2023-10-24'
+### ComfyUI Revision: 1607 on 'old' [53eeaad7] | Released on '2023-10-24'
 ========= possible_module ComfyUI-VideoHelperSuite =========
 [VideoHelperSuite] - [0;32mINFO[0m - ffmpeg could not be found. Using ffmpeg from imageio-ffmpeg.
 ========= possible_module example_node.py.example =========
 
 Import times for custom nodes:
    0.0 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\base64_images.py
-   0.0 seconds (IMPORT FAILED): D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\comfyui-animatediff
-   0.0 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved
-   0.2 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager
-   0.2 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-VideoHelperSuite
-  23.9 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Impact-Pack
+   0.2 seconds (IMPORT FAILED): D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\comfyui-animatediff
+   0.3 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved
+   0.6 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager
+   1.3 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-VideoHelperSuite
 
 Starting server
 
-To see the GUI go to: http://0.0.0.0:8189
+To see the GUI go to: http://127.0.0.1:8188
+FETCH DATA from: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager\extension-node-map.json
+[AnimateDiffEvo] - [0;33mWARNING[0m - ffmpeg could not be found. Outputs that require it have been disabled
 FETCH DATA from: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager\extension-node-map.json
 [AnimateDiffEvo] - [0;33mWARNING[0m - ffmpeg could not be found. Outputs that require it have been disabled
 FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
-Uninstall custom node 'ComfyUI Impact Pack'
-uninstall: ['https://github.com/ltdrdata/ComfyUI-Impact-Pack']
-Uninstallation was successful.
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+Install custom node 'Efficiency Nodes for ComfyUI Version 2.0+'
+install: ['https://github.com/jags111/efficiency-nodes-comfyui']
+Download: git clone 'https://github.com/jags111/efficiency-nodes-comfyui'
+Install: pip packages
+Installation was successful.
 After restarting ComfyUI, please refresh the browser.
 FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
+FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
+FETCH DATA from: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager\extension-node-map.json
+[AnimateDiffEvo] - [0;33mWARNING[0m - ffmpeg could not be found. Outputs that require it have been disabled
 
 Stopped server
