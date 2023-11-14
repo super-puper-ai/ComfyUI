@@ -34,7 +34,7 @@ class ImageToBuffer:
             img = Image.fromarray(np.clip(i, 0, 255).astype(np.uint8))
             buffer = BytesIO()
             print("Image.save")
-            img.save(buffer, format="PNG", optimize=True)
+            img.save(buffer, format="PNG", optimize=False)
             results.append(buffer)
         return (results,)
 
