@@ -30,8 +30,10 @@ class ImageToBuffer:
         for image in images:
             print("images: " + str(count))
             i = 255. * image.cpu().numpy()
+            print("Image.fromarray")
             img = Image.fromarray(np.clip(i, 0, 255).astype(np.uint8))
             buffer = BytesIO()
+            print("Image.save")
             img.save(buffer, format="PNG")
             results.append(buffer)
         return (results,)

@@ -1,88 +1,7 @@
-** ComfyUI start up time: 2023-11-01 12:09:33.735539
-
-#######################################################################
-[ComfyUI-Manager] Starting dependency installation/(de)activation for the extension
-
-
-## ComfyUI-Manager: EXECUTE => ['C:\\Users\\majul\\miniconda3\\envs\\env_pytorch39\\python.exe', '-m', 'pip', 'install', 'clip-interrogator']
-
-## Execute install/(de)activation script for 'D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\efficiency-nodes-comfyui'
- Collecting clip-interrogator
-   Downloading clip_interrogator-0.6.0-py3-none-any.whl (787 kB)
-      -------------------------------------- 787.8/787.8 kB 2.0 MB/s eta 0:00:00
- Requirement already satisfied: torch in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from clip-interrogator) (2.0.0)
- Requirement already satisfied: torchvision in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from clip-interrogator) (0.15.1)
- Requirement already satisfied: Pillow in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from clip-interrogator) (10.0.0)
- Requirement already satisfied: requests in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from clip-interrogator) (2.31.0)
- Requirement already satisfied: safetensors in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from clip-interrogator) (0.3.3)
- Requirement already satisfied: tqdm in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from clip-interrogator) (4.66.1)
- Collecting open-clip-torch (from clip-interrogator)
-   Obtaining dependency information for open-clip-torch from https://files.pythonhosted.org/packages/7c/7f/952fdffa17b15d0c7c51a730860fcf4f4982528ecc753b190dcd46cc944b/open_clip_torch-2.23.0-py3-none-any.whl.metadata
-   Downloading open_clip_torch-2.23.0-py3-none-any.whl.metadata (30 kB)
- Requirement already satisfied: accelerate in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from clip-interrogator) (0.22.0)
- Requirement already satisfied: transformers>=4.27.1 in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from clip-interrogator) (4.32.1)
- Requirement already satisfied: filelock in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from transformers>=4.27.1->clip-interrogator) (3.12.3)
- Requirement already satisfied: huggingface-hub<1.0,>=0.15.1 in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from transformers>=4.27.1->clip-interrogator) (0.16.4)
- Requirement already satisfied: numpy>=1.17 in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from transformers>=4.27.1->clip-interrogator) (1.25.2)
- Requirement already satisfied: packaging>=20.0 in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from transformers>=4.27.1->clip-interrogator) (23.1)
- Requirement already satisfied: pyyaml>=5.1 in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from transformers>=4.27.1->clip-interrogator) (6.0.1)
- Requirement already satisfied: regex!=2019.12.17 in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from transformers>=4.27.1->clip-interrogator) (2023.8.8)
- Requirement already satisfied: tokenizers!=0.11.3,<0.14,>=0.11.1 in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from transformers>=4.27.1->clip-interrogator) (0.13.3)
- Requirement already satisfied: colorama in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from tqdm->clip-interrogator) (0.4.6)
- Requirement already satisfied: psutil in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from accelerate->clip-interrogator) (5.9.5)
- Requirement already satisfied: typing-extensions in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from torch->clip-interrogator) (4.7.1)
- Requirement already satisfied: sympy in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from torch->clip-interrogator) (1.12)
- Requirement already satisfied: networkx in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from torch->clip-interrogator) (3.1)
- Requirement already satisfied: jinja2 in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from torch->clip-interrogator) (3.1.2)
- Collecting ftfy (from open-clip-torch->clip-interrogator)
-   Using cached ftfy-6.1.1-py3-none-any.whl (53 kB)
- Collecting sentencepiece (from open-clip-torch->clip-interrogator)
-   Downloading sentencepiece-0.1.99-cp39-cp39-win_amd64.whl (977 kB)
-      -------------------------------------- 977.6/977.6 kB 3.3 MB/s eta 0:00:00
- Collecting protobuf (from open-clip-torch->clip-interrogator)
-   Obtaining dependency information for protobuf from https://files.pythonhosted.org/packages/ba/ae/e286be9bee0dee7c5c923cc87f26bf52f172c322cbcea2e2ca9a42abd1f1/protobuf-4.24.4-cp39-cp39-win_amd64.whl.metadata
-   Downloading protobuf-4.24.4-cp39-cp39-win_amd64.whl.metadata (540 bytes)
- Collecting timm (from open-clip-torch->clip-interrogator)
-   Obtaining dependency information for timm from https://files.pythonhosted.org/packages/df/e4/3a56b85846102b67af6937410f9f8dc314fc60529d6891fc003611fc3796/timm-0.9.8-py3-none-any.whl.metadata
-   Downloading timm-0.9.8-py3-none-any.whl.metadata (59 kB)
-      ---------------------------------------- 59.3/59.3 kB ? eta 0:00:00
- Requirement already satisfied: charset-normalizer<4,>=2 in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from requests->clip-interrogator) (3.2.0)
- Requirement already satisfied: idna<4,>=2.5 in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from requests->clip-interrogator) (3.4)
- Requirement already satisfied: urllib3<3,>=1.21.1 in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from requests->clip-interrogator) (2.0.4)
- Requirement already satisfied: certifi>=2017.4.17 in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from requests->clip-interrogator) (2023.7.22)
- Requirement already satisfied: fsspec in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from huggingface-hub<1.0,>=0.15.1->transformers>=4.27.1->clip-interrogator) (2023.6.0)
- Collecting wcwidth>=0.2.5 (from ftfy->open-clip-torch->clip-interrogator)
-   Obtaining dependency information for wcwidth>=0.2.5 from https://files.pythonhosted.org/packages/19/0b/00728863778b14ececfc97e40850fd71529b6a1695907981cc3fdc085ba6/wcwidth-0.2.9-py2.py3-none-any.whl.metadata
-   Downloading wcwidth-0.2.9-py2.py3-none-any.whl.metadata (14 kB)
- Requirement already satisfied: MarkupSafe>=2.0 in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from jinja2->torch->clip-interrogator) (2.1.3)
- Requirement already satisfied: mpmath>=0.19 in c:\users\majul\miniconda3\envs\env_pytorch39\lib\site-packages (from sympy->torch->clip-interrogator) (1.3.0)
- Downloading open_clip_torch-2.23.0-py3-none-any.whl (1.5 MB)
-    ---------------------------------------- 1.5/1.5 MB 3.2 MB/s eta 0:00:00
- Downloading protobuf-4.24.4-cp39-cp39-win_amd64.whl (430 kB)
-    ---------------------------------------- 430.5/430.5 kB 3.4 MB/s eta 0:00:00
- Downloading timm-0.9.8-py3-none-any.whl (2.2 MB)
-    ---------------------------------------- 2.2/2.2 MB 3.2 MB/s eta 0:00:00
- Downloading wcwidth-0.2.9-py2.py3-none-any.whl (102 kB)
-    ---------------------------------------- 102.3/102.3 kB 3.0 MB/s eta 0:00:00
-[!] DEPRECATION: torchsde 0.2.5 has a non-standard dependency specifier numpy>=1.19.*; python_version >= "3.7". pip 23.3 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of torchsde or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063
- Installing collected packages: wcwidth, sentencepiece, protobuf, ftfy, timm, open-clip-torch, clip-interrogator
- Successfully installed clip-interrogator-0.6.0 ftfy-6.1.1 open-clip-torch-2.23.0 protobuf-4.24.4 sentencepiece-0.1.99 timm-0.9.8 wcwidth-0.2.9
-
-## ComfyUI-Manager: EXECUTE => ['C:\\Users\\majul\\miniconda3\\envs\\env_pytorch39\\python.exe', '-m', 'pip', 'install', 'simpleeval']
-
-## Execute install/(de)activation script for 'D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\efficiency-nodes-comfyui'
- Collecting simpleeval
-   Downloading simpleeval-0.9.13-py2.py3-none-any.whl (15 kB)
-[!] DEPRECATION: torchsde 0.2.5 has a non-standard dependency specifier numpy>=1.19.*; python_version >= "3.7". pip 23.3 will enforce this behaviour change. A possible replacement is to upgrade to a newer version of torchsde or contact the author to suggest that they release a version with a conforming dependency specifiers. Discussion can be found at https://github.com/pypa/pip/issues/12063
- Installing collected packages: simpleeval
- Successfully installed simpleeval-0.9.13
-
-[ComfyUI-Manager] Startup script completed.
-#######################################################################
-
+** ComfyUI start up time: 2023-11-01 15:30:49.366712
 
 Prestartup times for custom nodes:
-  12.5 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager
+   0.0 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager
 
 Using directml with device: 
 Total VRAM 1024 MB, total RAM 32699 MB
@@ -115,7 +34,7 @@ Using sub quadratic optimization for cross attention, if you have memory or spee
 [AnimateDiffEvo] - [0;31mERROR[0m - No motion models found. Please download one and place in: ['D:\\Documents\\projects\\super-puper-ai\\ComfyUI\\custom_nodes\\ComfyUI-AnimateDiff-Evolved\\models']
 ========= possible_module ComfyUI-Manager =========
 ### Loading: ComfyUI-Manager (V0.36)
-### ComfyUI Revision: 1607 on 'old' [53eeaad7] | Released on '2023-10-24'
+### ComfyUI Revision: 1629 [d9a7be5a] | Released on '2023-11-01'
 ========= possible_module ComfyUI-VideoHelperSuite =========
 [VideoHelperSuite] - [0;32mINFO[0m - ffmpeg could not be found. Using ffmpeg from imageio-ffmpeg.
 ========= possible_module efficiency-nodes-comfyui =========
@@ -125,41 +44,12 @@ Using sub quadratic optimization for cross attention, if you have memory or spee
 Import times for custom nodes:
    0.0 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\base64_images.py
    0.0 seconds (IMPORT FAILED): D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\comfyui-animatediff
-   0.0 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved
+   0.1 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved
    0.1 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\efficiency-nodes-comfyui
-   0.2 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-VideoHelperSuite
-   0.4 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager
+   0.5 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager
+   1.2 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-VideoHelperSuite
 
 Starting server
 
 To see the GUI go to: http://127.0.0.1:8188
 FETCH DATA from: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager\extension-node-map.json
-[AnimateDiffEvo] - [0;33mWARNING[0m - ffmpeg could not be found. Outputs that require it have been disabled
-[AnimateDiffEvo] - [0;33mWARNING[0m - ffmpeg could not be found. Outputs that require it have been disabled
-[AnimateDiffEvo] - [0;33mWARNING[0m - ffmpeg could not be found. Outputs that require it have been disabled
-[AnimateDiffEvo] - [0;33mWARNING[0m - ffmpeg could not be found. Outputs that require it have been disabled
-[AnimateDiffEvo] - [0;33mWARNING[0m - ffmpeg could not be found. Outputs that require it have been disabled
-[AnimateDiffEvo] - [0;33mWARNING[0m - ffmpeg could not be found. Outputs that require it have been disabled
-got prompt
-Requested to load SD1ClipModel
-Loading 1 new model
-warning, embedding:EasyNegative.pt, does not exist, ignoring
-warning, embedding:bad-artist-anime.pt, does not exist, ignoring
-Global Step: 840001
-Using split attention in VAE
-Working with z of shape (1, 4, 32, 32) = 4096 dimensions.
-Using split attention in VAE
-Leftover VAE keys ['model_ema.decay', 'model_ema.num_updates']
-----------------------------------------
-[36mEfficient Loader Models Cache:[0m
-Ckpt:
-  [1] epicphotogasm_v1
-Vae:
-  [1] vae-ft-mse-840000-ema-pruned
-Requested to load BaseModel
-Loading 1 new model
-C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torchsde\_brownian\brownian_interval.py:585: UserWarning: Should have ta>=t0 but got ta=0.02916753850877285 and t0=0.029168.
-  warnings.warn(f"Should have ta>=t0 but got ta={ta} and t0={self._start}.")
-100%|██████████████████████████████████████████████████████████████████████████████████| 20/20 [06:18<00:00, 15.08s/it]100%|██████████████████████████████████████████████████████████████████████████████████| 20/20 [06:18<00:00, 18.95s/it]
-C:\Users\majul\miniconda3\envs\env_pytorch39\lib\site-packages\torchsde\_brownian\brownian_interval.py:594: UserWarning: Should have tb<=t1 but got tb=1.6959110498428345 and t1=1.695911.
-  warnings.warn(f"Should have {tb_name}<=t1 but got {tb_name}={tb} and t1={self._end}.")
