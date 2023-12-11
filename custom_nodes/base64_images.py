@@ -94,7 +94,8 @@ class Base64ToImage:
     CATEGORY = "image"
 
     def base64_to_image(self, base64Str):
-        _bytes = base64.decodebytes(bytes(base64Str, 'utf-8'))
+        base64StrDecoded = urllib.parse.unquote(base64Str)
+        _bytes = base64.decodebytes(bytes(base64StrDecoded, 'utf-8'))
         i = Image.open(BytesIO(_bytes))
         i = ImageOps.exif_transpose(i)
         image = i.convert("RGB")

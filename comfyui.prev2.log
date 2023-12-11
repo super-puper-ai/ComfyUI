@@ -1,69 +1,516 @@
-** ComfyUI start up time: 2023-11-01 12:04:22.971992
+** ComfyUI start up time: 2023-12-11 19:19:13.628537
 
 Prestartup times for custom nodes:
-   0.1 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager
+   0.1 seconds: C:\Users\don00\projects\ComfyUI\custom_nodes\ComfyUI-Manager
 
-Using directml with device: 
-Total VRAM 1024 MB, total RAM 32699 MB
+Total VRAM 6144 MB, total RAM 16292 MB
 Set vram state to: NORMAL_VRAM
-Device: privateuseone
+Device: cuda:0 NVIDIA GeForce RTX 2060 : cudaMallocAsync
 VAE dtype: torch.float32
-Using sub quadratic optimization for cross attention, if you have memory or speed issues try using: --use-split-cross-attention
-========= custom_node_path D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes =========
+Using pytorch cross attention
 ========= possible_module base64_images.py =========
 ========= possible_module comfyui-animatediff =========
 Traceback (most recent call last):
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\nodes.py", line 1735, in load_custom_node
+  File "C:\Users\don00\projects\ComfyUI\nodes.py", line 1800, in load_custom_node
     module_spec.loader.exec_module(module)
-  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
-  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\comfyui-animatediff\__init__.py", line 2, in <module>
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Users\don00\projects\ComfyUI\custom_nodes\comfyui-animatediff\__init__.py", line 2, in <module>
     from .animatediff.nodes import NODE_CLASS_MAPPINGS, NODE_DISPLAY_NAME_MAPPINGS
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\comfyui-animatediff\animatediff\nodes.py", line 16, in <module>
+  File "C:\Users\don00\projects\ComfyUI\custom_nodes\comfyui-animatediff\animatediff\nodes.py", line 16, in <module>
     from .sampler import AnimateDiffSampler, AnimateDiffSlidingWindowOptions
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\comfyui-animatediff\animatediff\sampler.py", line 14, in <module>
-    from .sliding_schedule import ContextSchedules
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\comfyui-animatediff\animatediff\sliding_schedule.py", line 147
-    match name:
-          ^
-SyntaxError: invalid syntax
+  File "C:\Users\don00\projects\ComfyUI\custom_nodes\comfyui-animatediff\animatediff\sampler.py", line 52, in <module>
+    orig_maximum_batch_area = model_management.maximum_batch_area
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'comfy.model_management' has no attribute 'maximum_batch_area'
 
-Cannot import D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\comfyui-animatediff module for custom nodes: invalid syntax (sliding_schedule.py, line 147)
+Cannot import C:\Users\don00\projects\ComfyUI\custom_nodes\comfyui-animatediff module for custom nodes: module 'comfy.model_management' has no attribute 'maximum_batch_area'
 ========= possible_module ComfyUI-AnimateDiff-Evolved =========
-Using sub quadratic optimization for cross attention, if you have memory or speed issues try using: --use-split-cross-attention
-[AnimateDiffEvo] - [0;31mERROR[0m - No motion models found. Please download one and place in: ['D:\\Documents\\projects\\super-puper-ai\\ComfyUI\\custom_nodes\\ComfyUI-AnimateDiff-Evolved\\models']
+Using pytorch cross attention
+Traceback (most recent call last):
+  File "C:\Users\don00\projects\ComfyUI\nodes.py", line 1800, in load_custom_node
+    module_spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Users\don00\projects\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\__init__.py", line 2, in <module>
+    from .animatediff.nodes import NODE_CLASS_MAPPINGS, NODE_DISPLAY_NAME_MAPPINGS
+  File "C:\Users\don00\projects\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\nodes.py", line 22, in <module>
+    from .sampling import animatediff_sample_factory
+  File "C:\Users\don00\projects\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\sampling.py", line 9, in <module>
+    from comfy.samplers import lcm
+ImportError: cannot import name 'lcm' from 'comfy.samplers' (C:\Users\don00\projects\ComfyUI\comfy\samplers.py)
+
+Cannot import C:\Users\don00\projects\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved module for custom nodes: cannot import name 'lcm' from 'comfy.samplers' (C:\Users\don00\projects\ComfyUI\comfy\samplers.py)
 ========= possible_module ComfyUI-Manager =========
+## ComfyUI-Manager: installing dependencies
+ Collecting GitPython (from -r C:\Users\don00\projects\ComfyUI\custom_nodes\ComfyUI-Manager\requirements.txt (line 1))
+   Obtaining dependency information for GitPython from https://files.pythonhosted.org/packages/8d/c4/82b858fb6483dfb5e338123c154d19c043305b01726a67d89532b8f8f01b/GitPython-3.1.40-py3-none-any.whl.metadata
+   Downloading GitPython-3.1.40-py3-none-any.whl.metadata (12 kB)
+ Collecting gitdb<5,>=4.0.1 (from GitPython->-r C:\Users\don00\projects\ComfyUI\custom_nodes\ComfyUI-Manager\requirements.txt (line 1))
+   Obtaining dependency information for gitdb<5,>=4.0.1 from https://files.pythonhosted.org/packages/fd/5b/8f0c4a5bb9fd491c277c21eff7ccae71b47d43c4446c9d0c6cff2fe8c2c4/gitdb-4.0.11-py3-none-any.whl.metadata
+   Downloading gitdb-4.0.11-py3-none-any.whl.metadata (1.2 kB)
+ Collecting smmap<6,>=3.0.1 (from gitdb<5,>=4.0.1->GitPython->-r C:\Users\don00\projects\ComfyUI\custom_nodes\ComfyUI-Manager\requirements.txt (line 1))
+   Obtaining dependency information for smmap<6,>=3.0.1 from https://files.pythonhosted.org/packages/a7/a5/10f97f73544edcdef54409f1d839f6049a0d79df68adbc1ceb24d1aaca42/smmap-5.0.1-py3-none-any.whl.metadata
+   Downloading smmap-5.0.1-py3-none-any.whl.metadata (4.3 kB)
+ Downloading GitPython-3.1.40-py3-none-any.whl (190 kB)
+    -------------------------------------- 190.6/190.6 kB 888.3 kB/s eta 0:00:00
+ Downloading gitdb-4.0.11-py3-none-any.whl (62 kB)
+    ---------------------------------------- 62.7/62.7 kB 3.3 MB/s eta 0:00:00
+ Downloading smmap-5.0.1-py3-none-any.whl (24 kB)
+ Installing collected packages: smmap, gitdb, GitPython
+ Successfully installed GitPython-3.1.40 gitdb-4.0.11 smmap-5.0.1
+[!] 
+[!] [notice] A new release of pip is available: 23.2.1 -> 23.3.1
+[!] [notice] To update, run: C:\Users\don00\AppData\Local\Microsoft\WindowsApps\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\python.exe -m pip install --upgrade pip
+## ComfyUI-Manager: installing dependencies done.
 ### Loading: ComfyUI-Manager (V0.36)
-### ComfyUI Revision: 1607 on 'old' [53eeaad7] | Released on '2023-10-24'
+### ComfyUI Revision: 1777 [e1d95343] | Released on '2023-12-07'
 ========= possible_module ComfyUI-VideoHelperSuite =========
-[VideoHelperSuite] - [0;32mINFO[0m - ffmpeg could not be found. Using ffmpeg from imageio-ffmpeg.
+Traceback (most recent call last):
+  File "C:\Users\don00\projects\ComfyUI\nodes.py", line 1800, in load_custom_node
+    module_spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Users\don00\projects\ComfyUI\custom_nodes\ComfyUI-VideoHelperSuite\__init__.py", line 1, in <module>
+    from .videohelpersuite.nodes import NODE_CLASS_MAPPINGS, NODE_DISPLAY_NAME_MAPPINGS
+  File "C:\Users\don00\projects\ComfyUI\custom_nodes\ComfyUI-VideoHelperSuite\videohelpersuite\nodes.py", line 13, in <module>
+    from .load_video_nodes import LoadVideo, LoadVideoUpload, UploadVideo, OutVideoInfo
+  File "C:\Users\don00\projects\ComfyUI\custom_nodes\ComfyUI-VideoHelperSuite\videohelpersuite\load_video_nodes.py", line 6, in <module>
+    import cv2
+ModuleNotFoundError: No module named 'cv2'
+
+Cannot import C:\Users\don00\projects\ComfyUI\custom_nodes\ComfyUI-VideoHelperSuite module for custom nodes: No module named 'cv2'
+========= possible_module efficiency-nodes-comfyui =========
+[36mEfficiency Nodes:[0m Attempting to add 'AnimatedDiff Script' Node (ComfyUI-AnimateDiff-Evolved add-on)...[36mEfficiency Nodes:[0m Attempting to add 'AnimatedDiff Script' Node (ComfyUI-AnimateDiff-Evolved add-on)...[91mFailed![0m
+[93mEfficiency Nodes Warning:[0m Failed to import python package 'simpleeval'; related nodes disabled.
+
 ========= possible_module example_node.py.example =========
 
 Import times for custom nodes:
-   0.0 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\base64_images.py
-   0.2 seconds (IMPORT FAILED): D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\comfyui-animatediff
-   0.3 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved
-   0.6 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager
-   1.3 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-VideoHelperSuite
+   0.0 seconds: C:\Users\don00\projects\ComfyUI\custom_nodes\base64_images.py
+   0.0 seconds (IMPORT FAILED): C:\Users\don00\projects\ComfyUI\custom_nodes\ComfyUI-VideoHelperSuite
+   0.1 seconds (IMPORT FAILED): C:\Users\don00\projects\ComfyUI\custom_nodes\comfyui-animatediff
+   0.1 seconds (IMPORT FAILED): C:\Users\don00\projects\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved
+   0.2 seconds: C:\Users\don00\projects\ComfyUI\custom_nodes\efficiency-nodes-comfyui
+  12.6 seconds: C:\Users\don00\projects\ComfyUI\custom_nodes\ComfyUI-Manager
 
 Starting server
 
 To see the GUI go to: http://127.0.0.1:8188
-FETCH DATA from: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager\extension-node-map.json
-[AnimateDiffEvo] - [0;33mWARNING[0m - ffmpeg could not be found. Outputs that require it have been disabled
-FETCH DATA from: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager\extension-node-map.json
-[AnimateDiffEvo] - [0;33mWARNING[0m - ffmpeg could not be found. Outputs that require it have been disabled
-FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
-FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
-Install custom node 'Efficiency Nodes for ComfyUI Version 2.0+'
-install: ['https://github.com/jags111/efficiency-nodes-comfyui']
-Download: git clone 'https://github.com/jags111/efficiency-nodes-comfyui'
-Install: pip packages
-Installation was successful.
-After restarting ComfyUI, please refresh the browser.
-FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/custom-node-list.json
-FETCH DATA from: https://raw.githubusercontent.com/ltdrdata/ComfyUI-Manager/main/extension-node-map.json
-FETCH DATA from: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager\extension-node-map.json
-[AnimateDiffEvo] - [0;33mWARNING[0m - ffmpeg could not be found. Outputs that require it have been disabled
+FETCH DATA from: C:\Users\don00\projects\ComfyUI\custom_nodes\ComfyUI-Manager\extension-node-map.json
+got prompt
+Requested to load SD1ClipModel
+Loading 1 new model
+----------------------------------------
+[36mEfficient Loader Models Cache:[0m
+Ckpt:
+  [1] realisticVisionV60B1_v60B1VAE
+Requested to load AutoencoderKL
+Loading 1 new model
+[93mKSampler(Efficient) Warning:[0m No vae input detected, proceeding as if vae_decode was false.
+
+Requested to load BaseModel
+Loading 1 new model
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:06<00:00,  3.58it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:06<00:00,  3.29it/s]
+Prompt executed in 24.87 seconds
+gc collect
+got prompt
+Prompt executed in 0.01 seconds
+gc collect
+got prompt
+Prompt executed in 0.00 seconds
+got prompt
+[93mKSampler(Efficient) Warning:[0m No vae input detected, proceeding as if vae_decode was false.
+
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:06<00:00,  3.58it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:06<00:00,  3.25it/s]
+Prompt executed in 6.17 seconds
+gc collect
+got prompt
+[93mKSampler(Efficient) Warning:[0m No vae input detected, proceeding as if vae_decode was false.
+
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:06<00:00,  3.59it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:06<00:00,  3.33it/s]
+Prompt executed in 6.04 seconds
+gc collect
+got prompt
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:05<00:00,  3.59it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:05<00:00,  3.42it/s]
+Prompt executed in 7.85 seconds
+gc collect
+got prompt
+Requested to load SD1ClipModel
+Loading 1 new model
+----------------------------------------
+[36mEfficient Loader Models Cache:[0m
+Ckpt:
+  [1] realisticVisionV60B1_v60B1VAE
+Requested to load BaseModel
+Loading 1 new model
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:08<00:00,  3.35it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:08<00:00,  2.29it/s]
+Prompt executed in 20.57 seconds
+gc collect
+got prompt
+Requested to load SD1ClipModel
+Loading 1 new model
+----------------------------------------
+[36mEfficient Loader Models Cache:[0m
+Ckpt:
+  [1] realisticVisionV60B1_v60B1VAE
+Requested to load BaseModel
+Loading 1 new model
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:06<00:00,  3.50it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:06<00:00,  3.28it/s]
+Prompt executed in 20.52 seconds
+gc collect
+got prompt
+Requested to load SD1ClipModel
+Loading 1 new model
+----------------------------------------
+[36mEfficient Loader Models Cache:[0m
+Ckpt:
+  [1] realisticVisionV60B1_v60B1VAE
+Requested to load BaseModel
+Loading 1 new model
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:05<00:00,  3.43it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:05<00:00,  3.34it/s]
+Prompt executed in 16.59 seconds
+gc collect
+got prompt
+Requested to load BaseModel
+Loading 1 new model
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:06<00:00,  3.13it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:06<00:00,  3.23it/s]
+Prompt executed in 14.61 seconds
+gc collect
+got prompt
+Requested to load BaseModel
+Loading 1 new model
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:19<00:00,  1.17it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:19<00:00,  1.02it/s]
+Prompt executed in 28.70 seconds
+gc collect
+got prompt
+Requested to load SD1ClipModel
+Loading 1 new model
+----------------------------------------
+[36mEfficient Loader Models Cache:[0m
+Ckpt:
+  [1] realisticVisionV60B1_v60B1VAE
+Requested to load BaseModel
+Loading 1 new model
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:30<00:00,  1.33s/it]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:30<00:00,  1.54s/it]
+Prompt executed in 50.49 seconds
+gc collect
+got prompt
+Requested to load SD1ClipModel
+Loading 1 new model
+----------------------------------------
+[36mEfficient Loader Models Cache:[0m
+Ckpt:
+  [1] realisticVisionV60B1_v60B1VAE
+Requested to load BaseModel
+Loading 1 new model
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:27<00:00,  1.20s/it]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:27<00:00,  1.36s/it]
+Prompt executed in 40.24 seconds
+gc collect
+got prompt
+Requested to load SD1ClipModel
+Loading 1 new model
+----------------------------------------
+[36mEfficient Loader Models Cache:[0m
+Ckpt:
+  [1] realisticVisionV60B1_v60B1VAE
+Requested to load BaseModel
+Loading 1 new model
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:14<00:00,  1.10it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:14<00:00,  1.36it/s]
+Prompt executed in 19.07 seconds
+gc collect
+got prompt
+Requested to load SD1ClipModel
+Loading 1 new model
+----------------------------------------
+[36mEfficient Loader Models Cache:[0m
+Ckpt:
+  [1] realisticVisionV60B1_v60B1VAE
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [01:20<00:00,  2.47it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [01:20<00:00,  4.01s/it]
+Prompt executed in 84.65 seconds
+gc collect
+got prompt
+Requested to load SD1ClipModel
+Loading 1 new model
+----------------------------------------
+[36mEfficient Loader Models Cache:[0m
+Ckpt:
+  [1] realisticVisionV60B1_v60B1VAE
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:03<00:00,  5.64it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:03<00:00,  5.20it/s]
+Prompt executed in 4.70 seconds
+gc collect
+got prompt
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:03<00:00,  5.82it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:03<00:00,  5.41it/s]
+Prompt executed in 4.19 seconds
+FETCH DATA from: C:\Users\don00\projects\ComfyUI\custom_nodes\ComfyUI-Manager\extension-node-map.json
+got prompt
+Requested to load SD1ClipModel
+Loading 1 new model
+----------------------------------------
+[36mEfficient Loader Models Cache:[0m
+Ckpt:
+  [1] realisticVisionV60B1_v60B1VAE
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:03<00:00,  5.33it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:03<00:00,  5.14it/s]
+Prompt executed in 4.94 seconds
+gc collect
+got prompt
+Requested to load SD1ClipModel
+Loading 1 new model
+----------------------------------------
+[36mEfficient Loader Models Cache:[0m
+Ckpt:
+  [1] realisticVisionV60B1_v60B1VAE
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.56it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.20it/s]
+Prompt executed in 5.77 seconds
+gc collect
+got prompt
+Requested to load SD1ClipModel
+Loading 1 new model
+----------------------------------------
+[36mEfficient Loader Models Cache:[0m
+Ckpt:
+  [1] realisticVisionV60B1_v60B1VAE
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.66it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.20it/s]
+Prompt executed in 5.63 seconds
+gc collect
+got prompt
+Requested to load SD1ClipModel
+Loading 1 new model
+----------------------------------------
+[36mEfficient Loader Models Cache:[0m
+Ckpt:
+  [1] realisticVisionV60B1_v60B1VAE
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:09<00:00,  1.05it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:09<00:00,  2.03it/s]
+Prompt executed in 32.86 seconds
+gc collect
+got prompt
+Requested to load SD1ClipModel
+Loading 1 new model
+----------------------------------------
+[36mEfficient Loader Models Cache:[0m
+Ckpt:
+  [1] realisticVisionV60B1_v60B1VAE
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [01:05<00:00,  3.43it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [01:05<00:00,  3.28s/it]
+Prompt executed in 68.24 seconds
+gc collect
+got prompt
+Requested to load SD1ClipModel
+Loading 1 new model
+----------------------------------------
+[36mEfficient Loader Models Cache:[0m
+Ckpt:
+  [1] realisticVisionV60B1_v60B1VAE
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:13<00:00,  1.61it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:13<00:00,  1.50it/s]
+Prompt executed in 51.09 seconds
+gc collect
+got prompt
+Requested to load SD1ClipModel
+Loading 1 new model
+----------------------------------------
+[36mEfficient Loader Models Cache:[0m
+Ckpt:
+  [1] realisticVisionV60B1_v60B1VAE
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.43it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.16it/s]
+Prompt executed in 9.15 seconds
+gc collect
+got prompt
+Requested to load SD1ClipModel
+Loading 1 new model
+----------------------------------------
+[36mEfficient Loader Models Cache:[0m
+Ckpt:
+  [1] realisticVisionV60B1_v60B1VAE
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [03:48<00:00,  1.23it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [03:48<00:00, 11.42s/it]
+Prompt executed in 231.09 seconds
+gc collect
+got prompt
+Requested to load SD1ClipModel
+Loading 1 new model
+----------------------------------------
+[36mEfficient Loader Models Cache:[0m
+Ckpt:
+  [1] realisticVisionV60B1_v60B1VAE
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:09<00:00,  4.43it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:09<00:00,  2.16it/s]
+Prompt executed in 15.06 seconds
+gc collect
+got prompt
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:16<00:00,  1.56it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:16<00:00,  1.21it/s]
+Prompt executed in 24.01 seconds
+gc collect
+got prompt
+Requested to load SD1ClipModel
+Loading 1 new model
+----------------------------------------
+[36mEfficient Loader Models Cache:[0m
+Ckpt:
+  [1] realisticVisionV60B1_v60B1VAE
+Requested to load BaseModel
+Loading 1 new model
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:21<00:00,  4.55it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:21<00:00,  1.08s/it]
+Prompt executed in 34.57 seconds
+gc collect
+got prompt
+got prompt
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:20<00:00,  4.40it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:20<00:00,  1.02s/it]
+Requested to load AutoencoderKL
+Loading 1 new model
+Prompt executed in 23.51 seconds
+gc collect
+got prompt
+Requested to load SD1ClipModel
+Loading 1 new model
+----------------------------------------
+[36mEfficient Loader Models Cache:[0m
+Ckpt:
+  [1] realisticVisionV60B1_v60B1VAE
+Requested to load BaseModel
+Loading 1 new model
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.61it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.64it/s]
+Prompt executed in 21.28 seconds
+gc collect
+got prompt
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:06<00:00,  1.36it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:06<00:00,  3.06it/s]
+Prompt executed in 11.87 seconds
+gc collect
+got prompt
+Requested to load SD1ClipModel
+Loading 1 new model
+----------------------------------------
+[36mEfficient Loader Models Cache:[0m
+Ckpt:
+  [1] realisticVisionV60B1_v60B1VAE
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:17<00:00,  4.19it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:17<00:00,  1.16it/s]
+Prompt executed in 21.32 seconds
+gc collect
+got prompt
+got prompt
+Requested to load SD1ClipModel
+Loading 1 new model
+----------------------------------------
+[36mEfficient Loader Models Cache:[0m
+Ckpt:
+  [1] realisticVisionV60B1_v60B1VAE
+Requested to load AutoencoderKL
+Loading 1 new model
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  7.27it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.85it/s]
+Prompt executed in 47.57 seconds
+gc collect
+got prompt
+Requested to load SD1ClipModel
+Loading 1 new model
+----------------------------------------
+[36mEfficient Loader Models Cache:[0m
+Ckpt:
+  [1] realisticVisionV60B1_v60B1VAE
+100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [02:08<00:00,  2.43it/s]100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [02:08<00:00,  6.44s/it]
+Prompt executed in 157.24 seconds
+gc collect
+got prompt
+ERROR:root:!!! Exception during processing !!!
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\don00\projects\ComfyUI\execution.py", line 155, in recursive_execute
+    output_data, output_ui = get_output_data(obj, input_data_all)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\don00\projects\ComfyUI\execution.py", line 85, in get_output_data
+    return_values = map_node_over_list(obj, input_data_all, obj.FUNCTION, allow_interrupt=True)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\don00\projects\ComfyUI\execution.py", line 78, in map_node_over_list
+    results.append(getattr(obj, func)(**slice_dict(input_data_all, i)))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\don00\projects\ComfyUI\custom_nodes\base64_images.py", line 97, in base64_to_image
+    _bytes = base64.decodebytes(bytes(base64Str, 'utf-8'))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2032.0_x64__qbz5n2kfra8p0\Lib\base64.py", line 563, in decodebytes
+    return binascii.a2b_base64(s)
+           ^^^^^^^^^^^^^^^^^^^^^^
+binascii.Error: Invalid base64-encoded string: number of data characters (353) cannot be 1 more than a multiple of 4
+
+Prompt executed in 0.07 seconds
+gc collect
+got prompt
+ERROR:root:!!! Exception during processing !!!
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\don00\projects\ComfyUI\execution.py", line 155, in recursive_execute
+    output_data, output_ui = get_output_data(obj, input_data_all)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\don00\projects\ComfyUI\execution.py", line 85, in get_output_data
+    return_values = map_node_over_list(obj, input_data_all, obj.FUNCTION, allow_interrupt=True)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\don00\projects\ComfyUI\execution.py", line 78, in map_node_over_list
+    results.append(getattr(obj, func)(**slice_dict(input_data_all, i)))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\don00\projects\ComfyUI\custom_nodes\base64_images.py", line 98, in base64_to_image
+    i = Image.open(BytesIO(_bytes))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\don00\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\PIL\Image.py", line 3305, in open
+    raise UnidentifiedImageError(msg)
+PIL.UnidentifiedImageError: cannot identify image file <_io.BytesIO object at 0x0000025D494D1BC0>
+
+Prompt executed in 1.27 seconds
+gc collect
+got prompt
+ERROR:root:!!! Exception during processing !!!
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\don00\projects\ComfyUI\execution.py", line 155, in recursive_execute
+    output_data, output_ui = get_output_data(obj, input_data_all)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\don00\projects\ComfyUI\execution.py", line 85, in get_output_data
+    return_values = map_node_over_list(obj, input_data_all, obj.FUNCTION, allow_interrupt=True)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\don00\projects\ComfyUI\execution.py", line 78, in map_node_over_list
+    results.append(getattr(obj, func)(**slice_dict(input_data_all, i)))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\don00\projects\ComfyUI\custom_nodes\base64_images.py", line 98, in base64_to_image
+    i = Image.open(BytesIO(_bytes))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\don00\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\PIL\Image.py", line 3305, in open
+    raise UnidentifiedImageError(msg)
+PIL.UnidentifiedImageError: cannot identify image file <_io.BytesIO object at 0x0000025DB6E4A5C0>
+
+Prompt executed in 0.03 seconds
+gc collect
+got prompt
+ERROR:root:!!! Exception during processing !!!
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\don00\projects\ComfyUI\execution.py", line 155, in recursive_execute
+    output_data, output_ui = get_output_data(obj, input_data_all)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\don00\projects\ComfyUI\execution.py", line 85, in get_output_data
+    return_values = map_node_over_list(obj, input_data_all, obj.FUNCTION, allow_interrupt=True)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\don00\projects\ComfyUI\execution.py", line 78, in map_node_over_list
+    results.append(getattr(obj, func)(**slice_dict(input_data_all, i)))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\don00\projects\ComfyUI\custom_nodes\base64_images.py", line 97, in base64_to_image
+    _bytes = base64.decodebytes(bytes(base64Str, 'utf-8'))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2032.0_x64__qbz5n2kfra8p0\Lib\base64.py", line 563, in decodebytes
+    return binascii.a2b_base64(s)
+           ^^^^^^^^^^^^^^^^^^^^^^
+binascii.Error: Incorrect padding
+
+Prompt executed in 0.02 seconds
+got prompt
+ERROR:root:!!! Exception during processing !!!
+ERROR:root:Traceback (most recent call last):
+  File "C:\Users\don00\projects\ComfyUI\execution.py", line 155, in recursive_execute
+    output_data, output_ui = get_output_data(obj, input_data_all)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\don00\projects\ComfyUI\execution.py", line 85, in get_output_data
+    return_values = map_node_over_list(obj, input_data_all, obj.FUNCTION, allow_interrupt=True)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\don00\projects\ComfyUI\execution.py", line 78, in map_node_over_list
+    results.append(getattr(obj, func)(**slice_dict(input_data_all, i)))
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\don00\projects\ComfyUI\custom_nodes\base64_images.py", line 97, in base64_to_image
+    _bytes = base64.decodebytes(bytes(base64Str, 'utf-8'))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2032.0_x64__qbz5n2kfra8p0\Lib\base64.py", line 563, in decodebytes
+    return binascii.a2b_base64(s)
+           ^^^^^^^^^^^^^^^^^^^^^^
+binascii.Error: Invalid base64-encoded string: number of data characters (353) cannot be 1 more than a multiple of 4
+
+Prompt executed in 0.02 seconds
+gc collect
 
 Stopped server

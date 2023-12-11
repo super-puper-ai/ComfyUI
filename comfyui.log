@@ -1,55 +1,93 @@
-** ComfyUI start up time: 2023-11-01 15:30:49.366712
+** ComfyUI start up time: 2023-12-11 20:59:08.565997
 
 Prestartup times for custom nodes:
-   0.0 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager
+   0.0 seconds: C:\Users\don00\projects\ComfyUI\custom_nodes\ComfyUI-Manager
 
-Using directml with device: 
-Total VRAM 1024 MB, total RAM 32699 MB
+Total VRAM 6144 MB, total RAM 16292 MB
 Set vram state to: NORMAL_VRAM
-Device: privateuseone
+Device: cuda:0 NVIDIA GeForce RTX 2060 : cudaMallocAsync
 VAE dtype: torch.float32
-Using sub quadratic optimization for cross attention, if you have memory or speed issues try using: --use-split-cross-attention
-========= custom_node_path D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes =========
+Using pytorch cross attention
 ========= possible_module base64_images.py =========
 ========= possible_module comfyui-animatediff =========
 Traceback (most recent call last):
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\nodes.py", line 1735, in load_custom_node
+  File "C:\Users\don00\projects\ComfyUI\nodes.py", line 1800, in load_custom_node
     module_spec.loader.exec_module(module)
-  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
-  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\comfyui-animatediff\__init__.py", line 2, in <module>
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Users\don00\projects\ComfyUI\custom_nodes\comfyui-animatediff\__init__.py", line 2, in <module>
     from .animatediff.nodes import NODE_CLASS_MAPPINGS, NODE_DISPLAY_NAME_MAPPINGS
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\comfyui-animatediff\animatediff\nodes.py", line 16, in <module>
+  File "C:\Users\don00\projects\ComfyUI\custom_nodes\comfyui-animatediff\animatediff\nodes.py", line 16, in <module>
     from .sampler import AnimateDiffSampler, AnimateDiffSlidingWindowOptions
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\comfyui-animatediff\animatediff\sampler.py", line 14, in <module>
-    from .sliding_schedule import ContextSchedules
-  File "D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\comfyui-animatediff\animatediff\sliding_schedule.py", line 147
-    match name:
-          ^
-SyntaxError: invalid syntax
+  File "C:\Users\don00\projects\ComfyUI\custom_nodes\comfyui-animatediff\animatediff\sampler.py", line 52, in <module>
+    orig_maximum_batch_area = model_management.maximum_batch_area
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'comfy.model_management' has no attribute 'maximum_batch_area'
 
-Cannot import D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\comfyui-animatediff module for custom nodes: invalid syntax (sliding_schedule.py, line 147)
+Cannot import C:\Users\don00\projects\ComfyUI\custom_nodes\comfyui-animatediff module for custom nodes: module 'comfy.model_management' has no attribute 'maximum_batch_area'
 ========= possible_module ComfyUI-AnimateDiff-Evolved =========
-Using sub quadratic optimization for cross attention, if you have memory or speed issues try using: --use-split-cross-attention
-[AnimateDiffEvo] - [0;31mERROR[0m - No motion models found. Please download one and place in: ['D:\\Documents\\projects\\super-puper-ai\\ComfyUI\\custom_nodes\\ComfyUI-AnimateDiff-Evolved\\models']
+Using pytorch cross attention
+Traceback (most recent call last):
+  File "C:\Users\don00\projects\ComfyUI\nodes.py", line 1800, in load_custom_node
+    module_spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Users\don00\projects\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\__init__.py", line 2, in <module>
+    from .animatediff.nodes import NODE_CLASS_MAPPINGS, NODE_DISPLAY_NAME_MAPPINGS
+  File "C:\Users\don00\projects\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\nodes.py", line 22, in <module>
+    from .sampling import animatediff_sample_factory
+  File "C:\Users\don00\projects\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved\animatediff\sampling.py", line 9, in <module>
+    from comfy.samplers import lcm
+ImportError: cannot import name 'lcm' from 'comfy.samplers' (C:\Users\don00\projects\ComfyUI\comfy\samplers.py)
+
+Cannot import C:\Users\don00\projects\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved module for custom nodes: cannot import name 'lcm' from 'comfy.samplers' (C:\Users\don00\projects\ComfyUI\comfy\samplers.py)
 ========= possible_module ComfyUI-Manager =========
 ### Loading: ComfyUI-Manager (V0.36)
-### ComfyUI Revision: 1629 [d9a7be5a] | Released on '2023-11-01'
+### ComfyUI Revision: 1777 [e1d95343] | Released on '2023-12-07'
 ========= possible_module ComfyUI-VideoHelperSuite =========
-[VideoHelperSuite] - [0;32mINFO[0m - ffmpeg could not be found. Using ffmpeg from imageio-ffmpeg.
+Traceback (most recent call last):
+  File "C:\Users\don00\projects\ComfyUI\nodes.py", line 1800, in load_custom_node
+    module_spec.loader.exec_module(module)
+  File "<frozen importlib._bootstrap_external>", line 940, in exec_module
+  File "<frozen importlib._bootstrap>", line 241, in _call_with_frames_removed
+  File "C:\Users\don00\projects\ComfyUI\custom_nodes\ComfyUI-VideoHelperSuite\__init__.py", line 1, in <module>
+    from .videohelpersuite.nodes import NODE_CLASS_MAPPINGS, NODE_DISPLAY_NAME_MAPPINGS
+  File "C:\Users\don00\projects\ComfyUI\custom_nodes\ComfyUI-VideoHelperSuite\videohelpersuite\nodes.py", line 13, in <module>
+    from .load_video_nodes import LoadVideo, LoadVideoUpload, UploadVideo, OutVideoInfo
+  File "C:\Users\don00\projects\ComfyUI\custom_nodes\ComfyUI-VideoHelperSuite\videohelpersuite\load_video_nodes.py", line 6, in <module>
+    import cv2
+ModuleNotFoundError: No module named 'cv2'
+
+Cannot import C:\Users\don00\projects\ComfyUI\custom_nodes\ComfyUI-VideoHelperSuite module for custom nodes: No module named 'cv2'
 ========= possible_module efficiency-nodes-comfyui =========
-[36mEfficiency Nodes:[0m Attempting to add 'AnimatedDiff Script' Node (ComfyUI-AnimateDiff-Evolved add-on)...[36mEfficiency Nodes:[0m Attempting to add 'AnimatedDiff Script' Node (ComfyUI-AnimateDiff-Evolved add-on)...[92mSuccess![0m
+[36mEfficiency Nodes:[0m Attempting to add 'AnimatedDiff Script' Node (ComfyUI-AnimateDiff-Evolved add-on)...[36mEfficiency Nodes:[0m Attempting to add 'AnimatedDiff Script' Node (ComfyUI-AnimateDiff-Evolved add-on)...[91mFailed![0m
+[93mEfficiency Nodes Warning:[0m Failed to import python package 'simpleeval'; related nodes disabled.
+
 ========= possible_module example_node.py.example =========
 
 Import times for custom nodes:
-   0.0 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\base64_images.py
-   0.0 seconds (IMPORT FAILED): D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\comfyui-animatediff
-   0.1 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved
-   0.1 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\efficiency-nodes-comfyui
-   0.5 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager
-   1.2 seconds: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-VideoHelperSuite
+   0.0 seconds: C:\Users\don00\projects\ComfyUI\custom_nodes\base64_images.py
+   0.0 seconds (IMPORT FAILED): C:\Users\don00\projects\ComfyUI\custom_nodes\ComfyUI-VideoHelperSuite
+   0.0 seconds (IMPORT FAILED): C:\Users\don00\projects\ComfyUI\custom_nodes\comfyui-animatediff
+   0.0 seconds (IMPORT FAILED): C:\Users\don00\projects\ComfyUI\custom_nodes\ComfyUI-AnimateDiff-Evolved
+   0.1 seconds: C:\Users\don00\projects\ComfyUI\custom_nodes\efficiency-nodes-comfyui
+   0.9 seconds: C:\Users\don00\projects\ComfyUI\custom_nodes\ComfyUI-Manager
 
 Starting server
 
 To see the GUI go to: http://127.0.0.1:8188
-FETCH DATA from: D:\Documents\projects\super-puper-ai\ComfyUI\custom_nodes\ComfyUI-Manager\extension-node-map.json
+got prompt
+Requested to load SD1ClipModel
+Loading 1 new model
+----------------------------------------
+[36mEfficient Loader Models Cache:[0m
+Ckpt:
+  [1] realisticVisionV60B1_v60B1VAE
+Requested to load AutoencoderKL
+Loading 1 new model
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  5.97it/s]100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 20/20 [00:04<00:00,  4.71it/s]
+Prompt executed in 34.41 seconds
+gc collect
+got prompt
+
+Stopped server
