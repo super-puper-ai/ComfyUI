@@ -11,3 +11,4 @@ scipy
 tqdm
 psutil
 wget
+cv2
