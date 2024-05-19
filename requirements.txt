@@ -12,3 +12,4 @@ tqdm
 psutil
 wget
 opencv-python
+mediapipe
