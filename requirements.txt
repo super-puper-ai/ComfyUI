@@ -11,4 +11,4 @@ scipy
 tqdm
 psutil
 wget
-cv2
+opencv-python
