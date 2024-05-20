@@ -1,0 +1,21 @@
+version: '3.9'
+
+services:
+  comfy:
+    build: .
+    image: sd-comfy
+    volumes:
+      - ./custom_nodes:/app/custom_nodes
+      - ./models:/app/models
+      - ./input:/app/input
+    ports:
+      - "${FRONTEND_PORT:-7862}:7862"
+    stop_signal: SIGKILL
+    tty: true
+    deploy:
+      resources:
+        reservations:
+          devices:
+              - driver: nvidia
+                device_ids: ['0']
+                capabilities: [compute, utility]
